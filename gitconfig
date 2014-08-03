@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[color]
+	status = always
+	branch = always
+	diff = always
+[push]
+	default = simple
+[user]
+	email = qdsfmt@126.com

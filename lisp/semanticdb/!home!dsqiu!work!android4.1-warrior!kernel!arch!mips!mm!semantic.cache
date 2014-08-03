@@ -1,0 +1,2244 @@
+;; Object mm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mm/"
+  :tables
+  (list
+    (semanticdb-table "sc-mips.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/init.h" include (:system-flag t) nil [62 85])
+            ("linux/kernel.h" include (:system-flag t) nil [86 111])
+            ("linux/sched.h" include (:system-flag t) nil [112 136])
+            ("linux/mm.h" include (:system-flag t) nil [137 158])
+            ("asm/mipsregs.h" include (:system-flag t) nil [160 185])
+            ("asm/bcache.h" include (:system-flag t) nil [186 209])
+            ("asm/cacheops.h" include (:system-flag t) nil [210 235])
+            ("asm/page.h" include (:system-flag t) nil [236 257])
+            ("asm/pgtable.h" include (:system-flag t) nil [258 282])
+            ("asm/system.h" include (:system-flag t) nil [283 306])
+            ("asm/mmu_context.h" include (:system-flag t) nil [307 335])
+            ("asm/r4kcache.h" include (:system-flag t) nil [336 361])
+            ("mips_sc_wback_inv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [503 522])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [523 542]))                  
+                :type "void")
+                nil [473 597])
+            ("mips_sc_inv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [676 695])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [696 715]))                  
+                :type "void")
+                nil [652 958])
+            ("mips_sc_enable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [987 992]))                  
+                :type "void")
+                nil [960 1035])
+            ("mips_sc_disable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1065 1070]))                  
+                :type "void")
+                nil [1037 1113])
+            ("mips_sc_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.bc_enable = mips_sc_enable,
+	.bc_disable = mips_sc_disable,
+	.bc_wback_inv = mips_sc_wback_inv,
+	.bc_inv = mips_sc_inv
+}"
+                :type ("bcache_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1115 1279])
+            ("mips_sc_is_activated" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("cpuinfo_mips" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1809 1832]))                  
+                :type "int")
+                nil [1770 2184])
+            ("mips_sc_probe" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2225 2230]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2204 3232])
+            ("mips_sc_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3261 3266]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [3238 3376]))          
+      :file "sc-mips.c"
+      :pointmax 3377
+      :fsize 3376
+      :lastmodtime '(21199 29168 258378 898000)
+      :unmatched-syntax '((INT 3234 . 3237) (INT 2200 . 2203) (INLINE 2193 . 2199) (STATIC 2186 . 2192)))
+    (semanticdb-table "sc-jz.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/init.h" include (:system-flag t) nil [62 85])
+            ("linux/kernel.h" include (:system-flag t) nil [86 111])
+            ("linux/sched.h" include (:system-flag t) nil [112 136])
+            ("linux/mm.h" include (:system-flag t) nil [137 158])
+            ("asm/mipsregs.h" include (:system-flag t) nil [160 185])
+            ("asm/bcache.h" include (:system-flag t) nil [186 209])
+            ("asm/cacheops.h" include (:system-flag t) nil [210 235])
+            ("asm/page.h" include (:system-flag t) nil [236 257])
+            ("asm/pgtable.h" include (:system-flag t) nil [258 282])
+            ("asm/system.h" include (:system-flag t) nil [283 306])
+            ("asm/mmu_context.h" include (:system-flag t) nil [307 335])
+            ("asm/r4kcache.h" include (:system-flag t) nil [336 361])
+            ("__read_mostly" variable (:type ("scache_size" type (:type "class") nil nil)) nil [426 452])
+            ("mips_sc_wback_inv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [550 569])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [570 589]))                  
+                :type "void")
+                nil [520 775])
+            ("mips_sc_inv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [854 873])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [874 893]))                  
+                :type "void")
+                nil [830 1277])
+            ("mips_sc_enable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1306 1311]))                  
+                :type "void")
+                nil [1279 1354])
+            ("mips_sc_disable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1384 1389]))                  
+                :type "void")
+                nil [1356 1432])
+            ("mips_sc_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.bc_enable = mips_sc_enable,
+	.bc_disable = mips_sc_disable,
+	.bc_wback_inv = mips_sc_wback_inv,
+	.bc_inv = mips_sc_inv
+}"
+                :type ("bcache_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1434 1598])
+            ("mips_sc_is_activated" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("cpuinfo_mips" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2128 2151]))                  
+                :type "int")
+                nil [2089 2503])
+            ("mips_sc_probe" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2544 2549]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2523 3870])
+            ("mips_sc_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3899 3904]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [3876 4014]))          
+      :file "sc-jz.c"
+      :pointmax 4015
+      :fsize 4014
+      :lastmodtime '(21203 27569 958115 109000)
+      :unmatched-syntax nil)
+    (semanticdb-table "c-r4k.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/hardirq.h" include (:system-flag t) nil [375 401])
+            ("linux/init.h" include (:system-flag t) nil [402 425])
+            ("linux/highmem.h" include (:system-flag t) nil [426 452])
+            ("linux/kernel.h" include (:system-flag t) nil [453 478])
+            ("linux/linkage.h" include (:system-flag t) nil [479 505])
+            ("linux/sched.h" include (:system-flag t) nil [506 530])
+            ("linux/smp.h" include (:system-flag t) nil [531 553])
+            ("linux/mm.h" include (:system-flag t) nil [554 575])
+            ("linux/module.h" include (:system-flag t) nil [576 601])
+            ("linux/bitops.h" include (:system-flag t) nil [602 627])
+            ("asm/bcache.h" include (:system-flag t) nil [629 652])
+            ("asm/bootinfo.h" include (:system-flag t) nil [653 678])
+            ("asm/cache.h" include (:system-flag t) nil [679 701])
+            ("asm/cacheops.h" include (:system-flag t) nil [702 727])
+            ("asm/cpu.h" include (:system-flag t) nil [728 748])
+            ("asm/cpu-features.h" include (:system-flag t) nil [749 778])
+            ("asm/io.h" include (:system-flag t) nil [779 798])
+            ("asm/page.h" include (:system-flag t) nil [799 820])
+            ("asm/pgtable.h" include (:system-flag t) nil [821 845])
+            ("asm/r4kcache.h" include (:system-flag t) nil [846 871])
+            ("asm/sections.h" include (:system-flag t) nil [872 897])
+            ("asm/system.h" include (:system-flag t) nil [898 921])
+            ("asm/mmu_context.h" include (:system-flag t) nil [922 950])
+            ("asm/war.h" include (:system-flag t) nil [951 971])
+            ("asm/cacheflush.h" include (:system-flag t) nil [972 999])
+            ("r4k_on_each_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1373 1384]))                          
+                        :type "void")
+                        nil nil)
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1386 1397]))                  
+                :type "void")
+                nil [1324 1562])
+            ("cpu_has_safe_index_cacheops" variable (:constant-flag t) nil [1645 1672])
+            ("__read_mostly" variable (:type ("icache_size" type (:type "class") nil nil)) nil [1724 1750])
+            ("__read_mostly" variable (:type ("dcache_size" type (:type "class") nil nil)) nil [1772 1798])
+            ("__read_mostly" variable (:type ("scache_size" type (:type "class") nil nil)) nil [1820 1846])
+            ("cache_noop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1944 1949]))                  
+                :type "void")
+                nil [1921 1952])
+            ("no_sc_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.bc_enable = (void *)cache_noop,
+	.bc_disable = (void *)cache_noop,
+	.bc_wback_inv = (void *)cache_noop,
+	.bc_inv = (void *)cache_noop
+}"
+                :type ("bcache_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1954 2131])
+            ("bcops" variable
+               (:pointer 1
+                :default-value "&no_sc_ops"
+                :type ("bcache_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2133 2171])
+            ("cpu_is_r4600_v1_x" variable (:constant-flag t) nil [2181 2198])
+            ("cpu_is_r4600_v2_x" variable (:constant-flag t) nil [2255 2272])
+            ("R4600_HIT_CACHEOP_WAR_IMPL" variable (:constant-flag t) nil [2330 2356])
+            ("r4k_blast_dcache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2609 2628]))                  
+                :type "void")
+                nil [2572 2629])
+            ("r4k_blast_dcache_page_dc32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2677 2696]))                  
+                :type "void")
+                nil [2631 2757])
+            ("r4k_blast_dcache_page_dc64" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2805 2824]))                  
+                :type "void")
+                nil [2759 2885])
+            ("r4k_blast_dcache_page_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2937 2942]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [2899 3297])
+            ("r4k_blast_dcache_page_indexed" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3345 3364]))                  
+                :type "void")
+                nil [3299 3365])
+            ("r4k_blast_dcache_page_indexed_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3425 3430]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [3379 3826])
+            ("r4k_blast_dcache" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3861 3866]))                  
+                :type "void")
+                nil [3828 3867])
+            ("r4k_blast_dcache_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3914 3919]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [3881 4224])
+            ("JUMP_TO_ALIGN" variable (:constant-flag t) nil [4300 4313])
+            ("CACHE32_UNROLL32_ALIGN" variable (:constant-flag t) nil [4418 4440])
+            ("CACHE32_UNROLL32_ALIGN2" variable (:constant-flag t) nil [4488 4511])
+            ("blast_r4600_v1_icache32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4574 4579]))                  
+                :type "void")
+                nil [4531 4676])
+            ("tx49_blast_icache32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4717 4722]))                  
+                :type "void")
+                nil [4678 5457])
+            ("blast_icache32_r4600_v1_page_indexed" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5515 5534]))                  
+                :type "void")
+                nil [5459 5648])
+            ("tx49_blast_icache32_page_indexed" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5702 5721]))                  
+                :type "void")
+                nil [5650 6519])
+            ("r4k_blast_icache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6559 6578]))                  
+                :type "void")
+                nil [6521 6579])
+            ("r4k_blast_icache_page_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6631 6636]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [6593 6976])
+            ("r4k_blast_icache_page_indexed" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7025 7044]))                  
+                :type "void")
+                nil [6979 7045])
+            ("r4k_blast_icache_page_indexed_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7105 7110]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [7059 7770])
+            ("r4k_blast_icache" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7805 7810]))                  
+                :type "void")
+                nil [7772 7811])
+            ("r4k_blast_icache_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7858 7863]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [7825 8368])
+            ("r4k_blast_scache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8408 8427]))                  
+                :type "void")
+                nil [8370 8428])
+            ("r4k_blast_scache_page_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8480 8485]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [8442 8903])
+            ("r4k_blast_scache_page_indexed" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8951 8970]))                  
+                :type "void")
+                nil [8905 8971])
+            ("r4k_blast_scache_page_indexed_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9031 9036]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [8985 9526])
+            ("r4k_blast_scache" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9561 9566]))                  
+                :type "void")
+                nil [9528 9567])
+            ("r4k_blast_scache_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9614 9619]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [9581 9992])
+            ("local_r4k___flush_cache_all" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10041 10053]))                  
+                :type "void")
+                nil [9994 10357])
+            ("r4k___flush_cache_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10393 10398]))                  
+                :type "void")
+                nil [10359 10455])
+            ("has_valid_asid" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10490 10517]))                  
+                :type "int")
+                nil [10457 10727])
+            ("r4k__flush_cache_vmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10763 10768]))                  
+                :type "void")
+                nil [10729 10793])
+            ("r4k__flush_cache_vunmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10831 10836]))                  
+                :type "void")
+                nil [10795 10861])
+            ("local_r4k_flush_cache_range" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10910 10922]))                  
+                :type "void")
+                nil [10863 11146])
+            ("r4k_flush_cache_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11182 11209])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11211 11231])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11232 11250]))                  
+                :type "void")
+                nil [11148 11406])
+            ("local_r4k_flush_cache_mm" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11452 11464]))                  
+                :type "void")
+                nil [11408 12021])
+            ("r4k_flush_cache_mm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12054 12075]))                  
+                :type "void")
+                nil [12023 12164])
+            ("flush_cache_page_args" type
+               (:members 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12198 12225])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol classsubparts) [12227 12246])
+                    ("pfn" variable (:type "unsigned long") (reparse-symbol classsubparts) [12248 12266]))                  
+                :type "struct")
+                nil [12166 12269])
+            ("local_r4k_flush_cache_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12317 12328]))                  
+                :type "void")
+                nil [12271 14511])
+            ("r4k_flush_cache_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14546 14573])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [14575 14594])
+                    ("pfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [14595 14613]))                  
+                :type "void")
+                nil [14513 14828])
+            ("local_r4k_flush_data_cache_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14881 14893]))                  
+                :type "void")
+                nil [14830 14943])
+            ("r4k_flush_data_cache_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [14983 15002]))                  
+                :type "void")
+                nil [14945 15146])
+            ("flush_icache_range_args" type
+               (:members 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol classsubparts) [15182 15202])
+                    ("end" variable (:type "unsigned long") (reparse-symbol classsubparts) [15204 15222]))                  
+                :type "struct")
+                nil [15148 15225])
+            ("local_r4k_flush_icache_range" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15275 15295])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15296 15314]))                  
+                :type "void")
+                nil [15227 15616])
+            ("local_r4k_flush_icache_range_ipi" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15670 15681]))                  
+                :type "void")
+                nil [15618 15855])
+            ("r4k_flush_icache_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15892 15912])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15913 15931]))                  
+                :type "void")
+                nil [15857 16095])
+            ("local_r4k_flush_cache_sigtramp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18296 18307]))                  
+                :type "void")
+                nil [18253 19167])
+            ("r4k_flush_cache_sigtramp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [19206 19225]))                  
+                :type "void")
+                nil [19169 19294])
+            ("r4k_flush_icache_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19329 19334]))                  
+                :type "void")
+                nil [19296 19386])
+            ("rm7k_erratum31" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19422 19427]))                  
+                :type "void")
+                nil [19388 20187])
+            ("__cpuinitdata" variable
+               (:default-value "{ NULL, \"direct mapped\", \"2-way\",
+	\"3-way\", \"4-way\", \"5-way\", \"6-way\", \"7-way\", \"8-way\"
+}"
+                :type "int")
+                nil [20215 20321])
+            ("probe_pcache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20358 20363]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [20335 30188])
+            ("probe_scache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [30481 30486]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [30458 31937])
+            ("r5k_sc_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32496 32501]))                  
+                :type "int")
+                nil [32473 32502])
+            ("rm7k_sc_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32527 32532]))                  
+                :type "int")
+                nil [32503 32533])
+            ("mips_sc_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32558 32563]))                  
+                :type "int")
+                nil [32534 32564])
+            ("setup_scache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32601 32606]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [32578 34672])
+            ("ways" variable (:type "int") nil [34411 34416])
+            ("sets" variable
+               (:default-value "scache_size / (c->scache.linesz * c->scache.ways)"
+                :type "int")
+                nil [34429 34486])
+            ("printk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("scache_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34562 34575])
+                    ("" variable (:type ("way_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34581 34607])
+                    ("" variable (:type ("c" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34609 34611])
+                    ("" variable (:type ("scache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34612 34619])
+                    ("" variable (:type ("linesz" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34619 34626]))                  
+                :type "int")
+                nil [34489 34627])
+            ("MIPS_CPU_INCLUSIVE_CACHES" variable (:type "int") nil [34644 34670])
+            ("NXP_BARRIER" variable (:constant-flag t) nil [35439 35450])
+            ("config0" variable (:type "unsigned long") nil [35630 35652])
+            ("config0" variable
+               (:default-value "read_c0_config()"
+                :type "int")
+                nil [35655 35682])
+            ("write_c0_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("config0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35969 35977]))                  
+                :type "int")
+                nil [35953 35978])
+            ("__volatile__" function (:type ("__asm__" type (:type "class") nil nil)) nil [35980 35993])
+            ("cca" variable
+               (:default-value "-1"
+                :type ("__cpuinitdata" type (:type "class") nil nil))
+                nil [36009 36032])
+            ("get_option" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36088 36092])
+                    ("" variable (:type ("cca" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36094 36098]))                  
+                :type "int")
+                nil [36076 36099])
+            ("cca" variable
+               (:default-value "read_c0_config() & CONF_CM_CMASK"
+                :type "int")
+                nil [36217 36256])
+            ("_CACHE_SHIFT" variable (:type "int") nil [36290 36303])
+            ("pr_debug" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cca" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36345 36349]))                  
+                :type "int")
+                nil [36306 36350])
+            ("change_c0_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("CONF_CM_CMASK" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36369 36383])
+                    ("" variable (:type ("cca" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36384 36388]))                  
+                :type "int")
+                nil [36352 36389])
+            ("build_clear_page" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37269 37274]))                  
+                :type "void")
+                nil [37240 37275])
+            ("build_copy_page" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37305 37310]))                  
+                :type "void")
+                nil [37277 37311])
+            ("except_vec2_generic" variable (:type ("__weak" type (:type "class") nil nil)) nil [37325 37352])
+            ("except_vec2_sb1" variable (:type ("__weak" type (:type "class") nil nil)) nil [37366 37389])
+            ("coherentio" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [37391 37413])
+            ("c" variable
+               (:pointer 1
+                :default-value "&current_cpu_data"
+                :type ("cpuinfo_mips" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [37415 37458])
+            ("probe_pcache" function
+               (:prototype-flag t
+                :type "int")
+                nil [37662 37677])
+            ("setup_scache" function
+               (:prototype-flag t
+                :type "int")
+                nil [37679 37694])
+            ("r4k_blast_dcache_page_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37697 37727])
+            ("r4k_blast_dcache_page_indexed_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37729 37767])
+            ("r4k_blast_dcache_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37769 37794])
+            ("r4k_blast_icache_page_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37796 37826])
+            ("r4k_blast_icache_page_indexed_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37828 37866])
+            ("r4k_blast_icache_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37868 37893])
+            ("r4k_blast_scache_page_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37895 37925])
+            ("r4k_blast_scache_page_indexed_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37927 37965])
+            ("r4k_blast_scache_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [37967 37992])
+            ("shm_align_mask" variable
+               (:default-value "max_t( unsigned long,
+					c->dcache.sets * c->dcache.linesz - 1,
+					PAGE_SIZE - 1)"
+                :type "int")
+                nil [38226 38329])
+            ("shm_align_mask" variable
+               (:default-value "PAGE_SIZE-1"
+                :type "int")
+                nil [38338 38367])
+            ("__flush_cache_vmap" variable
+               (:default-value "r4k__flush_cache_vmap"
+                :type "int")
+                nil [38370 38413])
+            ("__flush_cache_vunmap" variable
+               (:default-value "r4k__flush_cache_vunmap"
+                :type "int")
+                nil [38415 38462])
+            ("flush_cache_all" variable
+               (:default-value "cache_noop"
+                :type "int")
+                nil [38465 38495])
+            ("__flush_cache_all" variable
+               (:default-value "r4k___flush_cache_all"
+                :type "int")
+                nil [38497 38539])
+            ("flush_cache_mm" variable
+               (:default-value "r4k_flush_cache_mm"
+                :type "int")
+                nil [38541 38578])
+            ("flush_cache_page" variable
+               (:default-value "r4k_flush_cache_page"
+                :type "int")
+                nil [38580 38620])
+            ("flush_cache_range" variable
+               (:default-value "r4k_flush_cache_range"
+                :type "int")
+                nil [38622 38664])
+            ("flush_cache_sigtramp" variable
+               (:default-value "r4k_flush_cache_sigtramp"
+                :type "int")
+                nil [38667 38715])
+            ("flush_icache_all" variable
+               (:default-value "r4k_flush_icache_all"
+                :type "int")
+                nil [38717 38757])
+            ("local_flush_data_cache_page" variable
+               (:default-value "local_r4k_flush_data_cache_page"
+                :type "int")
+                nil [38759 38821])
+            ("flush_data_cache_page" variable
+               (:default-value "r4k_flush_data_cache_page"
+                :type "int")
+                nil [38823 38873])
+            ("flush_icache_range" variable
+               (:default-value "r4k_flush_icache_range"
+                :type "int")
+                nil [38875 38919])
+            ("local_flush_icache_range" variable
+               (:default-value "local_r4k_flush_icache_range"
+                :type "int")
+                nil [38921 38977])
+            ("build_clear_page" function
+               (:prototype-flag t
+                :type "int")
+                nil [39317 39336])
+            ("build_copy_page" function
+               (:prototype-flag t
+                :type "int")
+                nil [39338 39356])
+            ("local_r4k___flush_cache_all" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39533 39538]))                  
+                :type "int")
+                nil [39505 39539])
+            ("coherency_setup" function
+               (:prototype-flag t
+                :type "int")
+                nil [39542 39560]))          
+      :file "c-r4k.c"
+      :pointmax 39563
+      :fsize 39562
+      :lastmodtime '(21206 31619 316520 499000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NXP_BARRIER" (spp-arg-list nil 35486 . 35488) . 
+              ((symbol "__asm__" 35499 . 35506) (symbol "__volatile__" 35507 . 35519) (semantic-list "(						\\
+	\".set noreorder\\n\\t\"						\\
+	\"nop; nop; nop; nop; nop; nop;\\n\\t\"				\\
+	\".set reorder\\n\\t\")" 35519 . 35619)))
+          ("cpu_has_safe_index_cacheops" . ((number "1" 1673 . 1674)))
+          ("JUMP_TO_ALIGN" (spp-arg-list ("order") 4313 . 4320) . 
+              ((symbol "__asm__" 4324 . 4331) (symbol "__volatile__" 4332 . 4344) (semantic-list "( \\
+		\"b\\t1f\\n\\t\" \\
+		\".align\\t\" #order \"\\n\\t\" \\
+		\"1:\\n\\t\" \\
+		)" 4344 . 4409)))
+          ("CACHE32_UNROLL32_ALIGN2" . ((symbol "JUMP_TO_ALIGN" 4512 . 4525) (semantic-list "(11)" 4525 . 4529)))
+          ("cpu_is_r4600_v2_x" (spp-arg-list nil 2272 . 2274) . ((semantic-list "((read_c0_prid() & 0xfffffff0) == 0x00002020)" 2275 . 2320)))
+          ("CACHE32_UNROLL32_ALIGN" . ((symbol "JUMP_TO_ALIGN" 4441 . 4454) (semantic-list "(10)" 4454 . 4458)))
+          ("R4600_HIT_CACHEOP_WAR_IMPL" . 
+              ((DO "do" 2363 . 2365) (semantic-list "{									\\
+	if (R4600_V2_HIT_CACHEOP_WAR && cpu_is_r4600_v2_x())		\\
+		*(volatile unsigned long *)CKSEG1;			\\
+	if (R4600_V1_HIT_CACHEOP_WAR)					\\
+		__asm__ __volatile__(\"nop;nop;nop;nop\");		\\
+}" 2366 . 2560) (WHILE "while" 2561 . 2566) (semantic-list "(0)" 2567 . 2570)))
+          ("cpu_is_r4600_v1_x" (spp-arg-list nil 2198 . 2200) . ((semantic-list "((read_c0_prid() & 0xfffffff0) == 0x00002010)" 2201 . 2246)))
+          )
+)
+    (semanticdb-table "c-jz.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/hardirq.h" include (:system-flag t) nil [375 401])
+            ("linux/init.h" include (:system-flag t) nil [402 425])
+            ("linux/highmem.h" include (:system-flag t) nil [426 452])
+            ("linux/kernel.h" include (:system-flag t) nil [453 478])
+            ("linux/linkage.h" include (:system-flag t) nil [479 505])
+            ("linux/sched.h" include (:system-flag t) nil [506 530])
+            ("linux/smp.h" include (:system-flag t) nil [531 553])
+            ("linux/mm.h" include (:system-flag t) nil [554 575])
+            ("linux/module.h" include (:system-flag t) nil [576 601])
+            ("linux/bitops.h" include (:system-flag t) nil [602 627])
+            ("asm/rjzcache.h" include (:system-flag t) nil [629 654])
+            ("asm/bcache.h" include (:system-flag t) nil [655 678])
+            ("asm/bootinfo.h" include (:system-flag t) nil [679 704])
+            ("asm/cache.h" include (:system-flag t) nil [705 727])
+            ("asm/cacheops.h" include (:system-flag t) nil [728 753])
+            ("asm/cpu.h" include (:system-flag t) nil [754 774])
+            ("asm/cpu-features.h" include (:system-flag t) nil [775 804])
+            ("asm/io.h" include (:system-flag t) nil [805 824])
+            ("asm/page.h" include (:system-flag t) nil [825 846])
+            ("asm/pgtable.h" include (:system-flag t) nil [847 871])
+            ("asm/r4kcache.h" include (:system-flag t) nil [872 897])
+            ("asm/sections.h" include (:system-flag t) nil [898 923])
+            ("asm/system.h" include (:system-flag t) nil [924 947])
+            ("asm/mmu_context.h" include (:system-flag t) nil [948 976])
+            ("asm/war.h" include (:system-flag t) nil [977 997])
+            ("asm/cacheflush.h" include (:system-flag t) nil [998 1025])
+            ("flush_insn_cache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1082 1101]))                  
+                :type "void")
+                nil [1052 1102])
+            ("reserved_for_alloccache" variable
+               (:dereference 1
+                :type "unsigned long")
+                nil [1103 1185])
+            ("r4k_on_each_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1532 1543]))                          
+                        :type "void")
+                        nil nil)
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1545 1556]))                  
+                :type "void")
+                nil [1483 1721])
+            ("r4k_on_other_cpu" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("func" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("info" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1773 1784]))                          
+                        :type "void")
+                        nil nil)
+                    ("info" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1786 1797]))                  
+                :type "void")
+                nil [1723 1948])
+            ("cpu_has_safe_index_cacheops" variable (:constant-flag t) nil [2031 2058])
+            ("__read_mostly" variable (:type ("icache_size" type (:type "class") nil nil)) nil [2110 2136])
+            ("__read_mostly" variable (:type ("dcache_size" type (:type "class") nil nil)) nil [2158 2184])
+            ("__read_mostly" variable (:type ("scache_size" type (:type "class") nil nil)) nil [2206 2232])
+            ("cache_noop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2330 2335]))                  
+                :type "void")
+                nil [2307 2338])
+            ("no_sc_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.bc_enable = (void *)cache_noop,
+	.bc_disable = (void *)cache_noop,
+	.bc_wback_inv = (void *)cache_noop,
+	.bc_inv = (void *)cache_noop
+}"
+                :type ("bcache_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2340 2517])
+            ("bcops" variable
+               (:pointer 1
+                :default-value "&no_sc_ops"
+                :type ("bcache_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2519 2557])
+            ("cpu_is_r4600_v1_x" variable (:constant-flag t) nil [2567 2584])
+            ("cpu_is_r4600_v2_x" variable (:constant-flag t) nil [2641 2658])
+            ("R4600_HIT_CACHEOP_WAR_IMPL" variable (:constant-flag t) nil [2716 2742])
+            ("r4k_blast_dcache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2995 3014]))                  
+                :type "void")
+                nil [2958 3015])
+            ("r4k_blast_dcache_page_dc32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3063 3082]))                  
+                :type "void")
+                nil [3017 3143])
+            ("r4k_blast_dcache_page_dc64" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3191 3210]))                  
+                :type "void")
+                nil [3145 3271])
+            ("r4k_blast_dcache_page_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3323 3328]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [3285 3683])
+            ("r4k_blast_dcache_page_indexed" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3731 3750]))                  
+                :type "void")
+                nil [3685 3751])
+            ("r4k_blast_dcache_page_indexed_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3811 3816]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [3765 4212])
+            ("r4k_blast_dcache_jz" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4291 4296]))                  
+                :type "void")
+                nil [4254 4297])
+            ("r4k_blast_dcache" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4331 4336]))                  
+                :type "void")
+                nil [4298 4337])
+            ("r4k_blast_dcache_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4384 4389]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [4351 4776])
+            ("JUMP_TO_ALIGN" variable (:constant-flag t) nil [4852 4865])
+            ("CACHE32_UNROLL32_ALIGN" variable (:constant-flag t) nil [4970 4992])
+            ("CACHE32_UNROLL32_ALIGN2" variable (:constant-flag t) nil [5040 5063])
+            ("blast_r4600_v1_icache32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5126 5131]))                  
+                :type "void")
+                nil [5083 5228])
+            ("tx49_blast_icache32" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5269 5274]))                  
+                :type "void")
+                nil [5230 6009])
+            ("blast_icache32_r4600_v1_page_indexed" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6067 6086]))                  
+                :type "void")
+                nil [6011 6200])
+            ("tx49_blast_icache32_page_indexed" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6254 6273]))                  
+                :type "void")
+                nil [6202 7071])
+            ("r4k_blast_icache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7111 7130]))                  
+                :type "void")
+                nil [7073 7131])
+            ("r4k_blast_icache_page_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7183 7188]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [7145 7528])
+            ("r4k_blast_icache_page_indexed" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7577 7596]))                  
+                :type "void")
+                nil [7531 7597])
+            ("r4k_blast_icache_page_indexed_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7657 7662]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [7611 8322])
+            ("r4k_blast_icache_jz" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8401 8406]))                  
+                :type "void")
+                nil [8364 8407])
+            ("r4k_blast_icache" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8441 8446]))                  
+                :type "void")
+                nil [8408 8447])
+            ("r4k_blast_icache_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8494 8499]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [8461 9086])
+            ("r4k_blast_scache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9126 9145]))                  
+                :type "void")
+                nil [9088 9146])
+            ("r4k_blast_scache_page_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9198 9203]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [9160 9621])
+            ("r4k_blast_scache_page_indexed" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9669 9688]))                  
+                :type "void")
+                nil [9623 9689])
+            ("r4k_blast_scache_page_indexed_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9749 9754]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [9703 10244])
+            ("r4k_blast_scache" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10279 10284]))                  
+                :type "void")
+                nil [10246 10285])
+            ("r4k_blast_scache_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10332 10337]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [10299 10710])
+            ("local_r4k_flush_dcache_ipi" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10750 10761]))                  
+                :type "void")
+                nil [10711 10800])
+            ("local_r4k_flush_icache_ipi" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10840 10851]))                  
+                :type "void")
+                nil [10801 10890])
+            ("allcpu_r4k_flush_icache" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10934 10939]))                  
+                :type "void")
+                nil [10891 10992])
+            ("allcpu_r4k_flush_dcache" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11037 11042]))                  
+                :type "void")
+                nil [10994 11094])
+            ("local_r4k___flush_cache_all" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11143 11155]))                  
+                :type "void")
+                nil [11096 11465])
+            ("r4k___flush_cache_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11501 11506]))                  
+                :type "void")
+                nil [11467 11563])
+            ("has_valid_asid" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11598 11625]))                  
+                :type "int")
+                nil [11565 11835])
+            ("r4k__flush_cache_vmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11871 11876]))                  
+                :type "void")
+                nil [11837 11931])
+            ("r4k__flush_cache_vunmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11969 11974]))                  
+                :type "void")
+                nil [11933 12029])
+            ("local_r4k_flush_cache_range" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12078 12090]))                  
+                :type "void")
+                nil [12031 12275])
+            ("r4k_flush_cache_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12311 12338])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [12340 12360])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [12361 12379]))                  
+                :type "void")
+                nil [12277 12535])
+            ("local_r4k_flush_cache_mm" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12581 12593]))                  
+                :type "void")
+                nil [12537 13153])
+            ("r4k_flush_cache_mm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13186 13207]))                  
+                :type "void")
+                nil [13155 13296])
+            ("flush_cache_page_args" type
+               (:members 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13330 13357])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol classsubparts) [13359 13378])
+                    ("pfn" variable (:type "unsigned long") (reparse-symbol classsubparts) [13380 13398]))                  
+                :type "struct")
+                nil [13298 13401])
+            ("local_r4k_flush_cache_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13449 13460]))                  
+                :type "void")
+                nil [13403 15154])
+            ("r4k_flush_cache_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15189 15216])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15218 15237])
+                    ("pfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15238 15256]))                  
+                :type "void")
+                nil [15156 15471])
+            ("local_r4k_flush_data_cache_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15524 15536]))                  
+                :type "void")
+                nil [15473 15586])
+            ("r4k_flush_data_cache_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [15626 15645]))                  
+                :type "void")
+                nil [15588 15852])
+            ("local_r4k_flush_insn_cache_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15906 15918]))                  
+                :type "void")
+                nil [15855 15968])
+            ("r4k_flush_insn_cache_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [16008 16027]))                  
+                :type "void")
+                nil [15970 16171])
+            ("flush_icache_range_args" type
+               (:members 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol classsubparts) [16207 16227])
+                    ("end" variable (:type "unsigned long") (reparse-symbol classsubparts) [16229 16247]))                  
+                :type "struct")
+                nil [16173 16250])
+            ("local_r4k_flush_icache_range" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17177 17197])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17198 17216]))                  
+                :type "void")
+                nil [17129 17531])
+            ("local_r4k_flush_icache_jz_ipi" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17581 17592]))                  
+                :type "void")
+                nil [17532 17632])
+            ("local_r4k_flush_dcache_jz_ipi" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17682 17693]))                  
+                :type "void")
+                nil [17633 17733])
+            ("protected_blast_other_cpu_dcache_range_ipi" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18153 18164]))                  
+                :type "void")
+                nil [18091 19291])
+            ("protected_blast_other_cpu_icache_range_ipi" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19710 19721]))                  
+                :type "void")
+                nil [19648 20830])
+            ("r4k_flush_icache_range" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21306 21326])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [21327 21345]))                  
+                :type "void")
+                nil [21271 22722])
+            ("local_r4k_flush_cache_sigtramp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24991 25002]))                  
+                :type "void")
+                nil [24948 25960])
+            ("r4k_flush_cache_sigtramp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [25999 26018]))                  
+                :type "void")
+                nil [25962 26137])
+            ("r4k_flush_icache_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26172 26177]))                  
+                :type "void")
+                nil [26139 26229])
+            ("flush_kernel_vmap_range_args" type
+               (:members 
+                  ( ("vaddr" variable (:type "unsigned long") (reparse-symbol classsubparts) [26270 26290])
+                    ("size" variable (:type "int") (reparse-symbol classsubparts) [26292 26302]))                  
+                :type "struct")
+                nil [26231 26305])
+            ("local_r4k_flush_kernel_vmap_range" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26360 26371]))                  
+                :type "void")
+                nil [26307 26783])
+            ("rm7k_erratum31" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27067 27072]))                  
+                :type "void")
+                nil [27033 27832])
+            ("__cpuinitdata" variable
+               (:default-value "{ NULL, \"direct mapped\", \"2-way\",
+	\"3-way\", \"4-way\", \"5-way\", \"6-way\", \"7-way\", \"8-way\"
+}"
+                :type "int")
+                nil [27860 27966])
+            ("probe_pcache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28003 28008]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [27980 37305])
+            ("probe_scache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37598 37603]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [37575 39054])
+            ("r5k_sc_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39613 39618]))                  
+                :type "int")
+                nil [39590 39619])
+            ("rm7k_sc_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39644 39649]))                  
+                :type "int")
+                nil [39620 39650])
+            ("mips_sc_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39675 39680]))                  
+                :type "int")
+                nil [39651 39681])
+            ("setup_scache" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39718 39723]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [39695 41839])
+            ("au1x00_fixup_config_od" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41869 41874]))                  
+                :type "void")
+                nil [41841 42568])
+            ("NXP_BARRIER" variable (:constant-flag t) nil [42606 42617])
+            ("nxp_pr4450_fixup_config" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [42788 42793]))                  
+                :type "void")
+                nil [42752 43163])
+            ("cca" variable
+               (:default-value "-1"
+                :type ("__cpuinitdata" type (:type "class") nil nil))
+                nil [43176 43199])
+            ("cca_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43229 43239]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [43212 43280])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cca_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43298 43308]))                  
+                :type "int")
+                nil [43282 43309])
+            ("coherency_setup" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [43349 43354]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [43323 44366])
+            ("r4k_cache_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [44398 44403]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [44373 46842]))          
+      :file "c-jz.c"
+      :pointmax 46843
+      :fsize 46842
+      :lastmodtime '(21203 34138 441822 258000)
+      :unmatched-syntax '((VOID 44368 . 44372) (VOID 43318 . 43322) (STATIC 43311 . 43317) (string 43290 . 43296) (INT 43208 . 43211) (STATIC 43201 . 43207) (INT 43172 . 43175) (STATIC 43165 . 43171) (VOID 39690 . 39694) (STATIC 39683 . 39689) (INT 37571 . 37574) (STATIC 37564 . 37570) (VOID 27975 . 27979) (STATIC 27968 . 27974) (semantic-list 27857 . 27859) (symbol 27847 . 27857) (punctuation 27846 . 27847) (CHAR 27841 . 27845) (STATIC 27834 . 27840) (VOID 10294 . 10298) (STATIC 10287 . 10293) (VOID 9698 . 9702) (STATIC 9691 . 9697) (VOID 9155 . 9159) (STATIC 9148 . 9154) (VOID 8456 . 8460) (STATIC 8449 . 8455) (VOID 7606 . 7610) (STATIC 7599 . 7605) (VOID 7140 . 7144) (STATIC 7133 . 7139) (VOID 4346 . 4350) (STATIC 4339 . 4345) (VOID 3760 . 3764) (STATIC 3753 . 3759) (VOID 3280 . 3284) (STATIC 3273 . 3279) (LONG 2201 . 2205) (UNSIGNED 2192 . 2200) (STATIC 2185 . 2191) (LONG 2153 . 2157) (UNSIGNED 2144 . 2152) (STATIC 2137 . 2143) (LONG 2105 . 2109) (UNSIGNED 2096 . 2104) (STATIC 2089 . 2095))
+      :lexical-table 
+        '(("NXP_BARRIER" (spp-arg-list nil 42617 . 42619) . 
+              ((symbol "__asm__" 42630 . 42637) (symbol "__volatile__" 42638 . 42650) (semantic-list "(						\\
+	\".set noreorder\\n\\t\"						\\
+	\"nop; nop; nop; nop; nop; nop;\\n\\t\"				\\
+	\".set reorder\\n\\t\")" 42650 . 42750)))
+          ("cpu_has_safe_index_cacheops" . ((number "1" 2059 . 2060)))
+          ("JUMP_TO_ALIGN" (spp-arg-list ("order") 4865 . 4872) . 
+              ((symbol "__asm__" 4876 . 4883) (symbol "__volatile__" 4884 . 4896) (semantic-list "( \\
+		\"b\\t1f\\n\\t\" \\
+		\".align\\t\" #order \"\\n\\t\" \\
+		\"1:\\n\\t\" \\
+		)" 4896 . 4961)))
+          ("CACHE32_UNROLL32_ALIGN2" . ((symbol "JUMP_TO_ALIGN" 5064 . 5077) (semantic-list "(11)" 5077 . 5081)))
+          ("cpu_is_r4600_v2_x" (spp-arg-list nil 2658 . 2660) . ((semantic-list "((read_c0_prid() & 0xfffffff0) == 0x00002020)" 2661 . 2706)))
+          ("CACHE32_UNROLL32_ALIGN" . ((symbol "JUMP_TO_ALIGN" 4993 . 5006) (semantic-list "(10)" 5006 . 5010)))
+          ("R4600_HIT_CACHEOP_WAR_IMPL" . 
+              ((DO "do" 2749 . 2751) (semantic-list "{									\\
+	if (R4600_V2_HIT_CACHEOP_WAR && cpu_is_r4600_v2_x())		\\
+		*(volatile unsigned long *)CKSEG1;			\\
+	if (R4600_V1_HIT_CACHEOP_WAR)					\\
+		__asm__ __volatile__(\"nop;nop;nop;nop\");		\\
+}" 2752 . 2946) (WHILE "while" 2947 . 2952) (semantic-list "(0)" 2953 . 2956)))
+          ("cpu_is_r4600_v1_x" (spp-arg-list nil 2584 . 2586) . ((semantic-list "((read_c0_prid() & 0xfffffff0) == 0x00002010)" 2587 . 2632)))
+          )
+)
+    (semanticdb-table "cache.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/fs.h" include (:system-flag t) nil [305 326])
+            ("linux/fcntl.h" include (:system-flag t) nil [327 351])
+            ("linux/init.h" include (:system-flag t) nil [352 375])
+            ("linux/kernel.h" include (:system-flag t) nil [376 401])
+            ("linux/linkage.h" include (:system-flag t) nil [402 428])
+            ("linux/module.h" include (:system-flag t) nil [429 454])
+            ("linux/sched.h" include (:system-flag t) nil [455 479])
+            ("linux/syscalls.h" include (:system-flag t) nil [480 507])
+            ("linux/mm.h" include (:system-flag t) nil [508 529])
+            ("asm/cacheflush.h" include (:system-flag t) nil [531 558])
+            ("asm/processor.h" include (:system-flag t) nil [559 585])
+            ("asm/cpu.h" include (:system-flag t) nil [586 606])
+            ("asm/cpu-features.h" include (:system-flag t) nil [607 636])
+            ("linux/highmem.h" include (:system-flag t) nil [637 663])
+            ("flush_cache_all" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [713 718]))                  
+                :type "void")
+                nil [689 719])
+            ("__flush_cache_all" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [746 751]))                  
+                :type "void")
+                nil [720 752])
+            ("flush_cache_mm" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("mm" variable
+                       (:pointer 1
+                        :type ("mm_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [776 797]))                  
+                :type "void")
+                nil [753 798])
+            ("flush_cache_range" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [825 852])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [853 873])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [875 893]))                  
+                :type "void")
+                nil [799 894])
+            ("flush_cache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [920 947])
+                    ("page" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [948 967])
+                    ("pfn" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [969 987]))                  
+                :type "void")
+                nil [895 988])
+            ("flush_icache_range" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1016 1036])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1037 1055]))                  
+                :type "void")
+                nil [989 1056])
+            ("local_flush_icache_range" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1090 1110])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1111 1129]))                  
+                :type "void")
+                nil [1057 1130])
+            ("__flush_cache_vmap" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1159 1164]))                  
+                :type "void")
+                nil [1132 1165])
+            ("__flush_cache_vunmap" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1195 1200]))                  
+                :type "void")
+                nil [1166 1201])
+            ("flush_cache_sigtramp" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1269 1288]))                  
+                :type "void")
+                nil [1240 1289])
+            ("local_flush_data_cache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1326 1338]))                  
+                :type "void")
+                nil [1290 1339])
+            ("flush_data_cache_page" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1370 1389]))                  
+                :type "void")
+                nil [1340 1390])
+            ("flush_icache_all" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1416 1421]))                  
+                :type "void")
+                nil [1391 1422])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("local_flush_data_cache_page" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1442 1470]))                  
+                :type "int")
+                nil [1424 1471])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("flush_data_cache_page" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1486 1508]))                  
+                :type "int")
+                nil [1472 1509])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("cacheflush" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2045 2056])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2057 2071])
+                    ("" variable (:type ("addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2072 2077])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2078 2092])
+                    ("" variable (:type ("bytes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2093 2099])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2101 2114])
+                    ("" variable (:type ("cache" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2115 2121]))                  
+                :type "int")
+                nil [2029 2286])
+            ("__flush_dcache_page" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2313 2331]))                  
+                :type "void")
+                nil [2288 2916])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__flush_dcache_page" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2932 2952]))                  
+                :type "int")
+                nil [2918 2953])
+            ("__flush_anon_page" function
+               (:arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2978 2996])
+                    ("vmaddr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2997 3018]))                  
+                :type "void")
+                nil [2955 3937])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("__flush_anon_page" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3953 3971]))                  
+                :type "int")
+                nil [3939 3972])
+            ("__update_cache" function
+               (:arguments 
+                  ( ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3994 4021])
+                    ("address" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4022 4044])
+                    ("pte" variable (:type ("pte_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4046 4056]))                  
+                :type "void")
+                nil [3974 4801])
+            ("_page_cachable_default" variable (:type "unsigned long") nil [4803 4840])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_page_cachable_default" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4855 4878]))                  
+                :type "int")
+                nil [4841 4879])
+            ("setup_protection_map" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4921 4926]))                  
+                :type "void")
+                nil [4881 8598])
+            ("cpu_cache_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8630 8635]))                  
+                :type ("__cpuinit" type (:type "class") nil nil))
+                nil [8605 9232])
+            ("__uncached_access" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9263 9281])
+                    ("addr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9282 9301]))                  
+                :type ("__weak" type (:type "class") nil nil))
+                nil [9238 9383]))          
+      :file "cache.c"
+      :pointmax 9384
+      :fsize 9383
+      :lastmodtime '(21199 29168 258378 898000)
+      :unmatched-syntax nil)
+    (semanticdb-table "dma-default.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/types.h" include (:system-flag t) nil [376 400])
+            ("linux/dma-mapping.h" include (:system-flag t) nil [401 431])
+            ("linux/mm.h" include (:system-flag t) nil [432 453])
+            ("linux/module.h" include (:system-flag t) nil [454 479])
+            ("linux/scatterlist.h" include (:system-flag t) nil [480 510])
+            ("linux/string.h" include (:system-flag t) nil [511 536])
+            ("linux/gfp.h" include (:system-flag t) nil [537 559])
+            ("linux/highmem.h" include (:system-flag t) nil [560 586])
+            ("asm/cache.h" include (:system-flag t) nil [588 610])
+            ("asm/io.h" include (:system-flag t) nil [611 630])
+            ("dma-coherence.h" include (:system-flag t) nil [632 658])
+            ("dma_addr_to_page" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [704 723])
+                    ("dma_addr" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [725 745]))                  
+                :type ("page" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [660 825])
+            ("cpu_is_noncoherent_r10000" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1037 1056]))                  
+                :type "int")
+                nil [993 1189])
+            ("massage_gfp_flags" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1222 1247])
+                    ("gfp" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1248 1258]))                  
+                :type ("gfp_t" type (:type "class") nil nil))
+                nil [1191 2066])
+            ("dma_alloc_noncoherent" function
+               (:pointer 1
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2096 2115])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2116 2128])
+                    ("dma_handle" variable
+                       (:pointer 1
+                        :type ("dma_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2154])
+                    ("gfp" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2155 2165]))                  
+                :type "void")
+                nil [2068 2387])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dma_alloc_noncoherent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2402 2424]))                  
+                :type "int")
+                nil [2388 2425])
+            ("mips_dma_alloc_coherent" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2464 2483])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2484 2496])
+                    ("dma_handle" variable
+                       (:pointer 1
+                        :type ("dma_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2498 2522])
+                    ("gfp" variable (:type ("gfp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2523 2533]))                  
+                :type "void")
+                nil [2427 2993])
+            ("dma_free_noncoherent" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3022 3041])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3042 3054])
+                    ("vaddr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3055 3067])
+                    ("dma_handle" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3069 3091]))                  
+                :type "void")
+                nil [2996 3211])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dma_free_noncoherent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3247]))                  
+                :type "int")
+                nil [3212 3248])
+            ("mips_dma_free_coherent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3285 3304])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3305 3317])
+                    ("vaddr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3318 3330])
+                    ("dma_handle" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3332 3354]))                  
+                :type "void")
+                nil [3250 3708])
+            ("__dma_sync_virtual" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3748 3759])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3760 3772])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3774 3808]))                  
+                :type "void")
+                nil [3710 4095])
+            ("__dma_sync" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4348 4366])
+                    ("offset" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4368 4389])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4390 4402])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [4403 4437]))                  
+                :type "void")
+                nil [4318 4971])
+            ("mips_dma_unmap_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5005 5024])
+                    ("dma_addr" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5025 5045])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5047 5059])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [5060 5094])
+                    ("attrs" variable
+                       (:pointer 1
+                        :type ("dma_attrs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5095 5119]))                  
+                :type "void")
+                nil [4973 5307])
+            ("mips_dma_map_sg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5336 5355])
+                    ("sg" variable
+                       (:pointer 1
+                        :type ("scatterlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5356 5379])
+                    ("nents" variable (:type "int") (reparse-symbol arg-sub-list) [5381 5391])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [5392 5426])
+                    ("attrs" variable
+                       (:pointer 1
+                        :type ("dma_attrs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5427 5451]))                  
+                :type "int")
+                nil [5309 5707])
+            ("mips_dma_map_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5745 5764])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5765 5783])
+                    ("offset" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5785 5806])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5807 5819])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [5820 5854])
+                    ("attrs" variable
+                       (:pointer 1
+                        :type ("dma_attrs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5856 5880]))                  
+                :type ("dma_addr_t" type (:type "class") nil nil))
+                nil [5709 6017])
+            ("mips_dma_unmap_sg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6049 6068])
+                    ("sg" variable
+                       (:pointer 1
+                        :type ("scatterlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6069 6092])
+                    ("nhwentries" variable (:type "int") (reparse-symbol arg-sub-list) [6094 6109])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [6110 6144])
+                    ("attrs" variable
+                       (:pointer 1
+                        :type ("dma_attrs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6146 6170]))                  
+                :type "void")
+                nil [6019 6471])
+            ("mips_dma_sync_single_for_cpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6514 6533])
+                    ("dma_handle" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6535 6557])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6558 6570])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [6571 6605]))                  
+                :type "void")
+                nil [6473 6743])
+            ("mips_dma_sync_single_for_device" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6789 6808])
+                    ("dma_handle" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6810 6832])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6833 6845])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [6846 6880]))                  
+                :type "void")
+                nil [6745 7084])
+            ("mips_dma_sync_sg_for_cpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7123 7142])
+                    ("sg" variable
+                       (:pointer 1
+                        :type ("scatterlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7144 7167])
+                    ("nelems" variable (:type "int") (reparse-symbol arg-sub-list) [7168 7179])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [7180 7214]))                  
+                :type "void")
+                nil [7086 7438])
+            ("mips_dma_sync_sg_for_device" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7480 7499])
+                    ("sg" variable
+                       (:pointer 1
+                        :type ("scatterlist" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7501 7524])
+                    ("nelems" variable (:type "int") (reparse-symbol arg-sub-list) [7525 7536])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [7537 7571]))                  
+                :type "void")
+                nil [7440 7794])
+            ("mips_dma_mapping_error" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7823 7842])
+                    ("dma_addr" variable (:type ("dma_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7843 7863]))                  
+                :type "int")
+                nil [7796 7914])
+            ("mips_dma_supported" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7939 7958])
+                    ("mask" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7959 7968]))                  
+                :type "int")
+                nil [7916 8011])
+            ("dma_cache_sync" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8033 8052])
+                    ("vaddr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8053 8065])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8066 8078])
+                    ("direction" variable (:type ("dma_data_direction" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [8083 8117]))                  
+                :type "void")
+                nil [8013 8270])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dma_cache_sync" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8286 8301]))                  
+                :type "int")
+                nil [8272 8302])
+            ("mips_default_dma_map_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.alloc_coherent = mips_dma_alloc_coherent,
+	.free_coherent = mips_dma_free_coherent,
+	.map_page = mips_dma_map_page,
+	.unmap_page = mips_dma_unmap_page,
+	.map_sg = mips_dma_map_sg,
+	.unmap_sg = mips_dma_unmap_sg,
+	.sync_single_for_cpu = mips_dma_sync_single_for_cpu,
+	.sync_single_for_device = mips_dma_sync_single_for_device,
+	.sync_sg_for_cpu = mips_dma_sync_sg_for_cpu,
+	.sync_sg_for_device = mips_dma_sync_sg_for_device,
+	.mapping_error = mips_dma_mapping_error,
+	.dma_supported = mips_dma_supported
+}"
+                :type ("dma_map_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8304 8866])
+            ("mips_dma_map_ops" variable
+               (:pointer 1
+                :default-value "&mips_default_dma_map_ops"
+                :type ("dma_map_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8868 8933])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mips_dma_map_ops" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8948 8965]))                  
+                :type "int")
+                nil [8934 8966])
+            ("PREALLOC_DMA_DEBUG_ENTRIES" variable (:constant-flag t) nil [8976 9002])
+            ("mips_dma_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9046 9051]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9025 9112])
+            ("fs_initcall" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mips_dma_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9125 9139]))                  
+                :type "int")
+                nil [9113 9140]))          
+      :file "dma-default.c"
+      :pointmax 9141
+      :fsize 9140
+      :lastmodtime '(21199 29168 258378 898000)
+      :unmatched-syntax '((INT 9021 . 9024) (STATIC 9014 . 9020))
+      :lexical-table 
+        '(("PREALLOC_DMA_DEBUG_ENTRIES" . ((semantic-list "(1 << 16)" 9003 . 9012)))
+          )
+))
+  :file "!home!dsqiu!work!android4.1-warrior!kernel!arch!mips!mm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

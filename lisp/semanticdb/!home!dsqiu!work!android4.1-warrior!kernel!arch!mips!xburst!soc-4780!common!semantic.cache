@@ -1,0 +1,1365 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "clk.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/init.h" include (:system-flag t) nil [269 292])
+            ("linux/kernel.h" include (:system-flag t) nil [293 318])
+            ("linux/io.h" include (:system-flag t) nil [319 340])
+            ("linux/module.h" include (:system-flag t) nil [341 366])
+            ("linux/err.h" include (:system-flag t) nil [367 389])
+            ("linux/proc_fs.h" include (:system-flag t) nil [390 416])
+            ("linux/clk.h" include (:system-flag t) nil [417 439])
+            ("linux/delay.h" include (:system-flag t) nil [440 464])
+            ("linux/syscore_ops.h" include (:system-flag t) nil [465 495])
+            ("soc/cpm.h" include (:system-flag t) nil [497 517])
+            ("soc/base.h" include (:system-flag t) nil [518 539])
+            ("soc/extal.h" include (:system-flag t) nil [540 562])
+            ("DEFINE_SPINLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("clkgr0_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [587 599]))                  
+                :type "int")
+                nil [564 600])
+            ("DEFINE_SPINLOCK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("clkgr1_lock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [624 636]))                  
+                :type "int")
+                nil [601 637])
+            ("clk" type
+               (:prototype t
+                :type "struct")
+                nil [639 650])
+            ("clk_ops" type
+               (:members 
+                  ( ("enable" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("clk" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [683 696])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [696 700]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [669 701])
+                    ("get_parent" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("clk" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [729 742]))                          
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [703 743])
+                    ("set_parent" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("clk" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [763 776])
+                            ("" variable
+                               (:pointer 1
+                                :type ("clk" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [776 789]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [745 790])
+                    ("get_rate" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("clk" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [818 831]))                          
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [792 832])
+                    ("set_rate" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("clk" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [850 863])
+                            ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [863 877]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [834 878]))                  
+                :type "struct")
+                nil [651 881])
+            ("clk" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [897 914])
+                    ("rate" variable (:type "unsigned long") (reparse-symbol classsubparts) [916 935])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [937 956])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol classsubparts) [958 978])
+                    ("CLK_FLG_NOALLOC" variable (:constant-flag t) (reparse-symbol classsubparts) [987 1002])
+                    ("CLK_FLG_ENABLE" variable (:constant-flag t) (reparse-symbol classsubparts) [1018 1032])
+                    ("CLK_GATE_BIT" variable (:constant-flag t) (reparse-symbol classsubparts) [1048 1060])
+                    ("CLK_FLG_GATE" variable (:constant-flag t) (reparse-symbol classsubparts) [1088 1100])
+                    ("CLK_CPCCR_NO" variable (:constant-flag t) (reparse-symbol classsubparts) [1116 1128])
+                    ("CLK_FLG_CPCCR" variable (:constant-flag t) (reparse-symbol classsubparts) [1165 1178])
+                    ("CLK_CGU_NO" variable (:constant-flag t) (reparse-symbol classsubparts) [1194 1204])
+                    ("CLK_FLG_CGU" variable (:constant-flag t) (reparse-symbol classsubparts) [1242 1253])
+                    ("CLK_PLL_NO" variable (:constant-flag t) (reparse-symbol classsubparts) [1269 1279])
+                    ("CLK_FLG_PLL" variable (:constant-flag t) (reparse-symbol classsubparts) [1317 1328])
+                    ("CLK_PARENT" variable (:constant-flag t) (reparse-symbol classsubparts) [1344 1354])
+                    ("CLK_FLG_PARENT" variable (:constant-flag t) (reparse-symbol classsubparts) [1392 1406])
+                    ("ops" variable
+                       (:pointer 1
+                        :type ("clk_ops" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1415 1435])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [1437 1447])
+                    ("source" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1449 1468]))                  
+                :type "struct")
+                nil [883 1471])
+            ("" type
+               (:members 
+                  ( ("CLK_ID_EXT0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1481 1493])
+                    ("CLK_ID_EXT1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1525 1537])
+                    ("CLK_ID_APLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1569 1581])
+                    ("CLK_ID_MPLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1613 1625])
+                    ("CLK_ID_EPLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1657 1669])
+                    ("CLK_ID_VPLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1701 1713])
+                    ("CLK_ID_SCLKA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1745 1758])
+                    ("CLK_ID_CCLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1878 1890])
+                    ("CLK_ID_L2CLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1922 1935])
+                    ("CLK_ID_H0CLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1969 1982])
+                    ("CLK_ID_H2CLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2016 2029])
+                    ("CLK_ID_PCLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2063 2075])
+                    ("CLK_ID_NEMC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2193 2205])
+                    ("CLK_ID_BCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2237 2248])
+                    ("CLK_ID_OTG0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2278 2290])
+                    ("CLK_ID_MSC0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2322 2334])
+                    ("CLK_ID_SSI0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2366 2378])
+                    ("CLK_ID_I2C0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2410 2422])
+                    ("CLK_ID_I2C1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2454 2466])
+                    ("CLK_ID_SCC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2498 2509])
+                    ("CLK_ID_AIC0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2539 2551])
+                    ("CLK_ID_TSSI0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2583 2596])
+                    ("CLK_ID_OWI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2630 2641])
+                    ("CLK_ID_MSC1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2671 2683])
+                    ("CLK_ID_MSC2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2715 2727])
+                    ("CLK_ID_KBC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2759 2770])
+                    ("CLK_ID_SADC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2800 2812])
+                    ("CLK_ID_UART0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2844 2857])
+                    ("CLK_ID_UART1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2891 2904])
+                    ("CLK_ID_UART2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2938 2951])
+                    ("CLK_ID_UART3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2985 2998])
+                    ("CLK_ID_SSI1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3032 3044])
+                    ("CLK_ID_SSI2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3076 3088])
+                    ("CLK_ID_PDMA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3120 3132])
+                    ("CLK_ID_GPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3164 3175])
+                    ("CLK_ID_MAC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3205 3216])
+                    ("CLK_ID_UHC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3246 3257])
+                    ("CLK_ID_OHCI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3287 3299])
+                    ("CLK_ID_EHCI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3331 3343])
+                    ("CLK_ID_I2C2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3375 3387])
+                    ("CLK_ID_CIM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3419 3430])
+                    ("CLK_ID_LCD1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3460 3472])
+                    ("CLK_ID_LCD0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3504 3516])
+                    ("CLK_ID_IPU0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3548 3560])
+                    ("CLK_ID_IPU1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3592 3604])
+                    ("CLK_ID_DDR0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3636 3648])
+                    ("CLK_ID_DDR1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3680 3692])
+                    ("CLK_ID_I2C3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3810 3822])
+                    ("CLK_ID_TSSI1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3854 3867])
+                    ("CLK_ID_VPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3901 3912])
+                    ("CLK_ID_PCM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3942 3953])
+                    ("CLK_ID_GPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3983 3994])
+                    ("CLK_ID_COMPRESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4024 4040])
+                    ("CLK_ID_AIC1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4080 4092])
+                    ("CLK_ID_GPVLC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4125 4138])
+                    ("CLK_ID_OTG1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4172 4184])
+                    ("CLK_ID_HDMI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4216 4228])
+                    ("CLK_ID_UART4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4260 4273])
+                    ("CLK_ID_AHB_MON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4307 4322])
+                    ("CLK_ID_I2C4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4360 4372])
+                    ("CLK_ID_DES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4404 4415])
+                    ("CLK_ID_X2D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4445 4456])
+                    ("CLK_ID_P1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4486 4496])
+                    ("CLK_ID_CGU_DDR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4610 4625])
+                    ("CLK_ID_CGU_VPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4662 4677])
+                    ("CLK_ID_CGU_AIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4714 4729])
+                    ("CLK_ID_CGU_LCD0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4766 4782])
+                    ("CLK_ID_CGU_LCD1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4822 4838])
+                    ("CLK_ID_MSC_MUX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4878 4893])
+                    ("CLK_ID_CGU_MSC0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4930 4946])
+                    ("CLK_ID_CGU_MSC1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4985 5001])
+                    ("CLK_ID_CGU_MSC2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5040 5056])
+                    ("CLK_ID_CGU_UHC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5095 5110])
+                    ("CLK_ID_CGU_SSI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5147 5162])
+                    ("CLK_ID_CGU_CIMMCLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5199 5218])
+                    ("CLK_ID_CGU_PCM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5263 5278])
+                    ("CLK_ID_CGU_GPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5315 5330])
+                    ("CLK_ID_CGU_HDMI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5367 5383])
+                    ("CLK_ID_CGU_BCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5422 5437]))                  
+                :type "enum")
+                nil [1473 5475])
+            ("" type
+               (:members 
+                  ( ("CGU_DDR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5485 5493])
+                    ("CGU_VPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5493 5501])
+                    ("CGU_AIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5501 5509])
+                    ("CGU_LCD0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5509 5518])
+                    ("CGU_LCD1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5518 5527])
+                    ("CGU_MSC0" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5527 5536])
+                    ("CGU_MSC1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5536 5545])
+                    ("CGU_MSC2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5545 5554])
+                    ("CGU_UHC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5556 5564])
+                    ("CGU_SSI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5564 5572])
+                    ("CGU_CIMMCLK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5572 5584])
+                    ("CGU_PCM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5584 5592])
+                    ("CGU_GPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5592 5600])
+                    ("CGU_HDMI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5600 5609])
+                    ("CGU_BCH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5609 5617])
+                    ("CGU_MSC_MUX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5617 5629]))                  
+                :type "enum")
+                nil [5477 5632])
+            ("clk_srcs" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+#define GATE(x)  (((x)<<24) | CLK_FLG_GATE)
+#define CPCCR(x) (((x)<<16) | CLK_FLG_CPCCR)
+#define CGU(no)  (((no)<<16) | CLK_FLG_CGU)
+#define PLL(no)  (((no)<<16) | CLK_FLG_PLL)
+#define PARENT(P)  (((CLK_ID_##P)<<16) | CLK_FLG_PARENT)
+#define DEF_CLK(N,FLAG)						\\
+		[CLK_ID_##N] = { .name = CLK_NAME_##N, .flags = FLAG, }
+
+		DEF_CLK(EXT0,  		CLK_FLG_NOALLOC),
+		DEF_CLK(EXT1,  		CLK_FLG_NOALLOC),
+
+		DEF_CLK(APLL,  		PLL(CPM_CPAPCR)),
+		DEF_CLK(MPLL,  		PLL(CPM_CPMPCR)),
+		DEF_CLK(EPLL,  		PLL(CPM_CPEPCR)),
+		DEF_CLK(VPLL,  		PLL(CPM_CPVPCR)),
+
+		DEF_CLK(SCLKA,		0),
+
+		DEF_CLK(CCLK,  		CPCCR(0)),
+		DEF_CLK(L2CLK,  	CPCCR(1)),
+		DEF_CLK(H0CLK,  	CPCCR(2)),
+		DEF_CLK(H2CLK, 		CPCCR(3)),
+		DEF_CLK(PCLK, 		CPCCR(4)),
+
+		DEF_CLK(NEMC,  		GATE(0) | PARENT(H2CLK)),
+		DEF_CLK(BCH,   		GATE(1)),
+		DEF_CLK(OTG0,  		GATE(2)),
+		DEF_CLK(MSC0,  		GATE(3)),
+		DEF_CLK(SSI0,  		GATE(4)),
+		DEF_CLK(I2C0,  		GATE(5) | PARENT(PCLK)),
+		DEF_CLK(I2C1,  		GATE(6) | PARENT(PCLK)),
+		DEF_CLK(SCC,   		GATE(7)),
+		DEF_CLK(AIC0,   	GATE(8)),
+		DEF_CLK(TSSI0, 		GATE(9)),
+		DEF_CLK(OWI,   		GATE(10)),
+		DEF_CLK(MSC1,  		GATE(11)),
+		DEF_CLK(MSC2,  		GATE(12)),
+		DEF_CLK(KBC,   		GATE(13)),
+		DEF_CLK(SADC,  		GATE(14)),
+		DEF_CLK(UART0, 		GATE(15) | PARENT(EXT1)),
+		DEF_CLK(UART1, 		GATE(16) | PARENT(EXT1)),
+		DEF_CLK(UART2, 		GATE(17) | PARENT(EXT1)),
+		DEF_CLK(UART3, 		GATE(18) | PARENT(EXT1)),
+		DEF_CLK(SSI1,  		GATE(19)),
+		DEF_CLK(SSI2,  		GATE(20)),
+		DEF_CLK(PDMA,  		GATE(21)),
+		DEF_CLK(GPS,   		GATE(22)),
+		DEF_CLK(MAC,   		GATE(23)),
+		DEF_CLK(UHC,   		GATE(24)),
+		DEF_CLK(OHCI,   	PARENT(UHC)),
+		DEF_CLK(EHCI,   	PARENT(UHC)),
+		DEF_CLK(I2C2,  		GATE(25)| PARENT(PCLK)),
+		DEF_CLK(CIM,   		GATE(26)),
+		DEF_CLK(LCD0,   	GATE(27)| PARENT(LCD1)),
+		DEF_CLK(LCD1,   	GATE(28)),
+		DEF_CLK(IPU1,   	GATE(29)),
+		DEF_CLK(IPU0,   	GATE(29)),
+		DEF_CLK(DDR0,  		GATE(30)),
+		DEF_CLK(DDR1,  		GATE(31)),
+		DEF_CLK(I2C3,  		GATE(32+0)| PARENT(PCLK)),
+		DEF_CLK(TSSI1, 		GATE(32+1)),
+		DEF_CLK(VPU,		GATE(32+2)),
+		DEF_CLK(PCM,		GATE(32+3)),
+		DEF_CLK(GPU,		GATE(32+4)),
+		DEF_CLK(COMPRESS,	GATE(32+5)),
+		DEF_CLK(AIC1,		GATE(32+6)),
+		DEF_CLK(GPVLC,		GATE(32+7)),
+		DEF_CLK(OTG1,		GATE(32+8)),
+		DEF_CLK(HDMI,		GATE(32+9)),
+		DEF_CLK(UART4,		GATE(32+10) | PARENT(EXT1)),
+		DEF_CLK(AHB_MON,	GATE(32+11)),
+		DEF_CLK(I2C4,		GATE(32+12)| PARENT(PCLK)),
+		DEF_CLK(DES,		GATE(32+13)),
+		DEF_CLK(X2D,		GATE(32+14)),
+		DEF_CLK(P1,		GATE(32+15)),
+
+		DEF_CLK(CGU_DDR,	CGU(CGU_DDR)),
+		DEF_CLK(CGU_VPU,	CGU(CGU_VPU)),
+		DEF_CLK(CGU_AIC,	CGU(CGU_AIC)),
+		DEF_CLK(CGU_LCD0,	CGU(CGU_LCD0)),
+		DEF_CLK(CGU_LCD1,	CGU(CGU_LCD1)),
+		DEF_CLK(MSC_MUX,	CGU(CGU_MSC_MUX)),
+		DEF_CLK(CGU_MSC0,	CGU(CGU_MSC0)),
+		DEF_CLK(CGU_MSC1,	CGU(CGU_MSC1)),
+		DEF_CLK(CGU_MSC2,	CGU(CGU_MSC2)),
+		DEF_CLK(CGU_UHC,	CGU(CGU_UHC)),
+		DEF_CLK(CGU_SSI,	CGU(CGU_SSI)),
+		DEF_CLK(CGU_CIMMCLK,	CGU(CGU_CIMMCLK)),
+		DEF_CLK(CGU_PCM,	CGU(CGU_PCM)),
+		DEF_CLK(CGU_GPU,	CGU(CGU_GPU)),
+		DEF_CLK(CGU_HDMI,	CGU(CGU_HDMI)),
+		DEF_CLK(CGU_BCH,	CGU(CGU_BCH)),
+#undef GATE
+#undef CPCCR
+#undef CGU
+#undef PARENT
+#undef DEF_CLK
+	}"
+                :type ("clk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5635 8739])
+            ("init_ext_pll" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8773 8778]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [8753 10319])
+            ("cppcr_clk" type
+               (:members 
+                  ( ("off" variable (:type "short") (reparse-symbol classsubparts) [10341 10355])
+                    ("sel" variable (:type "short") (reparse-symbol classsubparts) [10341 10355]))                  
+                :type "struct")
+                nil [10321 10358])
+            ("cppcr_clks" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+#define CPPCR_CLK(N,O,D)	\\
+	[N] = { .off = O, .sel = D, }
+	CPPCR_CLK(0, 0, 28),
+	CPPCR_CLK(1, 4, 28),
+	CPPCR_CLK(2, 8, 26),
+	CPPCR_CLK(3, 12, 24),
+	CPPCR_CLK(4, 16, 24),
+}"
+                :type ("cppcr_clk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10360 10573])
+            ("cpccr_get_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10611 10627]))                  
+                :type "unsigned long")
+                nil [10575 10780])
+            ("cpccr_table" type
+               (:members 
+                  ( ("rate" variable (:type "unsigned long") (reparse-symbol classsubparts) [10804 10823])
+                    ("cpccr" variable (:type "unsigned int") (reparse-symbol classsubparts) [10825 10844]))                  
+                :type "struct")
+                nil [10782 10847])
+            ("CPNR" variable (:constant-flag t) nil [10857 10861])
+            ("MAX_M_DIV" variable (:constant-flag t) nil [10872 10881])
+            ("MAX_CCLK" variable (:constant-flag t) nil [10892 10900])
+            ("MAX_H0CLK" variable (:constant-flag t) nil [10930 10939])
+            ("MPLL_DIV" variable (:constant-flag t) nil [10968 10976])
+            ("APLL_DIV" variable (:constant-flag t) nil [11057 11065])
+            ("M_N_OD" variable (:constant-flag t) nil [11146 11152])
+            ("SET_PARENT" variable (:constant-flag t) nil [11217 11227])
+            ("SET_PLL" variable (:constant-flag t) nil [11318 11325])
+            ("cpccr_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("cpccr_table" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [11546 11590])
+            ("cclk_set_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11617 11633])
+                    ("rate" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11634 11653]))                  
+                :type "int")
+                nil [11592 13474])
+            ("clk_cpccr_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.get_rate = cpccr_get_rate,
+}"
+                :type ("clk_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13476 13547])
+            ("clk_cclk_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.get_rate = cpccr_get_rate,
+	.set_rate = cclk_set_rate,
+}"
+                :type ("clk_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [13549 13647])
+            ("init_cpccr_clk" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13683 13688]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [13661 14959])
+            ("cgu_clk" type
+               (:members 
+                  ( ("off" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("ce" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("stop" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("coe" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("div" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("ext" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("busy" variable (:type "int") (reparse-symbol classsubparts) [15102 15148])
+                    ("sel" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [15102 15148])
+                    ("cache" variable (:type "int") (reparse-symbol classsubparts) [15102 15148]))                  
+                :type "struct")
+                nil [14961 15151])
+            ("cgu_clks" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	[CGU_DDR] = 	{ CPM_DDRCDR, 29, 27, 1, 4, 30, 28, {-1,CLK_ID_SCLKA,CLK_ID_MPLL}},
+	[CGU_VPU] = 	{ CPM_VPUCDR, 29, 27, 1, 4, 30, 28, {CLK_ID_SCLKA,CLK_ID_MPLL,CLK_ID_EPLL}},
+	[CGU_AIC] = 	{ CPM_I2SCDR, 29, 27, 1, 8, 30, 28, {CLK_ID_EXT1,CLK_ID_SCLKA,CLK_ID_EXT1,CLK_ID_EPLL}},
+	[CGU_LCD0] = 	{ CPM_LPCDR0, 28, 26, 1, 8, 30, 27, {CLK_ID_APLL,CLK_ID_MPLL,CLK_ID_VPLL}},
+	[CGU_LCD1] = 	{ CPM_LPCDR1, 28, 26, 1, 8, 30, 27, {CLK_ID_APLL,CLK_ID_MPLL,CLK_ID_VPLL}},
+	[CGU_MSC_MUX]=	{ CPM_MSC0CDR, 29, 27, 2, 0, 30, 28, {-1,CLK_ID_SCLKA,CLK_ID_MPLL}},
+	[CGU_MSC0] = 	{ CPM_MSC0CDR, 29, 27, 2, 8, 30, 28, {CLK_ID_MSC_MUX,CLK_ID_MSC_MUX,CLK_ID_MSC_MUX,CLK_ID_MSC_MUX}},
+	[CGU_MSC1] = 	{ CPM_MSC1CDR, 29, 27, 2, 8, 30, 28, {CLK_ID_MSC_MUX,CLK_ID_MSC_MUX,CLK_ID_MSC_MUX,CLK_ID_MSC_MUX}},
+	[CGU_MSC2] = 	{ CPM_MSC2CDR, 29, 27, 2, 8, 30, 28, {CLK_ID_MSC_MUX,CLK_ID_MSC_MUX,CLK_ID_MSC_MUX,CLK_ID_MSC_MUX}},
+	[CGU_UHC] = 	{ CPM_UHCCDR, 29, 27, 1, 8, 30, 28, {CLK_ID_APLL,CLK_ID_MPLL,CLK_ID_EPLL,0}},
+	[CGU_SSI] = 	{ CPM_SSICDR, 29, 27, 1, 8, 30, 28, {CLK_ID_EXT1,CLK_ID_EXT1,CLK_ID_SCLKA,CLK_ID_MPLL}},
+	[CGU_CIMMCLK] = { CPM_CIMCDR, 30, 28, 1, 8, 31, 29, {CLK_ID_SCLKA,CLK_ID_MPLL}},
+	[CGU_PCM] = 	{ CPM_PCMCDR, 28, 26, 1, 8, 29, 27, {CLK_ID_EXT1,CLK_ID_EXT1,CLK_ID_EXT1,CLK_ID_EXT1,
+		CLK_ID_SCLKA,CLK_ID_MPLL,CLK_ID_EPLL,CLK_ID_VPLL}},
+	[CGU_GPU] = 	{ CPM_GPUCDR, 29, 27, 1, 4, 30, 28, {-1,CLK_ID_SCLKA,CLK_ID_MPLL,CLK_ID_EPLL}},
+	[CGU_HDMI] = 	{ CPM_HDMICDR, 29, 26, 1, 8, 30, 28, {CLK_ID_APLL,CLK_ID_MPLL,CLK_ID_VPLL}},
+	[CGU_BCH] = 	{ CPM_BCHCDR, 29, 27, 1, 4, 30, 28, {-1,CLK_ID_SCLKA,CLK_ID_MPLL,CLK_ID_EPLL}},
+}"
+                :type ("cgu_clk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15153 16794])
+            ("cgu_enable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16818 16834])
+                    ("on" variable (:type "int") (reparse-symbol arg-sub-list) [16834 16841]))                  
+                :type "int")
+                nil [16796 17350])
+            ("cgu_set_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17376 17392])
+                    ("rate" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17393 17412]))                  
+                :type "int")
+                nil [17352 18104])
+            ("cgu_get_rate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18140 18156]))                  
+                :type "unsigned long")
+                nil [18106 18539])
+            ("cgu_get_parent" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18576 18592]))                  
+                :type ("clk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [18541 18781])
+            ("cgu_set_parent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18809 18825])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18826 18845]))                  
+                :type "int")
+                nil [18783 19211])
+            ("clk_cgu_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.enable	= cgu_enable,
+	.get_rate = cgu_get_rate,
+	.set_rate = cgu_set_rate,
+	.get_parent = cgu_get_parent,
+	.set_parent = cgu_set_parent,
+}"
+                :type ("clk_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [19213 19392])
+            ("init_cgu_clk" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19426 19431]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [19406 19786])
+            ("init_gate_clk" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19821 19826]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [19800 20123])
+            ("clkgr0" variable
+               (:typemodifiers ("static")
+                :type "unsigned long")
+                nil [20125 20153])
+            ("clkgr1" variable
+               (:typemodifiers ("static")
+                :type "unsigned long")
+                nil [20154 20182])
+            ("clk_suspend" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20199 20204]))                  
+                :type "int")
+                nil [20183 20384])
+            ("clk_resume" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20402 20407]))                  
+                :type "void")
+                nil [20386 20495])
+            ("clk_pm_ops" variable
+               (:default-value "{
+	.suspend = clk_suspend,
+	.resume = clk_resume,
+}"
+                :type ("syscore_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [20497 20581])
+            ("init_all_clk" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20608 20613]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [20588 21568])
+            ("cpm_clear_bit_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [21600 21608])
+                    ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21609 21626]))                  
+                :type "int")
+                nil [21570 22002])
+            ("cpm_set_bit_lock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bit" variable (:type "int") (reparse-symbol arg-sub-list) [22032 22040])
+                    ("reg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22041 22058]))                  
+                :type "int")
+                nil [22004 22380])
+            ("clk_gate_ctrl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22407 22423])
+                    ("enable" variable (:type "int") (reparse-symbol arg-sub-list) [22424 22435]))                  
+                :type "int")
+                nil [22382 22683])
+            ("clk_get" function
+               (:pointer 1
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22705 22724])
+                    ("id" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22725 22740]))                  
+                :type ("clk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [22685 23180])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23195 23203]))                  
+                :type "int")
+                nil [23181 23204])
+            ("clk_enable" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23221 23237]))                  
+                :type "int")
+                nil [23206 23641])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_enable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23656 23667]))                  
+                :type "int")
+                nil [23642 23668])
+            ("clk_is_enabled" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23689 23705]))                  
+                :type "int")
+                nil [23670 23784])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_is_enabled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23799 23814]))                  
+                :type "int")
+                nil [23785 23815])
+            ("clk_disable" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23834 23850]))                  
+                :type "void")
+                nil [23817 24220])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_disable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24235 24247]))                  
+                :type "int")
+                nil [24221 24248])
+            ("clk_get_rate" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24277 24293]))                  
+                :type "unsigned long")
+                nil [24250 24362])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_get_rate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24377 24390]))                  
+                :type "int")
+                nil [24363 24391])
+            ("clk_put" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24406 24422]))                  
+                :type "void")
+                nil [24393 24493])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_put" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24508 24516]))                  
+                :type "int")
+                nil [24494 24517])
+            ("clk_round_rate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24609 24625])
+                    ("rate" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [24626 24645]))                  
+                :type "long")
+                nil [24589 24646])
+            ("clk_set_rate" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24665 24681])
+                    ("rate" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [24682 24701]))                  
+                :type "int")
+                nil [24648 24911])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_set_rate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24926 24939]))                  
+                :type "int")
+                nil [24912 24940])
+            ("clk_set_parent" function
+               (:arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24961 24977])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24978 24997]))                  
+                :type "int")
+                nil [24942 25230])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_set_parent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25245 25260]))                  
+                :type "int")
+                nil [25231 25261])
+            ("clk_get_parent" function
+               (:pointer 1
+                :arguments 
+                  ( ("clk" variable
+                       (:pointer 1
+                        :type ("clk" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25290 25306]))                  
+                :type ("clk" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [25263 25365])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clk_get_parent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25380 25395]))                  
+                :type "int")
+                nil [25366 25396])
+            ("cpm_start_ehci" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25417 25422]))                  
+                :type "int")
+                nil [25398 26616])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpm_start_ehci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26631 26646]))                  
+                :type "int")
+                nil [26617 26647])
+            ("cpm_stop_ehci" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26667 26672]))                  
+                :type "int")
+                nil [26649 26716])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpm_stop_ehci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26731 26745]))                  
+                :type "int")
+                nil [26717 26746])
+            ("cpm_start_ohci" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26767 26772]))                  
+                :type "int")
+                nil [26748 26802])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpm_start_ohci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26817 26832]))                  
+                :type "int")
+                nil [26803 26833])
+            ("cpm_stop_ohci" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26853 26858]))                  
+                :type "int")
+                nil [26835 26887])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cpm_stop_ohci" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26902 26916]))                  
+                :type "int")
+                nil [26888 26917])
+            ("clk_read_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26944 26955])
+                    ("start" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26956 26969])
+                    ("off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26970 26980])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [26983 26993])
+                    ("eof" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [26994 27003])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27004 27015]))                  
+                :type "int")
+                nil [26919 27587])
+            ("clk_write_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27615 27633])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27634 27653])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27653 27660])
+                    ("count" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [27663 27683])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27684 27695]))                  
+                :type "int")
+                nil [27589 27984])
+            ("init_clk_proc" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [28018 28023]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [27997 28221])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("init_clk_proc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28235 28249]))                  
+                :type "int")
+                nil [28223 28250]))          
+      :file "clk.c"
+      :pointmax 28252
+      :fsize 28251
+      :lastmodtime '(21199 29168 378378 892000)
+      :unmatched-syntax '((INT 27993 . 27996) (STATIC 27986 . 27992) (punctuation 27652 . 27653) (VOID 20583 . 20587) (VOID 19795 . 19799) (STATIC 19788 . 19794) (VOID 19401 . 19405) (STATIC 19394 . 19400) (VOID 13656 . 13660) (STATIC 13649 . 13655) (VOID 8748 . 8752) (STATIC 8741 . 8747) (spp-macro-def 5446 . 5462) (spp-macro-def 5392 . 5409) (spp-macro-def 5339 . 5355) (spp-macro-def 5287 . 5303) (spp-macro-def 5227 . 5247) (spp-macro-def 5171 . 5187) (spp-macro-def 5119 . 5135) (spp-macro-def 5065 . 5082) (spp-macro-def 5010 . 5027) (spp-macro-def 4955 . 4972) (spp-macro-def 4902 . 4918) (spp-macro-def 4847 . 4864) (spp-macro-def 4791 . 4808) (spp-macro-def 4738 . 4754) (spp-macro-def 4686 . 4702) (spp-macro-def 4634 . 4650) (spp-macro-def 4505 . 4516) (spp-macro-def 4465 . 4477) (spp-macro-def 4424 . 4436) (spp-macro-def 4381 . 4394) (spp-macro-def 4331 . 4347) (spp-macro-def 4282 . 4296) (spp-macro-def 4237 . 4250) (spp-macro-def 4193 . 4206) (spp-macro-def 4147 . 4161) (spp-macro-def 4101 . 4114) (spp-macro-def 4049 . 4066) (spp-macro-def 4003 . 4015) (spp-macro-def 3962 . 3974) (spp-macro-def 3921 . 3933) (spp-macro-def 3876 . 3890) (spp-macro-def 3831 . 3844) (spp-macro-def 3701 . 3714) (spp-macro-def 3657 . 3670) (spp-macro-def 3613 . 3626) (spp-macro-def 3569 . 3582) (spp-macro-def 3525 . 3538) (spp-macro-def 3481 . 3494) (spp-macro-def 3439 . 3451) (spp-macro-def 3396 . 3409) (spp-macro-def 3352 . 3365) (spp-macro-def 3308 . 3321) (spp-macro-def 3266 . 3278) (spp-macro-def 3225 . 3237) (spp-macro-def 3184 . 3196) (spp-macro-def 3141 . 3154) (spp-macro-def 3097 . 3110) (spp-macro-def 3053 . 3066) (spp-macro-def 3007 . 3021) (spp-macro-def 2960 . 2974) (spp-macro-def 2913 . 2927) (spp-macro-def 2866 . 2880) (spp-macro-def 2821 . 2834) (spp-macro-def 2779 . 2791) (spp-macro-def 2736 . 2749) (spp-macro-def 2692 . 2705) (spp-macro-def 2650 . 2662) (spp-macro-def 2605 . 2619) (spp-macro-def 2560 . 2573) (spp-macro-def 2518 . 2530) (spp-macro-def 2475 . 2488) (spp-macro-def 2431 . 2444) (spp-macro-def 2387 . 2400) (spp-macro-def 2343 . 2356) (spp-macro-def 2299 . 2312) (spp-macro-def 2257 . 2269) (spp-macro-def 2214 . 2227) (spp-macro-def 2084 . 2097) (spp-macro-def 2038 . 2052) (spp-macro-def 1991 . 2005) (spp-macro-def 1944 . 1958) (spp-macro-def 1899 . 1912) (spp-macro-def 1767 . 1781) (spp-macro-def 1722 . 1735) (spp-macro-def 1678 . 1691) (spp-macro-def 1634 . 1647) (spp-macro-def 1590 . 1603) (spp-macro-def 1546 . 1559) (spp-macro-def 1502 . 1515))
+      :lexical-table 
+        '(("CLK_PLL_NO" (spp-arg-list ("flg") 1279 . 1284) . ((semantic-list "(((flg) >> 16) & 0xff)" 1286 . 1308)))
+          ("CLK_NAME_H0CLK" . ((string "\"h0clk\"" 2007 . 2014)))
+          ("CLK_NAME_PDMA" . ((string "\"pdma\"" 3156 . 3162)))
+          ("CLK_NAME_GPS" . ((string "\"gps\"" 3198 . 3203)))
+          ("CLK_NAME_OHCI" . ((string "\"ohci\"" 3323 . 3329)))
+          ("CLK_NAME_DDR1" . ((string "\"ddr1\"" 3716 . 3722)))
+          ("CLK_NAME_HDMI" . ((string "\"hdmi\"" 4252 . 4258)))
+          ("CLK_FLG_NOALLOC" . ((symbol "BIT" 1003 . 1006) (semantic-list "(0)" 1006 . 1009)))
+          ("CLK_CPCCR_NO" (spp-arg-list ("flg") 1128 . 1133) . ((semantic-list "(((flg) >> 16) & 0xff)" 1134 . 1156)))
+          ("CLK_NAME_EPLL" . ((string "\"epll\"" 1693 . 1699)))
+          ("CLK_NAME_L2CLK" . ((string "\"l2clk\"" 1960 . 1967)))
+          ("CLK_NAME_SCC" . ((string "\"scc\"" 2532 . 2537)))
+          ("APLL_DIV" (spp-arg-list ("i" "h") 11065 . 11071) . ((semantic-list "((1<<22) | (1<<28) | (1<<26) | ((h-1)<<8) | ((i*2-1)<<4) | (i-1))" 11072 . 11137)))
+          ("CLK_FLG_ENABLE" . ((symbol "BIT" 1033 . 1036) (semantic-list "(1)" 1036 . 1039)))
+          ("CLK_FLG_CGU" . ((symbol "BIT" 1254 . 1257) (semantic-list "(4)" 1257 . 1260)))
+          ("CLK_NAME_H2CLK" . ((string "\"h2clk\"" 2054 . 2061)))
+          ("CLK_NAME_CIM" . ((string "\"cim\"" 3453 . 3458)))
+          ("CLK_NAME_GPU" . ((string "\"gpu\"" 4017 . 4022)))
+          ("CLK_NAME_CGU_VPU" . ((string "\"cgu_vpu\"" 4703 . 4712)))
+          ("CLK_NAME_CGU_MSC0" . ((string "\"cgu_msc0\"" 4973 . 4983)))
+          ("CLK_GATE_BIT" (spp-arg-list ("flg") 1060 . 1065) . ((semantic-list "((flg) >> 24)" 1066 . 1079)))
+          ("CLK_NAME_SCLKA" . ((string "\"sclka\"" 1783 . 1790)))
+          ("CLK_NAME_SADC" . ((string "\"sadc\"" 2836 . 2842)))
+          ("CLK_NAME_EHCI" . ((string "\"ehci\"" 3367 . 3373)))
+          ("CLK_NAME_P1" . ((string "\"p1\"" 4518 . 4522)))
+          ("CLK_NAME_CGU_LCD0" . ((string "\"lcd_pclk0\"" 4809 . 4820)))
+          ("CLK_NAME_MSC_MUX" . ((string "\"msc_mux\"" 4919 . 4928)))
+          ("CLK_NAME_CGU_MSC1" . ((string "\"cgu_msc1\"" 5028 . 5038)))
+          ("CLK_NAME_CGU_UHC" . ((string "\"cgu_uhc\"" 5136 . 5145)))
+          ("CLK_NAME_CGU_CIMMCLK" . ((string "\"cgu_cimmclk\"" 5248 . 5261)))
+          ("CLK_PARENT" (spp-arg-list ("flg") 1354 . 1359) . ((semantic-list "(((flg) >> 16) & 0xff)" 1361 . 1383)))
+          ("CLK_NAME_EXT0" . ((string "\"ext0\"" 1517 . 1523)))
+          ("CLK_NAME_OTG0" . ((string "\"otg0\"" 2314 . 2320)))
+          ("CLK_NAME_KBC" . ((string "\"kbc\"" 2793 . 2798)))
+          ("CLK_NAME_IPU0" . ((string "\"ipu0\"" 3584 . 3590)))
+          ("CLK_NAME_AHB_MON" . ((string "\"ahb_mon\"" 4349 . 4358)))
+          ("CLK_NAME_CGU_LCD1" . ((string "\"lcd_pclk1\"" 4865 . 4876)))
+          ("CLK_NAME_CGU_MSC2" . ((string "\"cgu_msc2\"" 5083 . 5093)))
+          ("CLK_NAME_CGU_BCH" . ((string "\"cgu_bch\"" 5463 . 5472)))
+          ("CPPCR_CLK" (spp-arg-list ("N" "O" "D") 10418 . 10425) . 
+              ((semantic-list "[N]" 10429 . 10432) (punctuation "=" 10433 . 10434) (semantic-list "{ .off = O, .sel = D, }" 10435 . 10458)))
+          ("CLK_FLG_CPCCR" . ((symbol "BIT" 1179 . 1182) (semantic-list "(3)" 1182 . 1185)))
+          ("CLK_NAME_EXT1" . ((string "\"ext1\"" 1561 . 1567)))
+          ("CLK_NAME_VPLL" . ((string "\"vpll\"" 1737 . 1743)))
+          ("CLK_NAME_SSI0" . ((string "\"ssi0\"" 2402 . 2408)))
+          ("CLK_NAME_I2C0" . ((string "\"i2c0\"" 2446 . 2452)))
+          ("CLK_NAME_OWI" . ((string "\"owi\"" 2664 . 2669)))
+          ("CLK_NAME_IPU1" . ((string "\"ipu1\"" 3628 . 3634)))
+          ("CLK_NAME_OTG1" . ((string "\"otg1\"" 4208 . 4214)))
+          ("CLK_NAME_DES" . ((string "\"des\"" 4438 . 4443)))
+          ("CLK_NAME_CGU_PCM" . ((string "\"cgu_pcm\"" 5304 . 5313)))
+          ("MAX_M_DIV" . ((number "6" 10882 . 10883)))
+          ("MAX_CCLK" . ((semantic-list "(2016 * 1000 * 1000)" 10901 . 10921)))
+          ("M_N_OD" (spp-arg-list ("m" "n" "od") 11152 . 11160) . ((semantic-list "(((m-1) << 19) | ((n-1) << 13) | ((od-1) << 9))" 11161 . 11208)))
+          ("CLK_NAME_I2C1" . ((string "\"i2c1\"" 2490 . 2496)))
+          ("CLK_NAME_UART0" . ((string "\"uart0\"" 2882 . 2889)))
+          ("CLK_NAME_SSI1" . ((string "\"ssi1\"" 3068 . 3074)))
+          ("CLK_NAME_MAC" . ((string "\"mac\"" 3239 . 3244)))
+          ("CLK_CGU_NO" (spp-arg-list ("flg") 1204 . 1209) . ((semantic-list "(((flg) >> 16) & 0xff)" 1211 . 1233)))
+          ("CLK_NAME_MSC0" . ((string "\"msc0\"" 2358 . 2364)))
+          ("CLK_NAME_UART1" . ((string "\"uart1\"" 2929 . 2936)))
+          ("CLK_NAME_SSI2" . ((string "\"ssi2\"" 3112 . 3118)))
+          ("CLK_NAME_I2C2" . ((string "\"i2c2\"" 3411 . 3417)))
+          ("CLK_NAME_VPU" . ((string "\"vpu\"" 3935 . 3940)))
+          ("SET_PLL" (spp-arg-list ("P" "M" "N" "OD" "TO") 11325 . 11342) . 
+              ((symbol "cpm_outl" 11352 . 11360) (semantic-list "(M_N_OD(M, N, OD) | (1 << 0),CPM_CP##P##PCR)" 11360 . 11404) (punctuation ";" 11404 . 11405) (symbol "clk_srcs" 11412 . 11420) (semantic-list "[CLK_ID_##P##PLL]" 11420 . 11437) (punctuation "." 11437 . 11438) (symbol "rate" 11438 . 11442) (punctuation "=" 11443 . 11444) (symbol "CONFIG_EXTAL_CLOCK" 11445 . 11463) (punctuation "*" 11464 . 11465) (number "1000000" 11466 . 11473) (punctuation "/" 11474 . 11475) (symbol "N" 11476 . 11477) (punctuation "/" 11478 . 11479) (symbol "OD" 11480 . 11482) (punctuation "*" 11483 . 11484) (symbol "M" 11485 . 11486) (punctuation ";" 11486 . 11487) (WHILE "while" 11491 . 11496) (semantic-list "(!(cpm_inl(CPM_CP##P##PCR) & (1 << 4)) && --TO)" 11497 . 11544)))
+          ("CLK_FLG_PLL" . ((symbol "BIT" 1329 . 1332) (semantic-list "(5)" 1332 . 1335)))
+          ("CLK_NAME_MSC1" . ((string "\"msc1\"" 2707 . 2713)))
+          ("CLK_NAME_UART2" . ((string "\"uart2\"" 2976 . 2983)))
+          ("CLK_NAME_UHC" . ((string "\"uhc\"" 3280 . 3285)))
+          ("CLK_NAME_LCD0" . ((string "\"lcd0\"" 3540 . 3546)))
+          ("CLK_NAME_I2C3" . ((string "\"i2c3\"" 3846 . 3852)))
+          ("CLK_NAME_CGU_AIC" . ((string "\"cgu_aic\"" 4755 . 4764)))
+          ("CLK_NAME_CGU_HDMI" . ((string "\"cgu_hdmi\"" 5410 . 5420)))
+          ("CLK_FLG_GATE" . ((symbol "BIT" 1101 . 1104) (semantic-list "(2)" 1104 . 1107)))
+          ("CLK_NAME_MPLL" . ((string "\"mpll\"" 1649 . 1655)))
+          ("CLK_NAME_NEMC" . ((string "\"nemc\"" 2229 . 2235)))
+          ("CLK_NAME_BCH" . ((string "\"bch\"" 2271 . 2276)))
+          ("CLK_NAME_AIC0" . ((string "\"aic0\"" 2575 . 2581)))
+          ("CLK_NAME_MSC2" . ((string "\"msc2\"" 2751 . 2757)))
+          ("CLK_NAME_UART3" . ((string "\"uart3\"" 3023 . 3030)))
+          ("CLK_NAME_LCD1" . ((string "\"lcd1\"" 3496 . 3502)))
+          ("CLK_NAME_I2C4" . ((string "\"i2c4\"" 4396 . 4402)))
+          ("CLK_NAME_X2D" . ((string "\"x2d\"" 4479 . 4484)))
+          ("CLK_NAME_CGU_DDR" . ((string "\"cgu_ddr\"" 4651 . 4660)))
+          ("SET_PARENT" (spp-arg-list ("SON" "FATHER") 11227 . 11240) . 
+              ((symbol "clk_srcs" 11251 . 11259) (semantic-list "[CLK_ID_##SON]" 11259 . 11273) (punctuation "." 11273 . 11274) (symbol "parent" 11274 . 11280) (punctuation "=" 11281 . 11282) (punctuation "&" 11283 . 11284) (symbol "clk_srcs" 11284 . 11292) (semantic-list "[CLK_ID_##FATHER]" 11292 . 11309)))
+          ("CLK_FLG_PARENT" . ((symbol "BIT" 1407 . 1410) (semantic-list "(6)" 1410 . 1413)))
+          ("CLK_NAME_APLL" . ((string "\"apll\"" 1605 . 1611)))
+          ("CLK_NAME_TSSI0" . ((string "\"tssi0\"" 2621 . 2628)))
+          ("CLK_NAME_PCM" . ((string "\"pcm\"" 3976 . 3981)))
+          ("CLK_NAME_AIC1" . ((string "\"aic1\"" 4117 . 4123)))
+          ("CLK_NAME_GPVLC" . ((string "\"gpvlc\"" 4163 . 4170)))
+          ("CLK_NAME_UART4" . ((string "\"uart4\"" 4298 . 4305)))
+          ("CLK_NAME_CGU_GPU" . ((string "\"cgu_gpu\"" 5356 . 5365)))
+          ("PLL" (spp-arg-list ("no") 5812 . 5816) . ((semantic-list "(((no)<<16) | CLK_FLG_PLL)" 5818 . 5844)))
+          ("CPNR" . ((number "7" 10862 . 10863)))
+          ("MAX_H0CLK" . ((semantic-list "(432 * 1000 * 1000)" 10940 . 10959)))
+          ("CLK_NAME_CCLK" . ((string "\"cclk\"" 1914 . 1920)))
+          ("CLK_NAME_PCLK" . ((string "\"pclk\"" 2099 . 2105)))
+          ("CLK_NAME_TSSI1" . ((string "\"tssi1\"" 3892 . 3899)))
+          ("CLK_NAME_COMPRESS" . ((string "\"compress\"" 4068 . 4078)))
+          ("CLK_NAME_CGU_SSI" . ((string "\"cgu_ssi\"" 5188 . 5197)))
+          ("MPLL_DIV" (spp-arg-list ("i" "h") 10976 . 10982) . ((semantic-list "((1<<22) | (2<<28) | (2<<26) | ((h-1)<<8) | ((i*2-1)<<4) | (i-1))" 10983 . 11048)))
+          ("CLK_NAME_DDR0" . ((string "\"ddr0\"" 3672 . 3678)))
+          )
+))
+  :file "!home!dsqiu!work!android4.1-warrior!kernel!arch!mips!xburst!soc-4780!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

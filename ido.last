@@ -1,0 +1,87 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/dsqiu/Tools/dsqiu-emacs-config/" . "lisp/")
+ ("/home/dsqiu/Tools/" . "dsqiu-emacs-config/")
+ ("/home/dsqiu/" . "Tools/")
+ ("/home/dsqiu/Work/linux/cunit-code/Examples/" . "ConsoleTest/")
+ ("/home/dsqiu/Work/linux/cunit-code/" . "Examples/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/dsqiu/"
+ "/home/dsqiu/Tools/dsqiu-emacs-config/lisp/"
+ "/home/dsqiu/Work/linux/python/"
+ "/home/dsqiu/Tools/dsqiu-emacs-config/"
+ "/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/pybcs/"
+ "/home/dsqiu/Work/linux/baidu/c++/c-cplusplus-sdk.1.0/"
+ "/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/"
+ "/home/dsqiu/bin/"
+ "/home/dsqiu/Work/linux/cunit-code/Examples/BasicTest/"
+ "/home/dsqiu/Work/linux/cunit-code/Examples/ConsoleTest/"
+ "/home/dsqiu/Work/linux/cunit-code/Examples/"
+ "/home/dsqiu/Work/linux/cunit-code/Examples/AutomatedTest/"
+ "/home/dsqiu/Work/linux/cunit-code/CUnit/Sources/Automated/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ ".bashrc"
+ "python-mode.el"
+ "pycomplete.el"
+ "st1.py"
+ "st4.py"
+ "dotemacs"
+ "__init__.pyc"
+ "bcs.py"
+ "__init__.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/dsqiu/" (21470 5454 639786 748000) ".idlerc/" ".dbus/" ".gnome2/" ".xsession-errors" ".emacs.d/" ".gnome2_private/" "bin/" ".fonts.conf" ".bash_logout" ".nv/" "Pictures/" ".xinputrc" ".viminfo" "./" ".gstreamer-0.10/" ".emacs" "examples.desktop" ".gconf/" ".local/" ".profile" ".android/" ".dmrc" ".codeblocks/" "Templates/" ".ccache/" ".thunderbird/" ".dia/" ".Xauthority" "Tmp/" "Videos/" "Documents/" ".mozilla/" "Work/" "../" ".gnome/" ".Fontmatrix/" ".ICEauthority" "Downloads/" "Misc/" ".compiz/" ".bzr.log" "Tools/" ".bash_history" ".audacity-data/" ".xsession-errors.old" ".pki/" ".config/" "Music/" ".bashrc" "Desktop/" "Driver/" ".gitconfig" ".gvfs/" "CUnitHome/" ".kde/" ".vim/" "Public/" ".cache/" ".stardict/")
+
+ ("/home/dsqiu/Tools/dsqiu-emacs-config/lisp/" (21468 26131 806892 2000) "readline-compete/" "color-theme.el" "fontset-gbk.el" "highlight-parentheses.el" "auto-complete-1.3.1/" "ecb-2.40/" "subst2-gbk.el" ".#pycomplete.el" "yasnippet-bundle.el" "snippets/" "plugins/" "./" "gbk-mb.el" "pycomplete.el" "xml-parse.el" "ccepy.el" "python-mode.el" "themes/" "shell-completion.el" "ctypes.el" "subst-gbk.el" "thumbs.el" "w3m/" "compilation-always-kill.el" "session/" "wcy-swbuff.el" "table.el" "xml.el" "cedet_bzr/" "ede-projects.el" "elpa/" "project-root.el" "xpath.el" "shell-command.el" "../" "emacs-window-manager/" "ascii.el" "auto-complete-clang/" "ucdospy.el" "characters-gbk.el" "subst2-ksc.el" "window-number.el" "cscope/" "tabbar.el" "fillcode.el" "shell.el" "folding.el" "yasnippet.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "chinese-gbk.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "maxframe.el" "theme-changer/" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "xpath-parser.el" "gbk-utf-mode.el" "compilation-onewin.el" "ibuffer.el" "eshell/")
+
+ ("/home/dsqiu/Tools/dsqiu-emacs-config/" (21468 26174 910891 122000) "ido.last" "lisp/" "90-android.rules" "ropemacs/" "srecode-map.el" ".git/" "dotemacs" "dotemacs.org" "./" ".#dotemacs" "bookmarks" "ac-comphist.dat" "rope/" "gitconfig" "../" "ido.last~" "Pymacs/" "create.sh" "semanticdb/" "recentf" "eshell/" "auto-save-list/")
+
+ ("/home/dsqiu/Work/linux/python/" (21468 25747 898899 835000) "st8.py" "msyhl.rar" "st2.py" "./" "st1.py" "st5.py" "../" "srqcPython_(jb51.net).rar" "pythongjbc_45011.rar" "st6.py" "st7.py" "st3.py" "st4.py" "Python高级编程/" "names.txt")
+
+ ("/home/dsqiu/Tools/" (21457 3294 391064 954000) "cscope-15.8a.tar.gz" "dsqiu-emacs-config/" "./" "cscope-15.8a/" "../" "emacs/")
+
+ ("/home/dsqiu/Work/linux/" (21461 5371 40956 136000) "python/" "./" "../" "git-core/" "cunit-code/" "baidu/" "qzystudy/")
+
+ ("/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/pybcs/" (21460 23522 601417 506000) "httpc.pyc" "./" "object.py" "common.py" "common.pyc" "object.pyc" "../" "__init__.py" "bcs.pyc" "bcs.py" "httpc.py" "__init__.pyc" "bucket.pyc" "bucket.py")
+
+ ("/home/dsqiu/Work/linux/baidu/c++/c-cplusplus-sdk.1.0/" (20331 14174 0 0) "upload.txt" "lib/" "changlog" "./" "Makefile" "sample.cpp" "log/" "../" "readme" "include/")
+
+ ("/home/dsqiu/Work/linux/cunit-code/CUnit/Sources/Automated/" (21455 51563 510669 424000) "Automated.o" "libcunitautomated.la" "./" "Makefile" "../" ".deps/" "Makefile.am" "Automated.c" ".libs/" "Makefile.in" "Automated.lo")
+
+ ("/home/dsqiu/Work/linux/cunit-code/Examples/AutomatedTest/" (21455 51714 214666 349000) "TestAutomated-Results.xml" "AutomatedTest.dsp" "README" "./" "Makefile" "TestAutomated-Listing.xml" "../" ".deps/" "AutomatedTest_v1.c" "Jamfile" "Makefile.am" "CUnit-Memory-Dump.xml" "AutomatedTest.c" ".libs/" "Makefile.in" "AutomatedTest.o" "AutomatedTest")
+
+ ("/home/dsqiu/Work/linux/cunit-code/Examples/" (21455 51564 834669 397000) "ExampleTests.c" "Demo_fprintf/" "ExampleTests.h" "./" "Makefile" "WinTest/" "wxWidgetsTest/" "../" ".deps/" "Jamfile" "Makefile.am" "ExampleTests.o" "Makefile.in" "CursesTest/" "AutomatedTest/" "libcunitexamples.a" "BasicTest/" "ConsoleTest/")
+
+ ("/home/dsqiu/Work/linux/cunit-code/Examples/ConsoleTest/" (21455 51565 314669 388000) "ConsoleTest_v1.c" "README" "./" "Makefile" "ConsoleTest.o" "ConsoleTest.dsp" "../" ".deps/" "Jamfile" "Makefile.am" "ConsoleTest.c" "CUnit-Memory-Dump.xml" ".libs/" "Makefile.in" "ConsoleTest")
+
+ ("/home/dsqiu/Work/linux/cunit-code/Examples/BasicTest/" (21455 51565 70669 393000) "README" "./" "Makefile" "../" ".deps/" "Jamfile" "Makefile.am" "BasicTest.dsp" "CUnit-Memory-Dump.xml" ".libs/" "Makefile.in" "BasicTest.o" "BasicTest.c" "BasicTest")
+
+ ("/home/dsqiu/bin/" (21458 21245 739368 212000) "./" "../" "touchpad.py" "cscope")
+
+ ("/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/" (21460 23675 593414 384000) "pybcs/" "setup.py" "./" "docs/" "../" "README.md" "example.py" "tools/" "test/" "test_for_bae/")
+
+ ("/home/dsqiu/Work/linux/cunit-code/" (21455 49464 554712 255000) "NEWS" "config.h" "mkinstalldirs" "Doxyfile" "cunit.pc.in" "README" "Man/" "VC7/" "VC8/" "configure" "Jamrules" "libtool" "compile" "./" "autom4te.cache/" "INSTALL" "CUnit.dsw" "VC9/" "COPYING" "Makefile" "libcunit_dll.def" "config.h.in" "cscope.out" ".svn/" "configure.in" "stamp-h.in" "config.sub" "Jamrules.in" "config.guess" "../" "TODO" "VERSION" "doc/" "bootstrap" "PACKAGE" "Jamfile" "install-sh" "cscope.files" "Jambase" "Share/" "CUnit/" "Makefile.am" "CUnit.spec" "stamp-h1" "Examples/" "CUnit-Memory-Dump.xml" "ltmain.sh" "Makefile.in" "cunit.pc" "CUnit.spec.in" "depcomp" "missing" "config.status" "aclocal.m4" "ChangeLog" "config.log" "AUTHORS")
+
+ ("/home/dsqiu/Work/linux/cunit-code/CUnit/Sources/" (21455 50753 442685 954000) "Basic/" "Curses/" "Win/" "Framework/" "wxWidget/" "./" "Makefile" "libcunit_test.a" "../" "Test/" "Makefile.am" "libcunit.la" ".libs/" "Makefile.in" "Console/" "Automated/")
+
+ ("/home/dsqiu/Work/linux/cunit-code/CUnit/Sources/Framework/" (21455 50752 390685 976000) "MyMem_test.o" "Util_test.o" "Util.o" "Util.lo" "Util.c" "TestRun_test.o" "TestRun.c" "CUError_test.o" "TestDB.c" "./" "TestRun.o" "Makefile" "MyMem.c" "CUError.lo" "CUError.c" "TestRun.lo" "../" "TestDB.lo" ".deps/" "TestDB_test.o" "MyMem.o" "CUError.o" "libcunittestfmk.a" "TestDB.o" "Makefile.am" ".libs/" "Makefile.in" "libcunitfmk.la" "MyMem.lo")
+
+ ("/home/dsqiu/Work/" (21454 29226 928939 58000) "./" "../" "linux/" "android/")
+
+ ("/home/dsqiu/Work/linux/cunit-code/CUnit/" (21450 9041 0 0) "./" "Makefile" "../" "Jamfile" "Makefile.am" "CUnit.dsp" "Sources/" "Makefile.in" "Headers/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

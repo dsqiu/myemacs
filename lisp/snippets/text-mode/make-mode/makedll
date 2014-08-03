@@ -1,0 +1,26 @@
+#name : /* makeexec */ 
+# --
+CC = gcc
+CXX = g++
+CFLAGS  = -Wall -pipe -DDEBUG -D_NEW_LIC -g -D_GNU_SOURCE -shared -D_REENTRANT
+LIB     = -lconfig -ldl -lrt -L../../lib -lttc -g
+INCLUDE = -I$0
+OBJS    = $1
+TARGETS = $2.so
+all: $(TARGETS)
+
+$(TARGETS): $(OBJS)
+    $(CC) $(CFLAGS) $(INCLUDE) $(OBJS) -o $@ $(LIBDIR) $(LIB)
+
+.c.o:
+    $(CC)  $(CFLAGS) -c $(INCLUDE) $<
+    echo $@
+.cpp.o:
+    $(CXX) $(CFLAGS) -c $(INCLUDE) $<
+    echo $@
+    %:%.c
+    $(CC) $(CFLAGS) -o $@ $< $(OO) $(LDFLAGS)
+    echo $@
+clean:
+    rm -f *.o
+    rm -f $(TARGETS)

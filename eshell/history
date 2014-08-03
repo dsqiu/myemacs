@@ -1,0 +1,128 @@
+cd test3d/
+ls
+cd opengl/
+cd ..
+ls
+cd opengl_study/
+ls
+cd ..
+ls
+cd opengl_env/
+;s
+ls
+cat env.log 
+cd ..
+ls
+cd opengl/
+ls
+./moon 
+./triangle 
+ls
+cd ..
+ls
+cd ..
+ls
+cd gtk/
+ls
+cd ..
+ls
+cd cairo/
+ls
+cd ..
+ls
+cd ..
+ls
+clear
+ls
+ls
+cd Work/
+ls
+cd linux/
+ls
+cd python/
+ls
+mv ~/Downloads/*.rar .
+ls
+unrar x pythongjbc_45011.rar 
+ls
+mkdir Python高级编程
+cd Python高级编程/
+mv ../[Python高级编程].（法）莱德.扫描版.pdf .
+ls
+cd ..
+ls
+rm pdf福昕阅读器.url
+rm 安装*
+ls
+rm 最牛的单机游戏下载网站.url 
+ls
+okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
+ls
+toush st4.py
+ls
+touch st4.py
+chmod +x st4.py 
+;s
+ls
+./st4.py 
+./st4.py 
+./st4.py 
+e st2.py
+e st4.py
+toutch st5.py
+touch st5.py
+e st5.py
+cd ~/Work/linux/python/
+ls
+e st5.py
+ls
+touchpad.py 
+ls
+cd Work/linux/
+ls
+cd python/
+ls
+ls
+okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf 
+okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
+ls
+touch st6.py
+e st6.py 
+ls
+touch st7.py
+e st7.py 
+ls
+cd Work/
+ls
+cd linux/
+ls
+touchpad.py 
+ls
+cd python/
+ls
+okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
+ls
+touch st8.py
+e st8.py 
+ls
+cd Work/
+ls
+cd linux/
+ls
+cd python/
+ls
+ls
+ls
+okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
+cd Work/linux/python/
+ls
+touch st9.py
+e st9.py 
+ls
+chmod +x st9.py 
+ls
+./st9.py
+e st9.py 
+./st9.py
+./st9.py localhost 1111
+ls

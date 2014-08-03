@@ -1,0 +1,21 @@
+#name : file-line
+# --
+#include <stdio.h>
+#include <string.h>
+#define MAX_LINE_COUNT 2048
+void line_parser(char *s) {
+     ${0:printf("%s\n",s)}
+}
+int main(int argc, char *argv[])
+{
+	FILE *fp = fopen(argv[1], "r");
+	char buf[MAX_LINE_COUNT];
+	char *s;
+	while(!feof(fp)) {
+		s = fgets(buf,MAX_LINE_COUNT,fp);
+		if(s)
+			line_parser(s);
+	}
+	fclose(fp);
+	return 0;
+}

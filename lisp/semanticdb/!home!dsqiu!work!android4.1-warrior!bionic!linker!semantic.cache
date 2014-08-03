@@ -1,0 +1,729 @@
+;; Object linker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linker/"
+  :tables
+  (list
+    (semanticdb-table "linker.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/auxvec.h" include (:system-flag t) nil [1406 1431])
+            ("stdio.h" include (:system-flag t) nil [1433 1451])
+            ("stdlib.h" include (:system-flag t) nil [1452 1471])
+            ("string.h" include (:system-flag t) nil [1472 1491])
+            ("unistd.h" include (:system-flag t) nil [1492 1511])
+            ("fcntl.h" include (:system-flag t) nil [1512 1530])
+            ("errno.h" include (:system-flag t) nil [1531 1549])
+            ("dlfcn.h" include (:system-flag t) nil [1550 1568])
+            ("sys/stat.h" include (:system-flag t) nil [1569 1590])
+            ("pthread.h" include (:system-flag t) nil [1592 1612])
+            ("sys/mman.h" include (:system-flag t) nil [1614 1635])
+            ("sys/atomics.h" include (:system-flag t) nil [1637 1661])
+            ("bionic_tls.h" include (:system-flag t) nil [1719 1742])
+            ("linker.h" include nil nil [1744 1763])
+            ("linker_debug.h" include nil nil [1764 1789])
+            ("linker_environ.h" include nil nil [1790 1817])
+            ("linker_format.h" include nil nil [1818 1844])
+            ("ALLOW_SYMBOLS_FROM_MAIN" variable (:constant-flag t) nil [1854 1877])
+            ("SO_MAX" variable (:constant-flag t) nil [1888 1894])
+            ("LDPATH_BUFSIZE" variable (:constant-flag t) nil [1963 1977])
+            ("LDPATH_MAX" variable (:constant-flag t) nil [1990 2000])
+            ("LDPRELOAD_BUFSIZE" variable (:constant-flag t) nil [2012 2029])
+            ("LDPRELOAD_MAX" variable (:constant-flag t) nil [2042 2055])
+            ("link_image" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2823 2834])
+                    ("wr_offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2835 2854]))                  
+                :type "int")
+                nil [2801 2855])
+            ("socount" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [2857 2880])
+            ("sopool" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [2881 2910])
+            ("freelist" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [2911 2942])
+            ("solist" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "&libdl_info"
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [2943 2979])
+            ("sonext" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "&libdl_info"
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [2980 3016])
+            ("somain" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [3045 3067])
+            ("validate_soinfo" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3162 3173]))                  
+                :type "int")
+                nil [3128 3257])
+            ("ldpaths_buf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3259 3299])
+            ("ldpaths" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [3300 3343])
+            ("ldpreloads_buf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3345 3391])
+            ("ldpreload_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [3392 3446])
+            ("preloads" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [3448 3491])
+            ("pid" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3539 3554])
+            ("program_is_setuid" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [3620 3649])
+            ("HOODLUM" variable (:constant-flag t) nil [4661 4668])
+            ("__VA_ARGS__" variable (:type ("malloc" type (:type "class") nil nil)) nil [5139 5178])
+            ("__VA_ARGS__" variable (:type ("free" type (:type "class") nil nil)) nil [5179 5212])
+            ("__VA_ARGS__" variable (:type ("realloc" type (:type "class") nil nil)) nil [5213 5264])
+            ("__VA_ARGS__" variable (:type ("calloc" type (:type "class") nil nil)) nil [5265 5316])
+            ("tmp_err_buf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5318 5347])
+            ("__linker_dl_err_buf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5348 5385])
+            ("DL_ERR" variable (:constant-flag t) nil [5394 5400])
+            ("linker_get_error" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5841 5846]))                  
+                :type "char")
+                nil [5812 5900])
+            ("rtld_db_dlactivity" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6073 6078]))                  
+                :type "void")
+                nil [6016 6079])
+            ("_r_debug" variable
+               (:typemodifiers ("static")
+                :default-value "{1, NULL, &rtld_db_dlactivity,
+                                  RT_CONSISTENT, 0}"
+                :type ("r_debug" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6081 6197])
+            ("r_debug_tail" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "0"
+                :type ("link_map" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6198 6239])
+            ("_r_debug_lock" variable
+               (:typemodifiers ("static")
+                :default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [6241 6306])
+            ("insert_soinfo_into_debug_map" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6349 6363]))                  
+                :type "void")
+                nil [6308 7063])
+            ("remove_soinfo_from_debug_map" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7106 7120]))                  
+                :type "void")
+                nil [7065 7349])
+            ("notify_gdb_of_load" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7375 7389]))                  
+                :type "void")
+                nil [7351 7752])
+            ("notify_gdb_of_unload" function
+               (:arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7780 7794]))                  
+                :type "void")
+                nil [7754 8160])
+            ("notify_gdb_of_libraries" function (:type "void") nil [8162 8317])
+            ("alloc_info" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8345 8362]))                  
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [8319 9253])
+            ("free_info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9277 9288]))                  
+                :type "void")
+                nil [9255 9888])
+            ("addr_to_name" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("addr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9915 9929]))                  
+                :type "char")
+                nil [9890 10124])
+            ("_elf_lookup" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11617 11628])
+                    ("hash" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11629 11643])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11644 11661]))                  
+                :type ("Elf32_Sym" type (:type "class") nil nil))
+                nil [11587 13605])
+            ("elfhash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13631 13649]))                  
+                :type "unsigned int")
+                nil [13607 13877])
+            ("_do_lookup" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13909 13920])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13921 13938])
+                    ("base" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [13939 13954]))                  
+                :type ("Elf32_Sym" type (:type "class") nil nil))
+                nil [13879 16130])
+            ("__akim_elf_lookup" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16311 16320])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16321 16333]))                  
+                :type ("Elf32_Sym" type (:type "class") nil nil))
+                nil [16271 16334])
+            ("lookup_in_library" function
+               (:pointer 1
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16364 16375])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16376 16393]))                  
+                :type ("Elf32_Sym" type (:type "class") nil nil))
+                nil [16335 16539])
+            ("lookup" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16629 16646])
+                    ("found" variable
+                       (:pointer 2
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16647 16662])
+                    ("start" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16663 16677]))                  
+                :type ("Elf32_Sym" type (:type "class") nil nil))
+                nil [16611 17273])
+            ("find_containing_library" function
+               (:pointer 1
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17307 17324]))                  
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [17275 17537])
+            ("find_containing_symbol" function
+               (:pointer 1
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17573 17590])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17591 17602]))                  
+                :type ("Elf32_Sym" type (:type "class") nil nil))
+                nil [17539 18043])
+            ("sopaths" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    \"/vendor/lib\",
+    \"/system/lib\",
+    0
+}"
+                :type "char")
+                nil [18372 18451])
+            ("_open_lib" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18474 18491]))                  
+                :type "int")
+                nil [18453 18694])
+            ("open_library" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18720 18737]))                  
+                :type "int")
+                nil [18696 19679])
+            ("__header" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [19797 19838])
+            ("prelink_info_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("mmap_addr" variable (:type "long") (reparse-symbol classsubparts) [19861 19876])
+                          ("tag" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [19881 19893]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [19840 19936])
+            ("is_prelinked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [20063 20070])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20071 20088]))                  
+                :type "unsigned long")
+                nil [20029 20585])
+            ("verify_elf_object" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20801 20812])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20813 20830]))                  
+                :type "int")
+                nil [20772 21405])
+            ("get_lib_extents" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [22333 22340])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22341 22358])
+                    ("__hdr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22359 22371])
+                    ("total_sz" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [22372 22391]))                  
+                :type "unsigned int")
+                nil [22301 24049])
+            ("reserve_mem_region" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24674 24685]))                  
+                :type "int")
+                nil [24644 25405])
+            ("alloc_mem_region" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25435 25446]))                  
+                :type "int")
+                nil [25407 26223])
+            ("MAYBE_MAP_FLAG" variable (:constant-flag t) nil [26233 26247])
+            ("PFLAGS_TO_PROT" variable (:constant-flag t) nil [26298 26312])
+            ("load_segments" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [27041 27048])
+                    ("header" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27049 27062])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27063 27074]))                  
+                :type "int")
+                nil [27016 35642])
+            ("is_arm_solib" variable (:constant-flag t) nil [39718 39730])
+            ("load_arm_library" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [39778 39785])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39786 39803]))                  
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [39746 39820])
+            ("unload_arm_library" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39851 39862]))                  
+                :type "int")
+                nil [39821 39877])
+            ("link_arm_exec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39903 39914])
+                    ("wr_offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [39915 39934]))                  
+                :type "int")
+                nil [39878 39949])
+            ("load_library" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39987 40004])
+                    ("is_arm" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [40005 40017]))                  
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [39958 42376])
+            ("init_library" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42407 42418]))                  
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [42378 43002])
+            ("find_library" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43025 43042]))                  
+                :type ("soinfo" type (:type "class") nil nil))
+                nil [43004 43910])
+            ("call_destructors" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44046 44057]))                  
+                :type "void")
+                nil [44017 44058])
+            ("unload_library" function
+               (:arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44083 44094]))                  
+                :type "unsigned int")
+                nil [44059 45981])
+            ("reloc_library" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46162 46173])
+                    ("rel" variable
+                       (:pointer 1
+                        :type ("Elf32_Rel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46174 46189])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46190 46205]))                  
+                :type "int")
+                nil [46137 54245])
+            ("call_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ctor" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [56721 56736])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [56737 56747])
+                    ("reverse" variable (:type "int") (reparse-symbol arg-sub-list) [56748 56760]))                  
+                :type "void")
+                nil [56698 57265])
+            ("call_constructors_recursive" function
+               (:arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57300 57311]))                  
+                :type "void")
+                nil [57267 59784])
+            ("call_destructors" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59815 59826]))                  
+                :type "void")
+                nil [59786 60397])
+            ("nullify_closed_stdio" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [60523 60528]))                  
+                :type "int")
+                nil [60490 62648])
+            ("link_image" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("si" variable
+                       (:pointer 1
+                        :type ("soinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62672 62683])
+                    ("wr_offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [62684 62703]))                  
+                :type "int")
+                nil [62650 76650])
+            ("parse_library_path" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76683 76700])
+                    ("delim" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [76701 76713]))                  
+                :type "void")
+                nil [76652 77303])
+            ("parse_preloads" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77332 77349])
+                    ("delim" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77350 77362]))                  
+                :type "void")
+                nil [77305 78023])
+            ("__linker_init_post_relocation" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elfdata" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [78247 78266]))                  
+                :type "unsigned int")
+                nil [78201 84840])
+            ("find_linker_base" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elfdata" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [84983 85002]))                  
+                :type "unsigned int")
+                nil [84950 85424])
+            ("__linker_init" function
+               (:arguments 
+                  ( ("elfdata" variable
+                       (:pointer 2
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [85847 85866]))                  
+                :type "unsigned int")
+                nil [85824 87004]))          
+      :file "linker.c"
+      :pointmax 87005
+      :fsize 87004
+      :lastmodtime '(21046 35845 840383 943000)
+      :unmatched-syntax '((VOID "void" 5265 . 5315) (VOID "void" 5213 . 5263) (VOID "void" 5179 . 5211) (VOID "void" 5139 . 5177))
+      :lexical-table 
+        '(("ALLOW_SYMBOLS_FROM_MAIN" . ((number "1" 1878 . 1879)))
+          ("LDPRELOAD_BUFSIZE" . ((number "512" 2030 . 2033)))
+          ("PFLAGS_TO_PROT" (spp-arg-list ("x") 26312 . 26315) . ((semantic-list "(MAYBE_MAP_FLAG((x), PF_X, PROT_EXEC) | \\
+                                      MAYBE_MAP_FLAG((x), PF_R, PROT_READ) | \\
+                                      MAYBE_MAP_FLAG((x), PF_W, PROT_WRITE))" 26327 . 26524)))
+          ("SO_MAX" . ((number "128" 1895 . 1898)))
+          ("LDPRELOAD_MAX" . ((number "8" 2056 . 2057)))
+          ("MAYBE_MAP_FLAG" (spp-arg-list ("x" "from" "to") 26247 . 26258) . ((semantic-list "(((x) & (from)) ? (to) : 0)" 26262 . 26289)))
+          ("LDPATH_BUFSIZE" . ((number "512" 1978 . 1981)))
+          ("LDPATH_MAX" . ((number "8" 2001 . 2002)))
+          ("is_arm_solib" (spp-arg-list ("BUF" "NAME") 39730 . 39741) . ((semantic-list "(0)" 39742 . 39745)))
+          ("HOODLUM" (spp-arg-list ("name" "ret" "...") 4668 . 4684) . 
+              ((symbol "ret" 4737 . 4740) (symbol "name" 4741 . 4745) (symbol "__VA_ARGS__" 4746 . 4757) (semantic-list "{                                                                         \\
+        char errstr[] = \"ERROR: \" #name \" called from the dynamic linker!\\n\"; \\
+        write(2, errstr, sizeof(errstr));                                     \\
+        abort();                                                              \\
+    }" 4817 . 5138)))
+          ("DL_ERR" (spp-arg-list ("fmt" "x...") 5400 . 5411) . 
+              ((DO "do" 5470 . 5472) (semantic-list "{                                                                      \\
+        format_buffer(__linker_dl_err_buf, sizeof(__linker_dl_err_buf),            \\
+                 \"%s[%d]: \" fmt, __func__, __LINE__, ##x);                    \\
+        ERROR(fmt \"\\n\", ##x);                                                      \\
+    }" 5473 . 5801) (WHILE "while" 5802 . 5807) (semantic-list "(0)" 5807 . 5810)))
+          )
+)
+    (semanticdb-table "linker.h"
+      :file "linker.h"
+      :fsize 5637
+      :lastmodtime '(21046 35845 840383 943000))
+    (semanticdb-table "linker_debug.h"
+      :file "linker_debug.h"
+      :fsize 5818
+      :lastmodtime '(21046 35845 844383 943000))
+    (semanticdb-table "linker_environ.h"
+      :file "linker_environ.h"
+      :fsize 2460
+      :lastmodtime '(21046 35845 844383 943000))
+    (semanticdb-table "linker_format.h"
+      :file "linker_format.h"
+      :fsize 1852
+      :lastmodtime '(21046 35845 844383 943000)))
+  :file "!home!dsqiu!work!android4.1-warrior!bionic!linker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

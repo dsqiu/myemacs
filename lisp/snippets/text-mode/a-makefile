@@ -1,0 +1,34 @@
+#name : (lib.a Makefile)
+# --
+ #############################################################  
+# Makefile for static library.  
+# 编译静态链接库  
+#############################################################  
+#set your own environment option  
+CC = g++  
+CC_FLAG = -D_NOMNG -D_FILELINE  
+
+#static library use 'ar' command   
+AR = ar  
+
+#set your inc and lib  
+INC =   
+LIB = -lpthread -L./ -lsvrtool  
+
+#make target lib and relevant obj   
+PRG = libsvrtool.a  
+OBJ = Log.o  
+
+#all target  
+all:$(PRG)  
+$(PRG):$(OBJ)  
+	${AR} rv ${PRG} $?  
+
+.SUFFIXES: .c .o .cpp  
+.cpp.o:  
+	$(CC) $(CC_FLAG) $(INC) -c $*.cpp -o $*.o  
+
+.PRONY:clean  
+clean:  
+	@echo "Removing linked and compiled files......"  
+	rm -f $(OBJ) $(PRG)
