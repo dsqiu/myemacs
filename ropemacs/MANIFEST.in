@@ -1,0 +1,5 @@
+include README.rst COPYING setup.py MANIFEST.in CONTRIBUTORS
+recursive-include ropemacs *.py
+recursive-include ropemode *.py
+recursive-include docs *.rst
+recursive-include docs *.patch
