@@ -1,0 +1,32 @@
+#name : (lib.so Makefile)
+# --
+#############################################################   
+# Makefile for shared library.  
+# 编译动态链接库  
+#############################################################  
+#set your own environment option  
+CC = g++  
+CC_FLAG = -D_NOMNG -D_FILELINE  
+
+#set your inc and lib  
+INC =   
+LIB = -lpthread -L./ -lsvrtool  
+
+#make target lib and relevant obj   
+PRG = libsvrtool.so  
+OBJ = Log.o  
+
+#all target  
+all:$(PRG)  
+
+$(PRG):$(OBJ)  
+	$(CC) -shared -o $@ $(OBJ) $(LIB)  
+
+.SUFFIXES: .c .o .cpp  
+.cpp.o:  
+	$(CC) $(CC_FLAG) $(INC) -c $*.cpp -o $*.o  
+
+.PRONY:clean  
+clean:  
+	@echo "Removing linked and compiled files......;  
+	rm -f $(OBJ) $(PRG) 
