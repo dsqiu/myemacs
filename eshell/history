@@ -1,128 +1,128 @@
-cd test3d/
 ls
-cd opengl/
-cd ..
+cd dia2code-0.8.7/
 ls
-cd opengl_study/
+cd sr
 ls
-cd ..
+cd dia2code/
 ls
-cd opengl_env/
-;s
+grep isabstract . -rm
+grep isabstract . -rn
 ls
-cat env.log 
-cd ..
+cd Tools/
 ls
-cd opengl/
+cd dia2codes/
 ls
-./moon 
-./triangle 
+cd dia2code-0.8.7/
 ls
-cd ..
 ls
-cd ..
+cd dia2code/
 ls
-cd gtk/
+cd docs/
 ls
-cd ..
-ls
-cd cairo/
+cd en/
 ls
 cd ..
 ls
 cd ..
-ls
-clear
-ls
-ls
-cd Work/
-ls
-cd linux/
-ls
-cd python/
-ls
-mv ~/Downloads/*.rar .
-ls
-unrar x pythongjbc_45011.rar 
-ls
-mkdir Python高级编程
-cd Python高级编程/
-mv ../[Python高级编程].（法）莱德.扫描版.pdf .
-ls
-cd ..
-ls
-rm pdf福昕阅读器.url
-rm 安装*
-ls
-rm 最牛的单机游戏下载网站.url 
-ls
-okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
-ls
-toush st4.py
-ls
-touch st4.py
-chmod +x st4.py 
-;s
-ls
-./st4.py 
-./st4.py 
-./st4.py 
-e st2.py
-e st4.py
-toutch st5.py
-touch st5.py
-e st5.py
-cd ~/Work/linux/python/
-ls
-e st5.py
 ls
 touchpad.py 
+ls
+e generate_code_cpp.c
+grep d2c_parameter_set . -rn
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
 ls
 cd Work/linux/
-ls
-cd python/
-ls
-ls
-okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf 
-okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
-ls
-touch st6.py
-e st6.py 
-ls
-touch st7.py
-e st7.py 
-ls
-cd Work/
-ls
-cd linux/
-ls
 touchpad.py 
 ls
-cd python/
+cd github/
 ls
-okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
+cd qzystudy/
 ls
-touch st8.py
-e st8.py 
+cd cpp-design/
 ls
-cd Work/
+cd observer/
 ls
-cd linux/
+mkdir codes
+mkdir doc
+mkdir c
+mv 11113251-ae6b015242f84819951324627f73d6f1.png observer.txt doc/
 ls
-cd python/
+ld
+ls
+gedit doc/observer.txt &
+dia &
+ls
+dia2code -t cpp doc/observer.dia -d c
+cd c
+ls
+e Observer.h 
+ls
+cd ..
+ls
+touch gen_cpp.py
+cd ../..
+ls
+cd ..
+ls
+cd ..
+ls
+cd gramma/
+ls
+cd cppheaderparser/
+ls
+cd CppHeaderParser-2.4.3/
+ls
+cd CppHeaderParser/
+ls
+cd doc/
+ls
+firefox CppHeaderParser.html &
+AUP timeline: * calling filterListener.init()         	 (1)
+ld
+ls
+cd ..
+ls
+cd examples/
 ls
 ls
+clear
+./readSampleClass.py 
+cd ../../../
 ls
-okular Python高级编程/\[Python高级编程\].（法）莱德.扫描版.pdf &
-cd Work/linux/python/
+cd ...
+cd ...
 ls
-touch st9.py
-e st9.py 
+cd .emacs.d
 ls
-chmod +x st9.py 
+pwd
+pwd
+cd ..
 ls
-./st9.py
-e st9.py 
-./st9.py
-./st9.py localhost 1111
+ls -l .emacs.d
+cd .emacs.d/
 ls
+find -name max-lisp-eval-depth . -rn
+grep max-lisp-eval-depth . -rn
+cd ~/.emacs
+ls
+cd ~/.emacs.d
+ls
+meld dotemacs ~/.emacs
+ls
+cd ..
+ls -la
+ls
+ls
+cd .emacs.d
+ls
+rm Pymacs/ -rf
+ls
+git st

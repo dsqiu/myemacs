@@ -2,9 +2,35 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dsqiu/Work/linux/cpppython/zhuoqiang-cppython-7d0cded442ba/" . "clang/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/" . "python/")
+ ("/home/dsqiu/.emacs.d/lisp/snippets/text-mode/" . "python-mode/")
+ ("/home/dsqiu/.emacs.d/lisp/snippets/" . "text-mode/")
+ ("/home/dsqiu/.emacs.d/lisp/" . "snippets/")
+ ("/home/dsqiu/.emacs.d/" . "lisp/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/decorator/" . "c/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/" . "decorator/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/" . "c/")
+ ("/home/dsqiu/Work/linux/github/" . "myemacs/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/adapter/" . "doc/")
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/xburst/soc-4780/" . "common/")
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/xburst/" . "soc-4780/")
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/include/" . "asm/")
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/" . "mm/")
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/" . "mips/")
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/" . "arch/")
+ ("/home/dsqiu/Work/linux/" . "github/")
+ ("/home/dsqiu/Work/android/android4.3-master/build/" . "tools/")
+ ("/home/dsqiu/Work/android/android4.3-master/" . "build/")
+ ("/home/dsqiu/Work/android/" . "android4.3-master/")
+ ("/home/dsqiu/Work/" . "android/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/include/" . "cppunit/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/" . "include/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/src/" . "cppunit/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/python/" . "Python高级编程/")
  ("/home/dsqiu/Tools/dsqiu-emacs-config/" . "lisp/")
  ("/home/dsqiu/Tools/" . "dsqiu-emacs-config/")
- ("/home/dsqiu/" . "Tools/")
+ ("/home/dsqiu/" . ".emacs.d/")
  ("/home/dsqiu/Work/linux/cunit-code/Examples/" . "ConsoleTest/")
  ("/home/dsqiu/Work/linux/cunit-code/" . "Examples/")
 )
@@ -12,47 +38,228 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/dsqiu/"
+ "/home/dsqiu/Work/linux/gramma/cppheaderparser/CppHeaderParser-2.4.3/CppHeaderParser/examples/"
+ "/home/dsqiu/Work/linux/gramma/cppheaderparser/CppHeaderParser-2.4.3/CppHeaderParser/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/observer/"
+ "/home/dsqiu/Work/linux/gramma/ply-3.4/"
+ "/home/dsqiu/Work/linux/cppheaderparser/CppHeaderParser-2.4.3/CppHeaderParser/"
+ "/home/dsqiu/Work/linux/cpppython/zhuoqiang-cppython-7d0cded442ba/"
+ "/home/dsqiu/.emacs.d/lisp/snippets/text-mode/python-mode/"
+ "/home/dsqiu/Work/android/android4.3-master/build/tools/"
+ "/home/dsqiu/Work/linux/github/qzystudy/python/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/observer/c/"
+ "/home/dsqiu/Tools/dia2codes/dia2code-0.8.7/dia2code/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/flyweight/codes/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/codes/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/c/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/doc/"
+ "/home/dsqiu/Tools/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/decorator/c/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/decorator/doc/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/c/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/doc/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/"
+ "/home/dsqiu/Work/linux/github/myemacs/"
+ "/home/dsqiu/Work/linux/github/myemacs/lisp/package/package.el/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/adapter/doc/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/builder/c/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/singleton/"
+ "/home/dsqiu/Work/linux/nand-new/libnm/src/zone_manager/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/command/codes/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cpp-design/factory/codes/"
+ "/home/dsqiu/Work/linux/github/qzystudy/latex/"
+ "/home/dsqiu/Work/linux/github/txt/"
+ "/home/dsqiu/Work/linux/github/qzystudy/python/wxglade/wxGlade-0.6.8/"
+ "/home/dsqiu/Work/linux/tools/"
+ "/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/mm/"
+ "/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/include/asm/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/src/cppunit/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/include/cppunit/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/include/cppunit/extensions/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/examples/simple/"
+ "/home/dsqiu/Work/linux/cppunit-code/cppunit/src/cppunit/"
+ "/home/dsqiu/Work/linux/github/qzystudy/linux/"
+ "/home/dsqiu/Work/linux/github/qzystudy/cim/"
+ "/home/dsqiu/Work/linux/github/qzystudy/html5/"
+ "/home/dsqiu/Work/linux/github/qzystudy/python/Python高级编程/"
  "/home/dsqiu/Tools/dsqiu-emacs-config/lisp/"
  "/home/dsqiu/Work/linux/python/"
  "/home/dsqiu/Tools/dsqiu-emacs-config/"
  "/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/pybcs/"
- "/home/dsqiu/Work/linux/baidu/c++/c-cplusplus-sdk.1.0/"
- "/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/"
- "/home/dsqiu/bin/"
- "/home/dsqiu/Work/linux/cunit-code/Examples/BasicTest/"
- "/home/dsqiu/Work/linux/cunit-code/Examples/ConsoleTest/"
- "/home/dsqiu/Work/linux/cunit-code/Examples/"
- "/home/dsqiu/Work/linux/cunit-code/Examples/AutomatedTest/"
- "/home/dsqiu/Work/linux/cunit-code/CUnit/Sources/Automated/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
- ".bashrc"
- "python-mode.el"
- "pycomplete.el"
- "st1.py"
- "st4.py"
- "dotemacs"
- "__init__.pyc"
- "bcs.py"
+ "readSampleClass.py"
+ "CppHeaderParser.py"
+ "gen_cpp.py"
  "__init__.py"
+ "SampleClass.h"
+ "setup.py"
+ "test.sh"
+ "ifmain"
+ "compare_fileslist.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/dsqiu/" (21470 5454 639786 748000) ".idlerc/" ".dbus/" ".gnome2/" ".xsession-errors" ".emacs.d/" ".gnome2_private/" "bin/" ".fonts.conf" ".bash_logout" ".nv/" "Pictures/" ".xinputrc" ".viminfo" "./" ".gstreamer-0.10/" ".emacs" "examples.desktop" ".gconf/" ".local/" ".profile" ".android/" ".dmrc" ".codeblocks/" "Templates/" ".ccache/" ".thunderbird/" ".dia/" ".Xauthority" "Tmp/" "Videos/" "Documents/" ".mozilla/" "Work/" "../" ".gnome/" ".Fontmatrix/" ".ICEauthority" "Downloads/" "Misc/" ".compiz/" ".bzr.log" "Tools/" ".bash_history" ".audacity-data/" ".xsession-errors.old" ".pki/" ".config/" "Music/" ".bashrc" "Desktop/" "Driver/" ".gitconfig" ".gvfs/" "CUnitHome/" ".kde/" ".vim/" "Public/" ".cache/" ".stardict/")
+ ("/home/dsqiu/Work/linux/github/myemacs/" (21554 6278 171722 686000) "ido.last" "lisp/" "90-android.rules" "ropemacs/" "srecode-map.el" ".git/" "dotemacs" "dotemacs.org" "./" "session.10cc44352ff5bcfd56141247513143844200000026070050" "ac-comphist.dat" "rope/" "gitconfig" "elpa/" "../" "README.md" "Pymacs/" "create.sh" "semanticdb/" "recentf" "eshell/" "auto-save-list/" "session.10f9f0ba392d7ee176141249116869742300000088400051")
 
- ("/home/dsqiu/Tools/dsqiu-emacs-config/lisp/" (21468 26131 806892 2000) "readline-compete/" "color-theme.el" "fontset-gbk.el" "highlight-parentheses.el" "auto-complete-1.3.1/" "ecb-2.40/" "subst2-gbk.el" ".#pycomplete.el" "yasnippet-bundle.el" "snippets/" "plugins/" "./" "gbk-mb.el" "pycomplete.el" "xml-parse.el" "ccepy.el" "python-mode.el" "themes/" "shell-completion.el" "ctypes.el" "subst-gbk.el" "thumbs.el" "w3m/" "compilation-always-kill.el" "session/" "wcy-swbuff.el" "table.el" "xml.el" "cedet_bzr/" "ede-projects.el" "elpa/" "project-root.el" "xpath.el" "shell-command.el" "../" "emacs-window-manager/" "ascii.el" "auto-complete-clang/" "ucdospy.el" "characters-gbk.el" "subst2-ksc.el" "window-number.el" "cscope/" "tabbar.el" "fillcode.el" "shell.el" "folding.el" "yasnippet.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "chinese-gbk.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "maxframe.el" "theme-changer/" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "xpath-parser.el" "gbk-utf-mode.el" "compilation-onewin.el" "ibuffer.el" "eshell/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/doc/" (21553 2253 780513 331000) "./" "mediator.dia" "mediator.txt" "../" "11160211-9e1157f6aae04c9e95ea466b43784e50.png")
 
- ("/home/dsqiu/Tools/dsqiu-emacs-config/" (21468 26174 910891 122000) "ido.last" "lisp/" "90-android.rules" "ropemacs/" "srecode-map.el" ".git/" "dotemacs" "dotemacs.org" "./" ".#dotemacs" "bookmarks" "ac-comphist.dat" "rope/" "gitconfig" "../" "ido.last~" "Pymacs/" "create.sh" "semanticdb/" "recentf" "eshell/" "auto-save-list/")
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/c/" (21553 679 972545 446000) "ConcreteColleageB.h" "./" "ConcreteMediator.h" "../" "Colleage.h" "Mediator.h" "ConcreteColleageA.h")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/codes/" (21553 2162 368515 196000) "./" "mediator.cpp" "../")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/flyweight/codes/" (21553 6352 448429 694000) "./" "flyweight.cpp" "../")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/observer/c/" (21554 9584 247804 246000) "./" "../" "ConcreteObserverA.h" "ConcreteSubjectA.h" "Observer.h" "Subject.h.gch" "ConcreteObserverB.h" "ConcreteSubjectB.h" "Subject.h")
+
+ ("/home/dsqiu/Work/linux/gramma/ply-3.4/" (21554 12385 739873 358000) "setup.py" "README" "./" "ANNOUNCE" "example/" "build/" "ply/" "../" "TODO" "doc/" "CHANGES" "test/" "PKG-INFO")
+
+ ("/home/dsqiu/" (21554 12338 739872 198000) ".idlerc/" ".dbus/" ".gnome2/" ".AndroidStudioBeta/" ".xsession-errors" ".emacs.d/" ".gnome2_private/" "bin/" ".subversion/" ".python-eggs/" ".fonts.conf" ".bash_logout" ".nv/" "Pictures/" ".springlobby/" "deja-dup/" ".xinputrc" ".viminfo" "SpringLobby/" "./" ".gstreamer-0.10/" ".macromedia/" ".emacs" "AndroidStudioProjects/" "examples.desktop" "uml-generated-code/" ".gconf/" ".nvidia-settings-rc" ".local/" ".profile" ".android/" ".dmrc" ".codeblocks/" "Templates/" ".ccache/" ".thunderbird/" ".dia/" ".wxglade/" ".Xauthority" "Tmp/" "Videos/" "Documents/" ".mozilla/" "Work/" "../" ".gnome/" ".Fontmatrix/" ".ICEauthority" "Downloads/" "Misc/" ".compiz/" ".bzr.log" "Tools/" ".bash_history" ".audacity-data/" ".xsession-errors.old" ".pki/" ".config/" "Music/" ".bashrc" "Desktop/" ".texmf-var/" ".wine/" "Driver/" ".gitconfig" ".gvfs/" "CUnitHome/" ".kde/" ".lesshst" ".adobe/" ".gradle/" ".vim/" "Public/" ".cache/" ".stardict/")
+
+ ("/home/dsqiu/Work/linux/" (21554 12138 451867 257000) "github/" "./" "nand-new/" "../" "tools.tar.bz2" "yasnippet-snippets/" "gramma/" "git-core/" "tools/" "stardict/" "cunit-code/" "baidu/" "code.google/" "cppunit-code/" "htc/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/observer/" (21554 28832 368279 92000) "codes/" "c/" "./" "../" "gen_cpp.py" "doc/")
+
+ ("/home/dsqiu/Work/linux/gramma/cppheaderparser/CppHeaderParser-2.4.3/CppHeaderParser/" (21554 11997 327863 776000) "./" "examples/" "CppHeaderParser.pyc" "../" "doc/" "__init__.py" "CppHeaderParser.py")
+
+ ("/home/dsqiu/Work/linux/gramma/cppheaderparser/CppHeaderParser-2.4.3/CppHeaderParser/examples/" (21554 11891 891861 175000) "./" "readSampleClass.py" "../" "SampleClass.h")
+
+ ("/home/dsqiu/Work/linux/cppheaderparser/CppHeaderParser-2.4.3/CppHeaderParser/" (21554 11891 891861 175000) "./" "examples/" "../" "doc/" "__init__.py" "CppHeaderParser.py")
+
+ ("/home/dsqiu/Work/linux/cpppython/zhuoqiang-cppython-7d0cded442ba/clang/" (21554 8845 787786 28000) "enumerations.py" "./" "../" "__init__.py" "cindex.py" "libclang.dylib")
+
+ ("/home/dsqiu/Work/linux/cpppython/zhuoqiang-cppython-7d0cded442ba/" (21554 8845 891786 31000) "README.rst" "./" "test_module/" "../" "cppython.py" "clang/" "test_cppython.py" ".hgignore" "test.sh" ".hg_archival.txt")
+
+ ("/home/dsqiu/.emacs.d/lisp/snippets/text-mode/python-mode/" (21554 5446 131702 159000) "selfassign" "size" "function" "metaclass" "arg_positional" "setup" "assetNotIn" "propg" "__setitem__" "self_without_dot" "method_docstring" "defm" "unicode" "classmethod" "pass" "trace" "function_docstring" "deftest" "logger_name" "not_impl" "method" "__contains__" "if" "class" "from" "setdef" "init" "test_class" "./" "init_docstring" "celery_pdb" "np" "ife" "__new__" "try" "utf8" "lambda" "__getitem__" "prop" "with_statement" "test_file" "assertRaises" "ifmain" "parser" "logging" "assertFalse" "import" "str" "doctest" "interact" "self" "__" "../" "with" "doc" ".yas-setup.el" "return" "print" "list" ".yas-parents" "assertRaises.with" "iter" "__exit__" "propsg" "def" "parse_args" "main" "super" "assertTrue" "script" "cls" "__len__" "tryelse" "arg" "static" "assertIn" "assertEqual" "for" "reg" "eq" "django_test_class" "dec" "while" "__enter__" "repr" "ipdbdebug" "all" "assertNotEqual" "ass")
+
+ ("/home/dsqiu/.emacs.d/lisp/snippets/text-mode/" (21554 5764 243710 7000) "js-mode/" "sql-mode/" "m4-mode/" "time" "markdown-mode/" "csharp-mode/" "cpp-omnet-mode/" "org-mode/" "cc-mode/" "go-mode/" "./" "ensime-mode/" "chef-mode/" "git-commit-mode/" "makefile-gmake-mode/" "prog-mode/" "ex-makefile" "html-mode/" "ned-mode/" "makefile-bsdmake-mode/" "octave-mode/" "python-mode/" "makefile-mode/" "nxml-mode/" "a-makefile" "yaml-mode/" "f90-mode/" "lisp-interaction-mode/" "fundamental-mode/" "erc-mode/" "emacs-lisp-mode/" "tuareg-mode/" "cmake-mode/" "../" "antlr-mode/" "README.md" "so-makefile" "CONTRIBUTORS.txt" "applescript-mode/" "erlang-mode/" "text-mode/" "ruby-mode/" "js2-mode/" "nsis-mode/" "udev-mode/" "makefile-automake-mode/" "haskell-mode/" "make-mode/" "enh-ruby-mode/" "rst-mode/" "latex-mode/" "css-mode/" "sh-mode/" "nesc-mode/" "email" "groovy-mode/" "java-mode/" "snippet-mode/" "typerex-mode/" "rename_add_contr.py" "perl-mode/" "lua-mode/" "scala-mode/" "cperl-mode/" "conf-unix-mode/" "LICENSE")
+
+ ("/home/dsqiu/.emacs.d/lisp/" (21554 6130 163719 34000) "readline-compete/" "color-theme.el" "package/" "fontset-gbk.el" "highlight-parentheses.el" "auto-complete-1.3.1/" "ecb-2.40/" "subst2-gbk.el" "yasnippet-bundle.el" "snippets/" "plugins/" "./" "gbk-mb.el" "pycomplete.el" "xml-parse.el" "ccepy.el" "python-mode.el" "themes/" "shell-completion.el" "ctypes.el" "subst-gbk.el" "thumbs.el" "w3m/" "compilation-always-kill.el" "session/" "wcy-swbuff.el" "table.el" "xml.el" "cedet_bzr/" "ede-projects.el" "elpa/" "project-root.el" "xpath.el" "shell-command.el" "../" "emacs-window-manager/" "ascii.el" "auto-complete-clang/" "ucdospy.el" "characters-gbk.el" "google-c-style.el" "subst2-ksc.el" "window-number.el" "cscope/" "tabbar.el" "fillcode.el" "shell.el" "folding.el" "yasnippet.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "chinese-gbk.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "maxframe.el" "theme-changer/" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "xpath-parser.el" "gbk-utf-mode.el" "compilation-onewin.el" "ibuffer.el" "eshell/")
+
+ ("/home/dsqiu/.emacs.d/" (21554 6278 171722 686000) "ido.last" "lisp/" "90-android.rules" "ropemacs/" "srecode-map.el" ".git/" "dotemacs" "dotemacs.org" "./" "session.10cc44352ff5bcfd56141247513143844200000026070050" "ac-comphist.dat" "rope/" "gitconfig" "elpa/" "../" "README.md" "Pymacs/" "create.sh" "semanticdb/" "recentf" "eshell/" "auto-save-list/" "session.10f9f0ba392d7ee176141249116869742300000088400051")
+
+ ("/home/dsqiu/Work/android/android4.3-master/build/target/" (21450 3486 0 0) "./" "../" "board/" "product/")
+
+ ("/home/dsqiu/.emacs.d/lisp/snippets/" (21470 11157 535670 376000) "./" "../" "text-mode/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/" (21553 13030 988293 414000) "factory/" "templatemethod/" "abstractfactory/" "singleton/" "prototype/" "mediator/" "a.txt" "./" "bridge/" "command/" "strategy/" "observer/" "proxy/" "facade/" "../" "state/" "memento/" "builder/" "decorator/" "adapter/" "flyweight/")
+
+ ("/home/dsqiu/Tools/dsqiu-emacs-config/" (21550 47765 39581 39000) "session.10bbb573282bd2b95c141014856385398800000026210051" "ido.last" "session.10e0fb99a3f0a82640140763565187350600000021810050" "lisp/" "90-android.rules" "ropemacs/" "session.10b7071fba94d3f2e6141113041388158400000026680051" "session.102d64e9c3cea088e5140879148424721100000025970050" "srecode-map.el" ".git/" "dotemacs" "session.101f0bfa2e755fcf80140940396958298700000025930050" "dotemacs.org" "./" "bookmarks" "ac-comphist.dat" "session.106cb76efdbe4d8dbf141127153493366200000024220051" "rope/" "gitconfig" "../" "session.107e83c70ec511acb141121291447085600000026100051" "ido.last~" "Pymacs/" "session.1065d6fa488a46188140695319337324000000021600052" "session.10e23a1b307361d78314118066929347800000026530050" "create.sh" "session.10830a30d5dd239d27140945522378960800000026010049" "semanticdb/" "recentf" "session.10ad6660bfcf0b69a4141017943033437300000026650051" "eshell/" "auto-save-list/")
+
+ ("/home/dsqiu/Work/linux/github/txt/" (21542 32196 365026 668000) "./" "../" "mydmm.txt")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/command/codes/" (21534 20126 413331 618000) "main.cpp" "c" "./" "../")
+
+ ("/home/dsqiu/Work/linux/nand-new/libnm/src/zone_manager/" (21532 9348 142095 235000) "hash.c" "nandpageinfo.c" "pageinfodebug.c" "writecache.c" "hashnode.c" "l2pconvert.c" "./" "cachemanager.c" "zone.c" "zonemanager.c" "recycle.c" "../" "errhandle.c" "taskmanager.c" "cachelist.c" "junkzone.c" "erasetask.c" "cachedata.c" "recycle.b.c")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/" (21533 33971 414430 955000) ".git/" "python/" "cpp-design/" "./" "cim/" "test3d/" "java/" "cairo/" "../" "README.md" "linux/" "gtk/" "latex/" "html5/" "cppunit-code/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/mediator/" (21552 61436 332642 978000) "codes/" "c/" "./" "../" "doc/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/singleton/" (21534 21630 785300 920000) "codes/" "c/" "./" "../" "doc/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/adapter/doc/" (21551 58320 60811 559000) "./" "../" "adapter.dia" "adapter1.dia" "adapter.txt")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/decorator/doc/" (21552 6208 236537 628000) "./" "../" "decorator.txt" "decorator.dia" "02151417-9326d596507c4f51becf025dae59ddbd.png")
+
+ ("/home/dsqiu/Tools/" (21552 62088 712629 666000) "windows/" "htcnetup/" "cscope-15.8a.tar.gz" "goagent/" "dsqiu-emacs-config/" "./" "x-tile-2.5.tar.xz" "cscope-15.8a/" "x-tile-2.5/" "../" "discuz/" "Discuz_7.2_FULL_SC_UTF8.zip" "Discuz_7.2_FULL_SC_GBK.zip" "dia2codes/" "emacs/" "awesome")
+
+ ("/home/dsqiu/Tools/dia2codes/dia2code-0.8.7/dia2code/" (21552 63287 944605 194000) "generate_code_ada.o" "generate_code_ruby.o" "main.c" "comment_helper.o" "dia2code.c" "generate_code_java.c" "source_parser.o" "generate_code_c.o" "generate_code_python.o" "generate_code_php.o" "comment_helper.c" "includes.c" "comment_helper.h" "generate_code_php.c" "generate_code_java.o" "generate_code_as3.o" "dia2code.o" "scan_tree.o" "./" "Makefile" "parse_diagram.h" "makefile.mingw" "generate_code_shp.o" "includes.h" "generate_code_ada.c" "generate_code_cpp.c" "generate_code_as3.c" "main.o" "includes.o" "generate_code_php_five.o" "docs/" "decls.c" "generate_code_c.c" "../" "dia2code" "generate_code_idl.o" "parse_diagram.c" "source_parser.c" ".deps/" "generate_code_idl.c" "generate_code_php_five.c" "Makefile.am" "generate_code_sql.c" "generate_code_csharp.c" "parse_diagram.o" "generate_code_csharp.o" "Makefile.in" "generate_code_python.c" "generate_code_sql.o" "decls.o" "generate_code_ruby.c" "dia2code.h" "libdia2code.a" "scan_tree.c" "code_generators.h" "decls.h" "source_parser.h" "generate_code_shp.c" "generate_code_cpp.o")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/decorator/c/" (21552 3868 324585 376000) "./" "../" "decorator.cxx")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/decorator/" (21552 2830 364606 556000) "codes/" "c/" "./" "../" "doc/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/doc/" (21552 2294 896617 483000) "./" "08000618-3b212fa417704e868c3a9a71d7ae6a5d.png" "facade.dia" "08000710-279f446fa29b48e49633dbb1f8dabc58.jpg" "../" "facade.txt")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/c/" (21552 1951 808624 484000) "./" "../" "facade.cxx")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/facade/" (21552 1915 620625 222000) "codes/" "c/" "./" "../" "doc/")
+
+ ("/home/dsqiu/Work/linux/github/" (21514 46888 444587 967000) "./" "../" "txt/" "qzystudy/" "myemacs/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/builder/c/" (21534 39975 216983 790000) "Client.h" "./" "ConcreteBuilder1.h" "Director.h" "../" "Builder.h" "Product.h" "ConcreteBuilder2.h")
+
+ ("/home/dsqiu/Work/linux/github/myemacs/lisp/" (21550 48294 119570 243000) "readline-compete/" "color-theme.el" "package/" "fontset-gbk.el" "highlight-parentheses.el" "auto-complete-1.3.1/" "ecb-2.40/" "subst2-gbk.el" "yasnippet-bundle.el" "snippets/" "plugins/" "./" "gbk-mb.el" "pycomplete.el" "xml-parse.el" "ccepy.el" "python-mode.el" "themes/" "shell-completion.el" "ctypes.el" "subst-gbk.el" "thumbs.el" "w3m/" "compilation-always-kill.el" "session/" "wcy-swbuff.el" "table.el" "xml.el" "cedet_bzr/" "ede-projects.el" "elpa/" "project-root.el" "xpath.el" "shell-command.el" "../" "emacs-window-manager/" "ascii.el" "auto-complete-clang/" "ucdospy.el" "characters-gbk.el" "google-c-style.el" "subst2-ksc.el" "window-number.el" "cscope/" "tabbar.el" "fillcode.el" "shell.el" "folding.el" "yasnippet.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "chinese-gbk.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "maxframe.el" "theme-changer/" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "xpath-parser.el" "gbk-utf-mode.el" "compilation-onewin.el" "ibuffer.el" "eshell/")
+
+ ("/home/dsqiu/Work/linux/github/myemacs/lisp/package/" (21550 48308 355569 952000) "./" "package.el/" "../")
+
+ ("/home/dsqiu/Work/linux/github/myemacs/lisp/package/package.el/" (21550 48312 183569 874000) ".git/" "./" "package-maint.el" "package.el" "../" "TODO" "README.md")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/adapter/" (21534 20353 905326 976000) "codes/" "c/" "./" "../" "doc/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/builder/codes/" (21534 38564 405012 579000) "./" "../" "builder.cpp")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cpp-design/factory/codes/" (21517 34188 873319 836000) "HumanFactory.h" "YellowMan.h" "WhiteMan.h" "Factory.cpp" "./" "BlackMan.h" "../" "Human.h" "h")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/html5/" (21516 21057 389598 586000) "./" "../" "doc/" "index.html")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/mm/" (21506 32547 306862 339000) ".highmem.o.cmd" ".page.o.cmd" "c-tx39.c" "page.c" "cerr-sb1.c" "extable.c" "dma-default.c" "pgtable-32.c" "tlb-r8k.c" ".mmap.o.cmd" "sc-r5k.c" "c-r4k.o" "extable.o" "tlbex.o" ".tlbex-fault.o.cmd" "./" "tlb-r3k.c" "c-octeon.c" ".uasm.o.cmd" "Makefile" "mmap.o" ".cache.o.cmd" ".extable.o.cmd" "tlbex.c" ".built-in.o.cmd" "ioremap.c" "modules.builtin" "c-jz.o" "init.o" "pgtable-64.c" "tlbex-fault.o" ".pgtable-32.o.cmd" "fault.c" "cex-gen.o" "uasm.c" ".tlbex.o.cmd" "sc-mips.c" "cache.o" "patchs/" "tlbex-fault.S" "../" "c-r3k.c" "hugetlbpage.c" "sc-ip22.c" "uasm.o" "ioremap.o" ".cex-gen.o.cmd" ".ioremap.o.cmd" "c-r4k.c" "cache.c" "mmap.c" "cex-oct.S" "pgtable-32.o" "cex-sb1.S" ".fault.o.cmd" "highmem.o" "tlb-r4k.c" "fault.o" "sc-rm7k.c" "modules.order" ".c-jz.o.cmd" "cex-gen.S" ".c-r4k.o.cmd" "dma-default.o" ".tlb-r4k.o.cmd" "init.c" "page.o" ".dma-default.o.cmd" "tlb-r4k.o" "c-jz.c" "highmem.c" ".init.o.cmd" "built-in.o")
+
+ ("/home/dsqiu/Work/linux/tools/" (21506 62595 146324 204000) "splitbootimg.c" "Philips_demo.s" "org.s" "MIPS architecture vol IIa.pdf" "d" "./" "PCDepot_2_demo.s" "111.s" "007-2597-001.pdf" "PCDepot_2_demo.bin" "findins.c" ".dump.s.swp" "f" "decompressimage.c" "Karbonn_demo.s" "vmlinux_org" "../" "log.h" "Philips_demo.bin" "machcode.py" "run.sh" "dis_mipsfix/" "mxu_test" "findcode.py" "K-Touch_demo.s" ".dump.s.swo" "dump.s" "compile.sh" "Karbonn_demo.bin" "U+Pi_boot.img" "aa.s" "K-Touch_demo.bin" "decompress/" "file_search/" "bin 0822/" "boot.img" "sfile/" "s" "U+Pi_boot.s")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/python/" (21513 43328 878150 174000) "zw.py" "st19.py" "st8.py" "msyhl.rar" "wxglade/" "hello.py" "st2.py" "./" "st13.py" "st12.py" "st3.2.py" "st18.py" "st1.py" "st11.py" "st5.py" "st10.py" "st16.py" "parse_c_struct.py" "thirdpart/" "../" "srqcPython_(jb51.net).rar" "pythongjbc_45011.rar" "st9.py" "st15.py" "st14.py" "st6.py" "st7.py" "st3.py" "st4.py" "st3.1.py" "Python高级编程/" "imagebutton.py" "names.txt" "st17.py" "a.c")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/python/wxglade/wxGlade-0.6.8/" (21513 52620 82140 473000) "edit_sizers/" "misc.pyc" "clipboard.py" "epydoc.conf" "code_property.py" "clipboard.pyc" "setup.py" "configdialog.py" "errors.pyc" "templates_ui.pyc" "code_property.pyc" "wxglade" "edit_widget.py" "application.pyc" "xml_parse.py" "about.py" "edit_windows.pyc" "res/" "./" "config.pyc" "Makefile" "icons/" "test.py" "CHANGES.txt" "template.pyc" "application.py" "docs/" "kdefiledialog.py" "tree.pyc" "common.py" "credits.txt" "tests/" "layout_option_property.py" "build/" "configUI.pyc" "common.pyc" "errors.py" "font_dialog.pyc" "template.py" "../" "config.py" "__init__.py" "events_mixin.pyc" "edit_windows.py" "codegen/" "font_dialog.py" "widgets/" "widget_properties.py" "layout_option_property.pyc" "msgdialog.py" "xml_parse.pyc" "main.py" "events_mixin.py" "wxglade.py" "widget_properties.pyc" "color_dialog.py" "templates_ui.py" "configUI.py" "TODO.txt" "tree.py" "README.txt" "xrc2wxg.py" "ordereddict.py" "color_dialog.pyc" "NEWS.txt" "license.txt" "ordereddict.pyc" "main.pyc" "configdialog.pyc" "misc.py" "PKG-INFO")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/latex/" (21515 61741 51024 821000) "st6.tex" "st7.tex" "st1.tex" "st5.tex" "./" "st6.toc" "st8.bbl" "st3.tex" "st8.tex" "st2.tex" "../" "doc/" "st11.tex" "st4.tex" "st10.tex" "st9.tex")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/xburst/soc-4780/common/" (21506 31438 690884 961000) ".ahbm.o.cmd" "irq.c" "maintimer.c" "timer.c" "setup.c" ".random.o.cmd" "ahbm.o" "lm-device.o" "./" "serial.c" "irq.o" "Makefile" ".clk.o.cmd" ".cpufreq.o.cmd" ".built-in.o.cmd" ".tcu.o.cmd" "cpufreq.c" "modules.builtin" "cpufreq.o" "bch.o" "jzcpm_pwc.c" "random.c" ".jzcpm_pwc.o.cmd" "gpemc.c" "reset.o" "tcu.o" "pm_p0.c" "../" "clk.o" ".setup.o.cmd" "bch.c" ".irq.o.cmd" ".gpemc.o.cmd" "lm.c" "timer.o" ".lm-device.o.cmd" "gpemc.o" "pm.c" ".timer.o.cmd" ".serial.o.cmd" "serial.o" "clk_fpga.c" "platform.o" ".lm.o.cmd" "platform.c" "tcu.c" ".pm_p0.o.cmd" ".gpio.o.cmd" "proc.c" ".platform.o.cmd" "jzcpm_pwc.o" "modules.order" "gpio.c" ".reset.o.cmd" "clk.c" "lm.o" "reset.c" "gpio.o" "ahbm.c" "pmmon.c" ".bch.o.cmd" "lm-device.c" "setup.o" "cpu0timer.c" "pm_p0.o" "random.o" "built-in.o" "hibernate.c" "cpu1timer.c")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/xburst/soc-4780/" (21506 31438 694884 961000) "Kconfig" "./" "Makefile" "common/" ".built-in.o.cmd" "modules.builtin" "../" "board/" "modules.order" "include/" "built-in.o")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/xburst/" (21506 31438 706884 961000) "lib/" "Kconfig" "soc-m200/" "./" "Makefile" "common/" "soc-4775/" "Platform" ".built-in.o.cmd" "modules.builtin" "core/" "../" "soc-4780/" "modules.order" "built-in.o")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/" (21506 31438 722884 961000) "jazz/" "lib/" "Kconfig" "bcm47xx/" "mti-malta/" "oprofile/" "kernel/" "sgi-ip32/" "wrppmc/" "./" "mm/" "Makefile" "netlogic/" "lantiq/" ".built-in.o.cmd" "modules.builtin" "pci/" "cobalt/" "txx9/" "lasat/" "configs/" "powertv/" "math-emu/" "pnx8550/" "Kbuild.platforms" "xburst/" "power/" "emma/" "cavium-octeon/" "rb532/" "jz4740/" "../" "sni/" "sgi-ip27/" "pmc-sierra/" "alchemy/" "Kconfig.debug" "modules.order" "ar7/" "fw/" "mipssim/" "ath79/" "boot/" "dec/" "include/" "vr41xx/" "loongson/" "sgi-ip22/" "mti-sead3/" "sibyte/" "Kbuild" "bcm63xx/" "built-in.o" "pnx833x/")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/" (21506 31517 866883 346000) ".vmlinux.o.cmd" "usr/" "net/" "lib/" "Documentation/" "Kconfig" "sound/" "README" ".old_version" "kernel/" "virt/" ".git/" ".version" "init/" "./" "mm/" "COPYING" "Makefile" "Module.symvers" "modules.builtin" "crypto/" ".gitignore" "scripts/" "vmlinux.o" "block/" "REPORTING-BUGS" "../" "mklinux.sh" "samples/" "CREDITS" "security/" "arch/" ".missing-syscalls.d" "MAINTAINERS" "tools/" "ipc/" ".config" "drivers/" "modules.order" "fs/" "include/" ".mailmap" "Kbuild" "firmware/" ".tmp_versions/")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/include/asm/" (21450 3638 0 0) "i8259.h" "mach-cobalt/" "spram.h" "mach-lantiq/" "page.h" "barrier.h" "sections.h" "watch.h" "pci.h" "perf_event.h" "asm.h" "debug.h" "rjzcache.h" "tlbdebug.h" "mman.h" "gic.h" "module.h" "cpu.h" "dma-mapping.h" "sni.h" "mach-ath79/" "delay.h" "auxvec.h" "wbflush.h" "smvp.h" "highmem.h" "gpio.h" "sim.h" "mach-dec/" "serial.h" "fpregdef.h" "edac.h" "vdso.h" "pgtable.h" "cpu-features.h" "spinlock_types.h" "break.h" "uaccess.h" "current.h" "jazzdma.h" "mips_mt.h" "posix_types.h" "device.h" "fcntl.h" "mach-sead3/" "abi.h" "i8253.h" "kdebug.h" "resource.h" "mmu.h" "hardirq.h" "mc146818-time.h" "swab.h" "mach-tx39xx/" "ioctls.h" "poll.h" "cmpxchg.h" "dsp.h" "irq_regs.h" "pgtable-bits.h" "tlb.h" "mipsmtregs.h" "compat.h" "cmp.h" "fpu_emulator.h" "bitops.h" "setup.h" "rm9k-ocd.h" "thread_info.h" "shmbuf.h" "dma.h" "sparsemem.h" "mach-powertv/" "mach-db1x00/" "cachectl.h" "pgtable-32.h" "stat.h" "mach-bcm63xx/" "segment.h" "sgialib.h" "addrspace.h" "string.h" "sockios.h" "sigcontext.h" "mach-vr41xx/" "mach-au1x00/" "netlogic/" "mach-yosemite/" "irq_gt641xx.h" "smp.h" "mach-rm/" "mach-ip27/" "kgdb.h" "cacheops.h" "mach-netlogic/" "xor.h" "regdef.h" "prom.h" "compiler.h" "termbits.h" "kprobes.h" "mach-malta/" "nile4.h" "seccomp.h" "rtlx.h" "mach-bcm47xx/" "titan_dep.h" "tlbflush.h" "octeon/" "jump_label.h" "pci/" "txx9pio.h" "spinlock.h" "r4k-timer.h" "clock.h" "smtc.h" "mach-pnx8550/" "bitsperlong.h" "txx9/" "lasat/" "traps.h" "kexec.h" "mach-tx49xx/" "mach-wrppmc/" "siginfo.h" "atomic.h" "prefetch.h" "topology.h" "uasm.h" "asm-offsets.h" "local64.h" "ptrace.h" "mach-pb1x00/" "signal.h" "ioctl.h" "linkage.h" "jazz.h" "mach-loongson/" "processor.h" "r4kcache.h" "cpu-info.h" "vpe.h" "mach-sibyte/" "futex.h" "mxu_media.h" "emma/" "mach-rc32434/" "ipcbuf.h" "checksum.h" "hugetlb.h" "elf.h" "gcmpregs.h" "inst.h" "mach-ip28/" "mips-boards/" "isadep.h" "mach-lasat/" "txx9irq.h" "mach-jz4740/" "branch.h" "ftrace.h" "war.h" "smp-ops.h" "time.h" "mach-ip32/" "local.h" "mach-mipssim/" "statfs.h" "mach-ar7/" "fixmap.h" "shmparam.h" "sgidefs.h" "bootinfo.h" "mmzone.h" "irq.h" "amon.h" "io.h" "paccess.h" "param.h" "mach-jazz/" "pmc-sierra/" "scatterlist.h" "kspd.h" "mipsregs.h" "emergency-restart.h" "socket.h" "ds1287.h" "mach-ip22/" "cevt-r4k.h" "byteorder.h" "pgtable-64.h" "sembuf.h" "irq_cpu.h" "asmmacro-32.h" "mips_machine.h" "unistd.h" "mc146818rtc.h" "smtc_ipi.h" "mach-pnx833x/" "sn/" "reg.h" "sysmips.h" "asmmacro-64.h" "user.h" "bug.h" "msc01_ic.h" "types.h" "sgi/" "pgalloc.h" "mutex.h" "ucontext.h" "timex.h" "fw/" "fb.h" "kmap_types.h" "mach-cavium-octeon/" "cop2.h" "floppy.h" "smtc_proc.h" "bugs.h" "asmmacro.h" "compat-signal.h" "mach-generic/" "cputime.h" "percpu.h" "hw_irq.h" "mmu_context.h" "ip32/" "pmon.h" "reboot.h" "irqflags.h" "div64.h" "stacktrace.h" "stackframe.h" "system.h" "mxu.h" "xtalk/" "errno.h" "unaligned.h" "fpu.h" "dec/" "gt64120.h" "hazards.h" "vr41xx/" "m48t37.h" "mipsprom.h" "sibyte/" "bcache.h" "cache.h" "parport.h" "msgbuf.h" "sgiarcs.h" "Kbuild" "txx9tmr.h" "ide.h" "arch_hweight.h" "mach-emma2rh/" "vga.h" "suspend.h" "termios.h" "cacheflush.h" "../" "./")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/include/" (21450 3638 0 0) "./" "../" "asm/")
+
+ ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/" (21450 3641 0 0) "mn10300/" "m68k/" "sh/" "m32r/" "Kconfig" "blackfin/" "tile/" "./" "h8300/" "score/" "sparc/" "x86/" ".gitignore" "um/" "cris/" "alpha/" "../" "powerpc/" "s390/" "frv/" "microblaze/" "mips/" "arm/" "ia64/" "parisc/" "unicore32/" "xtensa/" "avr32/")
+
+ ("/home/dsqiu/Work/linux/baidu/" (21460 23943 245408 923000) "bcs-Baidu-BCS-SDK-Java-1.4.5.zip" "python/" "./" "../" "Baidu_BCS_Shell-Tool_V1.2.zip" "Baidu-BCS-SDK-Python-1.3.2.zip" "c-cplusplus-sdk.1.0.tar.gz" "c++/")
+
+ ("/home/dsqiu/Work/android/android4.3-master/build/tools/" (21497 37028 848124 152000) "check_builds.sh" "fs_get_stats/" "fixlinebreaks.sh" "merge-event-log-tags.py" "signapk/" "product_debug.py" "adbs" "releasetools/" "mktarball.sh" "parsedeps.py" "event_log_tags.py" "droiddoc/" "./" "post_process_props.py" "filter-product-graph.py" "print_module_licenses.sh" "Android.mk" "java-event-log-tags.py" "buildinfo.sh" "diff_package_overlays.py" "../" "findleaves.py" "rgb2565/" "fs_config/" "warn.py" "fileslist.py" "acp/" "zipalign/" "java-layers.py" "compare_fileslist.py" "generate-notice-files.py" "apicheck/" "atree/" "check_prereq/" "dump-package-stats" "check_radio_versions.py")
+
+ ("/home/dsqiu/Work/android/android4.3-master/build/" (21450 3486 0 0) ".git/" "./" "buildspec.mk.default" ".gitignore" "CleanSpec.mk" "core/" "../" "target/" "envsetup.sh" "libs/" "tools/")
+
+ ("/home/dsqiu/Work/android/android4.3-master/" (21460 28541 429315 93000) "packages/" "system/" "external/" "developers/" "cts/" "libcore/" "kernel/" "repo" "./" "Makefile" "abi/" "docs/" "dalvik/" "libnativehelper/" "device/" "build/" "bionic/" "../" "hardware/" ".repo/" "frameworks/" "pdk/" "ndk/" "prebuilts/" "development/" "bootable/" "out/" "b.sh" "sdk/")
+
+ ("/home/dsqiu/Work/android/" (21470 4822 147799 654000) "android4.3-master.tar.bz2" "./" "android4.3-master/" "../" "tools/")
+
+ ("/home/dsqiu/Tools/dsqiu-emacs-config/lisp/" (21468 26333 898887 878000) "readline-compete/" "color-theme.el" "fontset-gbk.el" "highlight-parentheses.el" "auto-complete-1.3.1/" "ecb-2.40/" "subst2-gbk.el" "yasnippet-bundle.el" "snippets/" "plugins/" "./" "gbk-mb.el" "pycomplete.el" "xml-parse.el" "ccepy.el" "python-mode.el" "themes/" "shell-completion.el" "ctypes.el" "subst-gbk.el" "thumbs.el" "w3m/" "compilation-always-kill.el" "session/" "wcy-swbuff.el" "table.el" "xml.el" "cedet_bzr/" "ede-projects.el" "elpa/" "project-root.el" "xpath.el" "shell-command.el" "../" "emacs-window-manager/" "ascii.el" "auto-complete-clang/" "ucdospy.el" "characters-gbk.el" "subst2-ksc.el" "window-number.el" "cscope/" "tabbar.el" "fillcode.el" "shell.el" "folding.el" "yasnippet.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "chinese-gbk.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "maxframe.el" "theme-changer/" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "xpath-parser.el" "gbk-utf-mode.el" "compilation-onewin.el" "ibuffer.el" "eshell/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/src/cppunit/" (21488 46583 625194 209000) "TestAssert.cpp" "ProtectorContext.h" "TestNamer.lo" "TestPath.cpp" "TestResultCollector.o" "DynamicLibraryManagerException.o" "CompilerOutputter.lo" "CompilerOutputter.o" "XmlOutputterHook.o" "ProtectorChain.lo" "Test.cpp" "SynchronizedObject.cpp" "XmlDocument.cpp" "TestPath.lo" "AdditionalMessage.o" "TestFailure.o" "TestPlugInDefaultImpl.o" "SourceLine.cpp" "PlugInManager.cpp" "DynamicLibraryManagerException.cpp" "DllMain.cpp" "TestComposite.o" "TestPath.o" "TextOutputter.o" "TestResult.cpp" "TestComposite.lo" "SynchronizedObject.lo" "XmlOutputter.lo" "TextTestProgressListener.cpp" "BriefTestProgressListener.o" "Asserter.o" "Protector.o" "TestComposite.cpp" "Protector.lo" "TestSuccessListener.cpp" "TestFactoryRegistry.cpp" "Test.lo" "BriefTestProgressListener.cpp" "TextTestResult.lo" "TestSetUp.lo" "Exception.cpp" "TestDecorator.cpp" "TestLeaf.cpp" "DynamicLibraryManagerException.lo" "Protector.cpp" "TestCase.cpp" "TestLeaf.o" "DefaultProtector.lo" "SynchronizedObject.o" "TestSetUp.cpp" "cppunit.vcxproj" "SourceLine.o" "TextTestRunner.o" "Makefile" "BeOsDynamicLibraryManager.cpp" "BeOsDynamicLibraryManager.lo" "TextTestProgressListener.lo" "TextOutputter.cpp" "TestResult.lo" "Message.cpp" "StringTools.cpp" "cppunit.vcproj" "cppunit_dll.dsp" "Exception.o" "PlugInManager.lo" "TestLeaf.lo" "TestResult.o" "XmlElement.o" "DynamicLibraryManager.o" "TextTestResult.cpp" "ProtectorChain.o" "TextTestRunner.lo" "TestFactoryRegistry.o" "XmlOutputterHook.cpp" "AdditionalMessage.lo" "SourceLine.lo" "Message.lo" "UnixDynamicLibraryManager.lo" "ProtectorChain.cpp" "XmlDocument.lo" "ProtectorChain.h" "AdditionalMessage.cpp" "TestAssert.o" "Win32DynamicLibraryManager.o" "UnixDynamicLibraryManager.o" "XmlElement.cpp" "BeOsDynamicLibraryManager.o" "TestSuite.cpp" "TestSuite.o" "cppunit_dll.vcproj" ".deps/" "Test.o" "TestResultCollector.lo" "TestFailure.cpp" "TestDecorator.o" "TestSetUp.o" "TextTestResult.o" "TestRunner.lo" "DefaultProtector.cpp" "DynamicLibraryManager.cpp" "UnixDynamicLibraryManager.cpp" "ShlDynamicLibraryManager.lo" "XmlOutputterHook.lo" "TextOutputter.lo" "TestPlugInDefaultImpl.lo" "TestSuccessListener.lo" "Makefile.am" "TypeInfoHelper.o" "TestAssert.lo" "XmlOutputter.o" "TestFailure.lo" "TestRunner.cpp" "TestDecorator.lo" "Win32DynamicLibraryManager.cpp" "DynamicLibraryManager.lo" "libcppunit.la" "DefaultProtector.h" "TestSuiteBuilderContext.cpp" "TestRunner.o" "TextTestProgressListener.o" "TestCaseDecorator.cpp" "ShlDynamicLibraryManager.cpp" ".libs/" "Exception.lo" "Makefile.in" "XmlDocument.o" "TestResultCollector.cpp" "BriefTestProgressListener.lo" "XmlOutputter.cpp" "TestPlugInDefaultImpl.cpp" "Asserter.cpp" "Asserter.lo" "StringTools.o" "TestCaseDecorator.o" "PlugInParameters.lo" "TestCase.lo" "cppunit.dsp" "CompilerOutputter.cpp" "TextTestRunner.cpp" "PlugInParameters.o" "XmlElement.lo" "Message.o" "cppunit_dll.vcxproj" "DefaultProtector.o" "TestSuite.lo" "TestFactoryRegistry.lo" "TestSuccessListener.o" "TestNamer.cpp" "PlugInParameters.cpp" "RepeatedTest.o" "RepeatedTest.cpp" "TestCaseDecorator.lo" "Win32DynamicLibraryManager.lo" "TypeInfoHelper.cpp" "ShlDynamicLibraryManager.o" "TestSuiteBuilderContext.o" "PlugInManager.o" "RepeatedTest.lo" "StringTools.lo" "TestCase.o" "TestNamer.o" "TypeInfoHelper.lo" "TestSuiteBuilderContext.lo" "../" "./")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/include/" (21488 45824 161209 707000) "./" "Makefile" "cppunit/" "../" "Makefile.am" "Makefile.in" "msvc6/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/" (21488 46260 905200 794000) "NEWS" "README.CVS" "INSTALL-VS2010.txt" "amalgamate.py" "autoupd.sh" "cppunit.spec.in" "lib/" "cppunit.spec" "README" "BuildVS2010.bat" "configure" "cppunit.pc" "libtool" "./" "autom4te.cache/" "INSTALL" "COPYING" "Makefile" "Build2010.sln" "examples/" "cscope.out" "THANKS" "configure.in" "src/" "../" "BUGS" "TODO" "INSTALL-WIN32.txt" "doc/" "CodingGuideLines.txt" "cscope.files" "cppunit.pc.in" "autogen.sh" "README.sourceforge" "cppunit.m4" "Makefile.am" "Makefile.in" "config/" "cppunit-config" "devtools/" "INSTALL-unix" "contrib/" "config.status" "aclocal.m4" "include/" "INSTALL-VS.Net2008.txt" "ChangeLog" "config.log" "cppunit-config.1" "cppunit-config.in" "AUTHORS")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/src/" (21488 45824 89209 708000) "./" "qttestrunner/" "Makefile" "cppunit/" "BuildMSI.vdproj" "CppUnitLibraries.dsw" "../" "DllPlugInTester/" "Makefile.am" "Makefile.in" "msvc6/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/include/cppunit/" (21488 45825 113209 687000) "AdditionalMessage.h" "portability/" "TestFixture.h" "TextTestResult.h" "TextTestRunner.h" "TestLeaf.h" "Test.h" "TestSuccessListener.h" "TestAssert.h" "config-auto.h" "TestResult.h" "./" "ui/" "Protector.h" "Makefile" "TestFailure.h" "TestComposite.h" "TextTestProgressListener.h" "TestCase.h" "TestCaller.h" "SynchronizedObject.h" "TextOutputter.h" "Message.h" "../" "XmlOutputter.h" "CompilerOutputter.h" "Outputter.h" "TestListener.h" "Makefile.am" "BriefTestProgressListener.h" "tools/" "SourceLine.h" "Makefile.in" "config/" "TestSuite.h" "TestRunner.h" "Exception.h" "TestResultCollector.h" "Portability.h" "Asserter.h" "XmlOutputterHook.h" "plugin/" "TestPath.h" "extensions/")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/include/cppunit/extensions/" (21488 45824 241209 705000) "XmlInputHelper.h" "TestCaseDecorator.h" "TestFactoryRegistry.h" "HelperMacros.h" "TestFixtureFactory.h" "./" "Orthodox.h" "Makefile" "RepeatedTest.h" "TestSuiteBuilderContext.h" "TestSetUp.h" "../" "TestFactory.h" "Makefile.am" "AutoRegisterSuite.h" "TestDecorator.h" "Makefile.in" "TestNamer.h" "TypeInfoHelper.h" "ExceptionTestCaseDecorator.h" "TestSuiteFactory.h")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cppunit-code/cppunit/examples/simple/" (21488 45853 933209 99000) "simple" "./" "simple_plugin.vcxproj" "Makefile" "simple_plugin.opt" "ExampleTestCase.cpp" "simple_plugin.dsp" "Main.o" "../" "simple.vcproj" ".deps/" "simple_plugin.vcproj" "Main.cpp" "SimplePlugIn.cpp" "Makefile.am" ".libs/" "Makefile.in" "simple.vcxproj" "ExampleTestCase.h" "simple.dsp" "ExampleTestCase.o")
+
+ ("/home/dsqiu/Work/linux/cppunit-code/cppunit/src/cppunit/" (21488 45534 49215 626000) "TestAssert.cpp" "ProtectorContext.h" "TestPath.cpp" "Test.cpp" "SynchronizedObject.cpp" "XmlDocument.cpp" "SourceLine.cpp" "PlugInManager.cpp" "DynamicLibraryManagerException.cpp" "DllMain.cpp" "TestResult.cpp" "TextTestProgressListener.cpp" "TestComposite.cpp" "TestSuccessListener.cpp" "TestFactoryRegistry.cpp" "BriefTestProgressListener.cpp" "Exception.cpp" "TestDecorator.cpp" "./" "TestLeaf.cpp" "Protector.cpp" "TestCase.cpp" "TestSetUp.cpp" "cppunit.vcxproj" "BeOsDynamicLibraryManager.cpp" "TextOutputter.cpp" "Message.cpp" "StringTools.cpp" "cppunit.vcproj" "cppunit_dll.dsp" "TextTestResult.cpp" "XmlOutputterHook.cpp" "ProtectorChain.cpp" "ProtectorChain.h" "AdditionalMessage.cpp" "XmlElement.cpp" "../" "TestSuite.cpp" "cppunit_dll.vcproj" "TestFailure.cpp" "DefaultProtector.cpp" "DynamicLibraryManager.cpp" "UnixDynamicLibraryManager.cpp" "Makefile.am" "TestRunner.cpp" "Win32DynamicLibraryManager.cpp" "DefaultProtector.h" "TestSuiteBuilderContext.cpp" "TestCaseDecorator.cpp" "ShlDynamicLibraryManager.cpp" "TestResultCollector.cpp" "XmlOutputter.cpp" "TestPlugInDefaultImpl.cpp" "Asserter.cpp" "cppunit.dsp" "CompilerOutputter.cpp" "TextTestRunner.cpp" "cppunit_dll.vcxproj" "TestNamer.cpp" "PlugInParameters.cpp" "RepeatedTest.cpp" "TypeInfoHelper.cpp")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/linux/" (21470 7564 983743 685000) "./" "../" "mmap.c" "study.txt")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/cim/" (21470 7565 111743 682000) "./" "a" "../" "captura.c")
+
+ ("/home/dsqiu/Work/linux/github/qzystudy/python/Python高级编程/" (21470 8242 151729 866000) "./" "../" "[Python高级编程].（法）莱德.扫描版.pdf")
 
  ("/home/dsqiu/Work/linux/python/" (21468 25747 898899 835000) "st8.py" "msyhl.rar" "st2.py" "./" "st1.py" "st5.py" "../" "srqcPython_(jb51.net).rar" "pythongjbc_45011.rar" "st6.py" "st7.py" "st3.py" "st4.py" "Python高级编程/" "names.txt")
-
- ("/home/dsqiu/Tools/" (21457 3294 391064 954000) "cscope-15.8a.tar.gz" "dsqiu-emacs-config/" "./" "cscope-15.8a/" "../" "emacs/")
-
- ("/home/dsqiu/Work/linux/" (21461 5371 40956 136000) "python/" "./" "../" "git-core/" "cunit-code/" "baidu/" "qzystudy/")
 
  ("/home/dsqiu/Work/linux/baidu/python/Baidu-BCS-SDK-Python-1.3.2/pybcs/" (21460 23522 601417 506000) "httpc.pyc" "./" "object.py" "common.py" "common.pyc" "object.pyc" "../" "__init__.py" "bcs.pyc" "bcs.py" "httpc.py" "__init__.pyc" "bucket.pyc" "bucket.py")
 

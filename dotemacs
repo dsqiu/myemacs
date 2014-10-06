@@ -299,9 +299,23 @@
 
 (require 'auto-complete)
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/lisp/auto-complete-1.3.1/dict")
 (ac-config-default)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/lisp/auto-complete-1.3.1/dict")
 (global-auto-complete-mode t)
+(defun my:ac-c-header-init ()
+       (require 'auto-complete-c-headers)
+       (add-to-list 'ac-sources	'ac-source-c-headers)
+;; gcc -xc++ -E -v -
+       (add-to-list 'achead:include-directories '
+       "/usr/include/c++/4.8 \
+       /usr/include/x86_64-linux-gnu/c++/4.8 \
+       /usr/include/c++/4.8/backward /usr/lib/gcc/x86_64-linux-gnu/4.8/include \
+       /usr/local/include \
+       /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed \
+       /usr/include/x86_64-linux-gnu /usr/include"
+       ))
+(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+(add-hook 'c-mode-hook 'my:ac-c-header-init)
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
 (setq ac-auto-start 3)
@@ -309,96 +323,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/auto-complete-clang")
 (require 'auto-complete-clang)
 (setq ac-quick-help-delay 0.5)
-;(ac-set-trigger-key "TAB")
 (define-key ac-mode-map  [(control tab)] 'auto-complete)
-;(defun my-ac-config ()
-;  (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))
-;  (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)
-  ;; (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
-; (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
-;  (add-hook 'css-mode-hook 'ac-css-mode-setup)
-;  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
-;  (global-auto-complete-mode t))
-;(defun my-ac-cc-mode-setup ()
-;  (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))
-;(add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
-;; ac-source-gtags
-;(my-ac-config)
-
-
-
-
-
-;      #+BEGIN_EXAMPLE
-;echo "" | g++ -v -x c++ -E -
-;       #+END_EXAMPLE
-
-;       you wil get something like this:
-
-;      #+BEGIN_EXAMPLE
-;#include "..." search starts here：
-;#include <...> search starts here：
-; /usr/include/c++/4.6
-; /usr/include/c++/4.6/x86_64-linux-gnu/.
-; /usr/include/c++/4.6/backward
-; /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include
-; /usr/local/include
-; /usr/lib/gcc/x86_64-linux-gnu/4.6.1/include-fixed
-; /usr/include/x86_64-linux-gnu
-; /usr/include
-;End of search list.
-;       #+END_EXAMPLE
-;    - setting the ac-clang-flags to include these default include pathes.
-;      e.g.,
-
-;      #+BEGIN_SRC emacs-lisp
-(setq ac-clang-flags
-      (mapcar (lambda (item)(concat "-I" item))
-              (split-string
-              "
- /usr/include/c++/4.7
- /usr/include/x86_64-linux-gnu/c++/4.7/.
- /usr/include/c++/4.7/backward
- /usr/lib/gcc/x86_64-linux-gnu/4.7/include
- /usr/local/include
- /usr/lib/gcc/x86_64-linux-gnu/4.7/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
-"
-               )))
-;       #+END_SRC
-
-
-
-
-
-
-;;; 当输入"."或">"时，在另一个窗口中列出结构体或类的成员
-;(defun my-c-mode-cedet-hook ()
-;  (local-set-key "." 'semantic-complete-self-insert)
-;  (local-set-key ">" 'semantic-complete-self-insert))
-;(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-
-;(defun my-cedet-hook ()
-;  (local-set-key [(control return)] 'semantic-ia-complete-symbol)
-;  (local-set-key [M-.] 'semantic-ia-complete-symbol-menu)
-;  (local-set-key "\C-c >" 'semantic-complete-analyze-inline)
-;  (local-set-key "C-cp" 'semantic-analyze-proto-impl-toggle))
-;(add-hook 'c-mode-common-hook 'my-cedet-hook)
-
-;(global-set-key [(control tab)] 'senator-completion-menu-popup)
-
-;; * This enables even more coding tools such as the nascent intellisense mode
-;;   decoration mode, and stickyfunc mode (plus regular code helpers)
-;; (semantic-load-enable-guady-code-helpers)
-
-;; * This turns on which-func support (Plus all other code helpers)
-;; (semantic-load-enable-excessive-code-helpers)
-
-;; This turns on modes that aid in grammar writing and semantic tool
-;; development.  It does not enable any other features such as code
-;; helpers above.
-;; (semantic-load-enable-semantic-debugging-helpers)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/ecb-2.40")
 (setq stack-trace-on-error nil)
@@ -919,20 +844,3 @@ Don't mess with special buffers."
     (setenv "CROSS_COMPILE" "mipsel-linux-android-")))
 
 (global-set-key (kbd "C-SPC") nil)
-
-(autoload 'pymacs-apply "pymacs")
-(autoload 'pymacs-call "pymacs")
-(autoload 'pymacs-eval "pymacs" nil t)
-(autoload 'pymacs-exec "pymacs" nil t)
-(autoload 'pymacs-load "pymacs" nil t)
-
-;(pymacs-load "ropemacs" "rope-")
-;(setq ropemacs-enable-autoimport t)
-;(require 'pycomplete)
-;(setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
-;(autoload 'python-mode "python-mode" "Python editing mode." t)
-;(setq interpreter-mode-alist(cons '("python" . python-mode)
-;                           interpreter-mode-alist))
-
-
-(require 'python-mode)
