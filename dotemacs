@@ -43,9 +43,10 @@
 (setq linum-format "%4d")
 (add-hook 'find-file-hooks (lambda () (linum-mode 1)))
 
+(add-to-list 'load-path "~/.emacs.d/lisp/yasnippet")
 (require 'yasnippet)
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/lisp/snippets")
+(yas/load-directory "~/.emacs.d/lisp/yasnippet/snippets")
+(yas-global-mode 1)
 
 (require 'highlight-parentheses)
 
@@ -66,8 +67,6 @@
 
 
 (require 'cc-mode)
-
-;(setq ac-quick-help-delay 0.5)
 
  ; yasnippet
 ; --------------
@@ -271,36 +270,15 @@
 ;(setq auto-mode-alist (cons '(".*/*linux.*/+.*\\.[ch]$" .
 ;			linux-c-mode) auto-mode-alist))
 
-;; Load CEDET
-(add-to-list 'load-path "~/.emacs.d/lisp/cedet_bzr/trunk/")
-; cedet
-(require 'cedet-devel-load)
-(setq ede-locate-setup-options
-      '(ede-locate-cscope
-	ede-locate-base))
 
-(setq-mode-local c-mode semanticdb-find-default-throttle
-                 '(project unloaded system recursive))
-(require 'cedet-cscope)
-(require 'semantic/ia)
-(require 'semantic/db-cscope)
-(semanticdb-enable-cscope-databases)
-
-(semantic-load-enable-minimum-features)
-(global-srecode-minor-mode 1)
-
-;; Semantic
-(global-semanticdb-minor-mode t)
-;(global-semantic-idle-completions-mode t)
-(global-semantic-decoration-mode t)
-;(global-semantic-highlight-func-mode t)
-
-(add-to-list 'load-path "~/.emacs.d/lisp/auto-complete-1.3.1")
+(add-to-list 'load-path "~/.emacs.d/lisp/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/lisp/popup-el")
+(require 'popup)
 
 (require 'auto-complete)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
 (require 'auto-complete-config)
 (ac-config-default)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/lisp/auto-complete-1.3.1/dict")
 (global-auto-complete-mode t)
 (defun my:ac-c-header-init ()
        (require 'auto-complete-c-headers)
@@ -324,6 +302,42 @@
 (require 'auto-complete-clang)
 (setq ac-quick-help-delay 0.5)
 (define-key ac-mode-map  [(control tab)] 'auto-complete)
+
+(setq ac-clang-flags
+      (mapcar (lambda (item)(concat "-I" item))
+              (split-string
+       "/usr/include/c++/4.8 \
+       /usr/include/x86_64-linux-gnu/c++/4.8 \
+       /usr/include/c++/4.8/backward /usr/lib/gcc/x86_64-linux-gnu/4.8/include \
+       /usr/local/include \
+       /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed \
+       /usr/include/x86_64-linux-gnu /usr/include"
+               )))
+
+
+;; Load CEDET
+(add-to-list 'load-path "~/.emacs.d/lisp/cedet_bzr/trunk/")
+; cedet
+(require 'cedet-devel-load)
+(setq ede-locate-setup-options
+      '(ede-locate-cscope
+	ede-locate-base))
+
+(setq-mode-local c-mode semanticdb-find-default-throttle
+                 '(project unloaded system recursive))
+(require 'cedet-cscope)
+(require 'semantic/ia)
+(require 'semantic/db-cscope)
+(semanticdb-enable-cscope-databases)
+
+(semantic-load-enable-minimum-features)
+(global-srecode-minor-mode 1)
+
+;; Semantic
+(global-semanticdb-minor-mode t)
+;(global-semantic-idle-completions-mode t)
+(global-semantic-decoration-mode t)
+;(global-semantic-highlight-func-mode t)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/ecb-2.40")
 (setq stack-trace-on-error nil)

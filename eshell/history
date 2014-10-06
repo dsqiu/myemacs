@@ -1,48 +1,4 @@
-ls
-cd dia2code-0.8.7/
-ls
-cd sr
-ls
-cd dia2code/
-ls
-grep isabstract . -rm
-grep isabstract . -rn
-ls
-cd Tools/
-ls
-cd dia2codes/
-ls
-cd dia2code-0.8.7/
-ls
-ls
-cd dia2code/
-ls
-cd docs/
-ls
-cd en/
-ls
-cd ..
-ls
-cd ..
-ls
-touchpad.py 
-ls
-e generate_code_cpp.c
-grep d2c_parameter_set . -rn
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-cd Work/linux/
-touchpad.py 
-ls
-cd github/
+cd Work/linux/github/
 ls
 cd qzystudy/
 ls
@@ -50,79 +6,23 @@ cd cpp-design/
 ls
 cd observer/
 ls
-mkdir codes
-mkdir doc
-mkdir c
-mv 11113251-ae6b015242f84819951324627f73d6f1.png observer.txt doc/
+cd codes/
 ls
-ld
 ls
-gedit doc/observer.txt &
-dia &
-ls
-dia2code -t cpp doc/observer.dia -d c
-cd c
-ls
-e Observer.h 
-ls
-cd ..
-ls
-touch gen_cpp.py
-cd ../..
-ls
+rm d.py 
+touch a.cpp
 cd ..
 ls
 cd ..
-ls
-cd gramma/
-ls
-cd cppheaderparser/
-ls
-cd CppHeaderParser-2.4.3/
-ls
-cd CppHeaderParser/
-ls
-cd doc/
-ls
-firefox CppHeaderParser.html &
-AUP timeline: * calling filterListener.init()         	 (1)
-ld
-ls
+cd ..
+cd linux/
+find -name "dotemacs"
 cd ..
 ls
-cd examples/
+cd 
 ls
+cd Tools/
+find -name "dotemacs"
+meld ./dsqiu-emacs-config/ ../.emacs.d/ &
 ls
-clear
-./readSampleClass.py 
-cd ../../../
-ls
-cd ...
-cd ...
-ls
-cd .emacs.d
-ls
-pwd
-pwd
-cd ..
-ls
-ls -l .emacs.d
-cd .emacs.d/
-ls
-find -name max-lisp-eval-depth . -rn
-grep max-lisp-eval-depth . -rn
-cd ~/.emacs
-ls
-cd ~/.emacs.d
-ls
-meld dotemacs ~/.emacs
-ls
-cd ..
-ls -la
-ls
-ls
-cd .emacs.d
-ls
-rm Pymacs/ -rf
-ls
-git st
+e a.cpp 
