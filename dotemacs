@@ -858,3 +858,4 @@ Don't mess with special buffers."
     (setenv "CROSS_COMPILE" "mipsel-linux-android-")))
 
 (global-set-key (kbd "C-SPC") nil)
+(global-set-key (kbd "C-x C-c") nil)
