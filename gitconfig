@@ -1,13 +1,17 @@
+[user]
+	name = dsqiu
+	email = dsqiu@ingenic.cn
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
+	 co = checkout
+	 ci = commit -a
+	 st = status
+	 br = branch
+	 oneline = log --pretty=oneline --since='2 days ago'
+	 onelog = log -p -1
 [color]
+	diff = always
 	status = always
 	branch = always
-	diff = always
-[push]
-	default = simple
-[user]
-	email = qdsfmt@126.com
+	ui = always
+[core]
+	editor = vim

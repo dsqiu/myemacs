@@ -43,11 +43,6 @@
 (setq linum-format "%4d")
 (add-hook 'find-file-hooks (lambda () (linum-mode 1)))
 
-(add-to-list 'load-path "~/.emacs.d/lisp/yasnippet")
-(require 'yasnippet)
-(yas/load-directory "~/.emacs.d/lisp/yasnippet/snippets")
-(yas-global-mode 1)
-
 (require 'highlight-parentheses)
 
 (cua-mode t)
@@ -152,7 +147,7 @@
 
 (global-set-key [C-f1] 'bookmark-set-default1)
 (defun bookmark-set-default1 (pos)
-  "Jump to the default bookmark 1 default-bookmark1"
+  "Jump to the default bookmark 1 default-bookmark1"/
   (interactive "d")
   (bookmark-set "default-bookmark1"))
 
@@ -271,15 +266,81 @@
 ;			linux-c-mode) auto-mode-alist))
 
 
+;; Load CEDET
+(add-to-list 'load-path "~/.emacs.d/lisp/cedet_bzr/trunk/")
+(require 'cedet-devel-load)
+(setq ede-locate-setup-options
+      '(ede-locate-cscope
+	ede-locate-base))
+
+(setq-mode-local c-mode semanticdb-find-default-throttle
+                 '(project unloaded system recursive))
+
+(semantic-load-enable-code-helpers)
+(require 'cedet-cscope)
+(require 'semantic/ia)
+(require 'semantic/db-cscope)
+
+(semanticdb-enable-cscope-databases)
+
+;; Semantic
+(global-semanticdb-minor-mode t)
+(global-semantic-decoration-mode t)
+
+(add-to-list 'load-path "~/.emacs.d/lisp/ecb-2.40")
+(setq stack-trace-on-error nil)
+(require 'ecb)
+(require 'ecb-autoloads)
+(setq ecb-tip-of-the-day nil)
+
+(global-set-key [M-left] 'windmove-left)
+(global-set-key [M-right] 'windmove-right)
+(global-set-key [M-up] 'windmove-up)
+(global-set-key [M-down] 'windmove-down)
+
+(ecb-layout-define "my-cscope-layout" right nil
+      (let ((edit-win (previous-window (selected-window) 0)))
+	  (ecb-set-methods-buffer)
+	  (select-window edit-win)))
+
+(defecb-window-dedicator ecb-set-cscope-buffer " *ECB cscope-buf*"
+                         (switch-to-buffer "*cscope*"))
+
+(setq ecb-layout-name "my-cscope-layout")
+(setq ecb-history-make-buckets 'never)
+(define-key global-map [(f1)] 'ecb-toggle-ecb-windows)
+
+
 (add-to-list 'load-path "~/.emacs.d/lisp/auto-complete")
 (add-to-list 'load-path "~/.emacs.d/lisp/popup-el")
 (require 'popup)
-
 (require 'auto-complete)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
+(setq ac-trigger-commands
+      (cons 'backward-delete-char-untabify ac-trigger-commands))
+
 (require 'auto-complete-config)
-(ac-config-default)
-(global-auto-complete-mode t)
+(setq ac-dwim t)
+(setq ac-use-quick-help t)
+;(setq ac-quick-help-delay 1.0)
+
+;(set-default 'ac-sources
+;             '(ac-source-semantic ;;ac使用semantic的分析结果
+; 	       ac-source-yasnippet
+; 	       ac-source-abbrev
+;               ac-source-words-in-buffer
+;               ac-source-words-in-all-buffer
+;               ac-source-imenu
+;               ac-source-files-in-current-dir
+;               ac-source-filename))
+(set-default 'ac-sources
+             '(ac-source-semantic ;;ac使用semantic的分析结果
+	       ac-source-yasnippet
+	       ac-source-abbrev
+               ac-source-words-in-buffer
+               ac-source-words-in-all-buffer
+              ))
+;(ac-config-default)
 (defun my:ac-c-header-init ()
        (require 'auto-complete-c-headers)
        (add-to-list 'ac-sources	'ac-source-c-headers)
@@ -294,95 +355,13 @@
        ))
 (add-hook 'c++-mode-hook 'my:ac-c-header-init)
 (add-hook 'c-mode-hook 'my:ac-c-header-init)
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
 (setq ac-auto-start 3)
-
-(add-to-list 'load-path "~/.emacs.d/lisp/auto-complete-clang")
-(require 'auto-complete-clang)
-(setq ac-quick-help-delay 0.5)
-(define-key ac-mode-map  [(control tab)] 'auto-complete)
-
-(setq ac-clang-flags
-      (mapcar (lambda (item)(concat "-I" item))
-              (split-string
-       "/usr/include/c++/4.8 \
-       /usr/include/x86_64-linux-gnu/c++/4.8 \
-       /usr/include/c++/4.8/backward /usr/lib/gcc/x86_64-linux-gnu/4.8/include \
-       /usr/local/include \
-       /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed \
-       /usr/include/x86_64-linux-gnu /usr/include"
-               )))
-
-
-;; Load CEDET
-(add-to-list 'load-path "~/.emacs.d/lisp/cedet_bzr/trunk/")
-; cedet
-(require 'cedet-devel-load)
-(setq ede-locate-setup-options
-      '(ede-locate-cscope
-	ede-locate-base))
-
-(setq-mode-local c-mode semanticdb-find-default-throttle
-                 '(project unloaded system recursive))
-(require 'cedet-cscope)
-(require 'semantic/ia)
-(require 'semantic/db-cscope)
-(semanticdb-enable-cscope-databases)
-
-(semantic-load-enable-minimum-features)
-(global-srecode-minor-mode 1)
-
-;; Semantic
-(global-semanticdb-minor-mode t)
-;(global-semantic-idle-completions-mode t)
-(global-semantic-decoration-mode t)
-;(global-semantic-highlight-func-mode t)
-
-(add-to-list 'load-path "~/.emacs.d/lisp/ecb-2.40")
-(setq stack-trace-on-error nil)
-(require 'ecb)
-(require 'ecb-autoloads)
-(setq ecb-tip-of-the-day nil)
-;;;; 各窗口间切换
-
-(global-set-key [M-left] 'windmove-left)
-
-(global-set-key [M-right] 'windmove-right)
-
-(global-set-key [M-up] 'windmove-up)
-
-(global-set-key [M-down] 'windmove-down)
-
-(ecb-layout-define "my-cscope-layout" right nil
-      (let ((edit-win (previous-window (selected-window) 0)))
-	  (ecb-set-methods-buffer)
-	  (select-window edit-win)))
-
-(defecb-window-dedicator ecb-set-cscope-buffer " *ECB cscope-buf*"
-                         (switch-to-buffer "*cscope*"))
-
-(setq ecb-layout-name "my-cscope-layout")
-
-;; Disable buckets so that history buffer can display more entries
-(setq ecb-history-make-buckets 'never)
-
-;;;; 隐藏和显示ecb窗口
-
-(define-key global-map [(f1)] 'ecb-toggle-ecb-windows)
-
-;;;; 使某一ecb窗口最大化
-
-;(define-key global-map "\C-c1" 'ecb-maximize-window-directories)
-
-;(define-key global-map "\C-c2" 'ecb-maximize-window-sources)
-
-;(define-key global-map "\C-c3" 'ecb-maximize-window-methods)
-
-;(define-key global-map "\C-c4" 'ecb-maximize-window-history)
-
-;;;; 恢复原始窗口布局
-;(require 'ecb-maximize-window-methods)
+(ac-cc-mode-setup)
+(global-auto-complete-mode)
+(add-to-list 'load-path "~/.emacs.d/lisp/yasnippet")
+(require 'yasnippet)
+(yas/load-directory "~/.emacs.d/lisp/yasnippet/snippets")
+(yas-global-mode t)
 
 (require 'hideif)
 (setq hide-ifdef-initially nil)
@@ -858,3 +837,5 @@ Don't mess with special buffers."
     (setenv "CROSS_COMPILE" "mipsel-linux-android-")))
 
 (global-set-key (kbd "C-SPC") nil)
+(global-set-key (kbd "C-x C-c") nil)
+(global-set-key (kbd "C-5")   'yas-next-field-or-maybe-expand)
