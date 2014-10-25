@@ -838,4 +838,3 @@ Don't mess with special buffers."
 
 (global-set-key (kbd "C-SPC") nil)
 (global-set-key (kbd "C-x C-c") nil)
-(global-set-key (kbd "C-5")   'yas-next-field-or-maybe-expand)
