@@ -91,4 +91,4 @@
 		       ("vec" "std::vector<${1:Class}> ${2:var}${3:(${4:10}, $1($5))};" "vector" nil nil nil nil nil nil)))
 
 
-;;; Do not edit! File generated at Tue Oct 21 19:11:20 2014
+;;; Do not edit! File generated at Thu Oct 30 19:04:01 2014

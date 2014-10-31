@@ -2,7 +2,8 @@
 ;;; Snippet definitions:
 ;;;
 (yas-define-snippets 'cc-mode
-		     '(("do" "do\n{\n    $0\n} while (${1:condition});" "do { ... } while (...)" nil nil nil nil nil nil)
+		     '(("/**" "/**\n *$0\n */\n" "/** * */" nil nil nil nil nil nil)
+		       ("do" "do\n{\n    $0\n} while (${1:condition});" "do { ... } while (...)" nil nil nil nil nil nil)
 		       ("for" "for (${1:i = 0}; ${2:i < N}; ${3:i++}) {\n    $0\n}\n" "for" nil nil nil nil nil nil)
 		       ("cc-modeif" "if (${1:condition})\n{\n    $0\n}" "if (...) { ... }" nil nil nil nil nil nil)
 		       ("ifdef" "#ifdef ${1:MACRO}\n\n$0\n\n#endif // $1" "ifdef" nil nil nil nil nil nil)
@@ -17,4 +18,4 @@
 		       ("while" "while (${1:condition}) {\n      $0\n}" "while" nil nil nil nil nil nil)))
 
 
-;;; Do not edit! File generated at Tue Oct 21 19:11:20 2014
+;;; Do not edit! File generated at Thu Oct 30 19:04:02 2014
