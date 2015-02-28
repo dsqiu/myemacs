@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/bcjia/npm701-new/kernel/drivers/i2c'
+let g:netrw_dirhist_2='/home/bcjia/npm701-new/kernel/drivers/i2c/chips'
+let g:netrw_dirhist_3='/home/bcjia/npm701-new/kernel/drivers/input/touchscreen'
+let g:netrw_dirhist_4='/home/bcjia/npm701-new/hardware/xb4760/libsensors'
+let g:netrw_dirhist_5='/home/bcjia/maple-new'
+let g:netrw_dirhist_6='/home/bcjia/npm701-aa-9-15/vendor/xb4k/class/mid/frameworks/base/core/java/android/hardware'
+let g:netrw_dirhist_7='/home/bcjia/npm701-10-20/frameworks'
+let g:netrw_dirhist_8='/home/bcjia/4.0-work/android-4-11-30/hardware/xb4770/libcamera'
+let g:netrw_dirhist_9='/home/bcjia/4.0-work/android-4-11-30/hardware/xb4770'
