@@ -341,20 +341,22 @@
                ac-source-words-in-all-buffer
               ))
 ;(ac-config-default)
-(defun my:ac-c-header-init ()
-       (require 'auto-complete-c-headers)
-       (add-to-list 'ac-sources	'ac-source-c-headers)
-;; gcc -xc++ -E -v -
-       (add-to-list 'achead:include-directories '
-       "/usr/include/c++/4.8 \
-       /usr/include/x86_64-linux-gnu/c++/4.8 \
-       /usr/include/c++/4.8/backward /usr/lib/gcc/x86_64-linux-gnu/4.8/include \
-       /usr/local/include \
-       /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed \
-       /usr/include/x86_64-linux-gnu /usr/include"
-       ))
-(add-hook 'c++-mode-hook 'my:ac-c-header-init)
-(add-hook 'c-mode-hook 'my:ac-c-header-init)
+;; (defun my:ac-c-header-init ()
+;;        (require 'auto-complete-c-headers)
+;;        (add-to-list 'ac-sources	'ac-source-c-headers)
+;; ;; gcc -xc++ -E -v -
+;;        (add-to-list 'achead:include-directories '
+;;        "/usr/include/c++/4.8
+;;         /usr/include/x86_64-linux-gnu/c++/4.8
+;;         /usr/include/c++/4.8/backward
+;;         /usr/lib/gcc/x86_64-linux-gnu/4.8/include
+;;         /usr/local/include
+;;         /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed
+;;         /usr/include/x86_64-linux-gnu
+;;         /usr/include"
+;;        ))
+;(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+;(add-hook 'c-mode-hook 'my:ac-c-header-init)
 (setq ac-auto-start 3)
 (ac-cc-mode-setup)
 (global-auto-complete-mode)
@@ -644,7 +646,7 @@
 	(call-interactively 'comint-send-input))
       )
     )
-(defun eshell/clear ()
+(defun eshell/c ()
    "04Dec2001 - sailor, to clear the eshell buffer."
      (interactive)
 	   (let ((inhibit-read-only t))
