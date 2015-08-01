@@ -1,0 +1,128 @@
+cd shootsheet/
+ls
+cd ren/
+ls
+cd 05A/
+ls
+e 05ADTP2式105破.txt
+ls
+touch hrzls.txt
+e hrzls.txt 
+ls -l
+touch ywcgdcz.txt
+e ywcgdcz.txt 
+touch whxhqdylms.txt
+e whxhqdylms.txt 
+ls
+e g.html 
+cd /media/dsqiu/Seagate\ Backup\ Plus\ Drive/
+ls
+e tt.txt 
+ls
+cd ~
+ls
+cd AndroidStudioProjects/
+ls
+cd AllStyle/
+ls
+ls
+touch shootsheet.sh
+e shootsheet.sh
+ls
+chmod +x shootsheet.sh
+./shootsheet.sh
+cat shootsheet.sh
+e shootsheet.sh
+ls
+./shootsheet.sh
+ls
+cd Files/
+ls
+cd CarType/
+ls
+e carType.txt 
+cd ..
+ls
+cd ..
+ls
+touch ext2.sh
+chmod +x ext2.sh 
+e ext2.sh 
+ls
+e README 
+ls
+ls
+ls
+cd ..
+cd Work/
+s
+cd linux/
+ls
+cd test_tcsm/
+ls
+cp ~/Work/android/work/list.h .
+ls
+e list.h 
+ls
+e 解压密码.txt
+cd ..
+ls
+cd ..
+ls
+cd Work/linux/
+ls
+cd  tizen2/
+ls
+e repo 
+cd ..
+ls
+cd if/
+ls
+make
+make
+ls
+cd platform/
+ls
+make
+ls
+make clean
+ls
+make distclean
+ls
+make
+ls
+cd development/
+ls
+cd device/
+ls
+ls
+cd icebox/
+ls
+cd rootfs/
+ls
+ls
+ls
+ls
+ls
+cd ..
+ls
+c
+ls
+ls
+ls
+cd kernel-3.10.14/
+ls
+cd firmware/
+ls
+cd ..
+cd drivers/dma/jzdma/
+ls
+cd common_firmware/
+ls
+make
+make clean
+make
+ls
+e src/uart.c
+ls
+cp firmware_uart.hex ../

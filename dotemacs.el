@@ -1,6 +1,6 @@
 (add-to-list 'load-path (expand-file-name "elisp" (concat (getenv "HOME") "/.emacs.d/lisp")))
 (add-to-list 'load-path "~/.emacs.d/lisp")
-(setq exec-path (split-string "/home/dsqiu/Work/android/tools/sdk/adt-bundle-linux-x86_64-20140702/sdk:/home/dsqiu/Work/android/tools/studio/android-studio/bin:/home/dsqiu/Work/android/tools/ndk/android-ndk-r10:/home/dsqiu/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" path-separator))
+(setq exec-path (split-string "/home/dsqiu/Work/bin/opt/mips-gcc472-glibc216/bin:/home/dsqiu/Work/android/tools/sdk/adt-bundle-linux-x86_64-20140702/sdk:/home/dsqiu/Work/android/tools/studio/android-studio/bin:/home/dsqiu/Work/android/tools/ndk/android-ndk-r10:/home/dsqiu/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" path-separator))
 
 ;(setq exec-path (concat	(split-string "/opt/mips-4.3/bin:~/bin/" path-separator) (getenv "PATH")))
 (setenv "PATH" (mapconcat 'identity exec-path ":"))
@@ -509,7 +509,6 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/cscope/cscope-15.8a/contrib/xcscope")
 (require 'xcscope)
 (define-key global-map [(control c)(f3)]  'cscope-set-initial-directory)
-(define-key global-map [(control c)(f4)]  'cscope-unset-initial-directory)
 
 (defun command-line-diff (switch)
       (let ((file1 (pop command-line-args-left))
@@ -840,3 +839,4 @@ Don't mess with special buffers."
 
 (global-set-key (kbd "C-SPC") nil)
 (global-set-key (kbd "C-x C-c") nil)
+

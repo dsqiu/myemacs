@@ -1,6 +1,6 @@
 [user]
 	name = dsqiu
-	email = dsqiu@ingenic.cn
+	email = qdsfmt@126.com
 [alias]
 	 co = checkout
 	 ci = commit -a
@@ -15,3 +15,4 @@
 	ui = always
 [core]
 	editor = vim
+
