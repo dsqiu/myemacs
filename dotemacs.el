@@ -1,6 +1,6 @@
 (add-to-list 'load-path (expand-file-name "elisp" (concat (getenv "HOME") "/.emacs.d/lisp")))
 (add-to-list 'load-path "~/.emacs.d/lisp")
-(setq exec-path (split-string "/home/dsqiu/Work/bin/opt/mips-gcc472-glibc216/bin:/home/dsqiu/Work/android/tools/sdk/adt-bundle-linux-x86_64-20140702/sdk:/home/dsqiu/Work/android/tools/studio/android-studio/bin:/home/dsqiu/Work/android/tools/ndk/android-ndk-r10:/home/dsqiu/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" path-separator))
+(setq exec-path (split-string "/home/dsqiu/bin/opt/mips-gcc472-glibc216/bin:/home/dsqiu/Work/android/tools/sdk/adt-bundle-linux-x86_64-20140702/sdk:/home/dsqiu/Work/android/tools/studio/android-studio/bin:/home/dsqiu/Work/android/tools/ndk/android-ndk-r10:/home/dsqiu/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" path-separator))
 
 ;(setq exec-path (concat	(split-string "/opt/mips-4.3/bin:~/bin/" path-separator) (getenv "PATH")))
 (setenv "PATH" (mapconcat 'identity exec-path ":"))
@@ -123,7 +123,6 @@
 
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
-
 
 (setq frame-title-format "emacs@%b")
 
@@ -509,6 +508,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/cscope/cscope-15.8a/contrib/xcscope")
 (require 'xcscope)
 (define-key global-map [(control c)(f3)]  'cscope-set-initial-directory)
+(define-key global-map [(control c)(f4)]  'cscope-unset-initial-directory)
 
 (defun command-line-diff (switch)
       (let ((file1 (pop command-line-args-left))
@@ -840,3 +840,43 @@ Don't mess with special buffers."
 (global-set-key (kbd "C-SPC") nil)
 (global-set-key (kbd "C-x C-c") nil)
 
+
+;=====stardict=====
+(require 'sdcv-mode)
+(global-set-key (kbd "C-c c") 'sdcv-search)
+(defun kid-sdcv-to-buffer ()
+  (interactive)
+  (let ((word (if mark-active
+                  (buffer-substring-no-properties (region-beginning) (region-end))
+                  (current-word nil t))))
+    (setq word (read-string (format "查字典 (默认 %s): " word)
+                            nil nil word))
+    (set-buffer (get-buffer-create "*sdcv*"))
+    (buffer-disable-undo)
+    (erase-buffer)
+    ; 在没有创建 *sdcv* windows 之前检查是否有分屏(是否为一个window)
+    ; 缺憾就是不能自动开出一个小屏幕，自己注销
+    (if (null (cdr (window-list)))
+        (setq onewindow t)
+      (setq onewindow nil))
+    (let ((process (start-process-shell-command "sdcv" "*sdcv*" "sdcv" "-n" word)))
+      (set-process-sentinel
+       process
+       (lambda (process signal)
+         (when (memq (process-status process) '(exit signal))
+           (unless (string= (buffer-name) "*sdcv*")
+             (setq kid-sdcv-window-configuration (current-window-configuration))
+             (switch-to-buffer-other-window "*sdcv*")
+             (local-set-key (kbd "d") 'kid-sdcv-to-buffer)
+             (local-set-key (kbd "n") 'next-line)
+             (local-set-key (kbd "j") 'next-line)
+             (local-set-key (kbd "p") 'previous-line)
+             (local-set-key (kbd "k") 'previous-line)
+             (local-set-key (kbd "SPC") 'scroll-up)
+             (local-set-key (kbd "DEL") 'scroll-down)
+             (local-set-key (kbd "q") (lambda ()
+                                        (interactive)
+                                        (if (eq onewindow t)
+                                            (delete-window)
+                                          (progn (bury-buffer) (other-window 1))))))
+           (goto-char (point-min))))))))
