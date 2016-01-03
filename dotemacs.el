@@ -268,26 +268,20 @@
 			my-asm-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '(".*\\.\\(inl$\\|c$\\|h$\\)" .
 			linux-c-mode) auto-mode-alist))
+
+
 ;(setq auto-mode-alist (cons '(".*/*linux.*/+.*\\.[ch]$" .
 ;			linux-c-mode) auto-mode-alist))
 
 
 ;; Load CEDET
-(add-to-list 'load-path "~/.emacs.d/lisp/cedet_bzr/trunk/")
-(require 'cedet-devel-load)
+(add-to-list 'load-path "~/.emacs.d/lisp/cedet")
 (setq ede-locate-setup-options
       '(ede-locate-cscope
 	ede-locate-base))
 
-(setq-mode-local c-mode semanticdb-find-default-throttle
-                 '(project unloaded system recursive))
-
-(semantic-load-enable-code-helpers)
 (require 'cedet-cscope)
 (require 'semantic/ia)
-(require 'semantic/db-cscope)
-
-(semanticdb-enable-cscope-databases)
 
 ;; Semantic
 (global-semanticdb-minor-mode t)
@@ -298,7 +292,6 @@
 (require 'ecb)
 (require 'ecb-autoloads)
 (setq ecb-tip-of-the-day nil)
-
 (global-set-key [M-left] 'windmove-left)
 (global-set-key [M-right] 'windmove-right)
 (global-set-key [M-up] 'windmove-up)
@@ -316,7 +309,6 @@
 (setq ecb-history-make-buckets 'never)
 (define-key global-map [(f1)] 'ecb-toggle-ecb-windows)
 
-
 (add-to-list 'load-path "~/.emacs.d/lisp/auto-complete")
 (add-to-list 'load-path "~/.emacs.d/lisp/popup-el")
 (require 'popup)
@@ -328,6 +320,7 @@
 (require 'auto-complete-config)
 (setq ac-dwim t)
 (setq ac-use-quick-help t)
+
 ;(setq ac-quick-help-delay 1.0)
 
 ;(set-default 'ac-sources
@@ -366,6 +359,7 @@
 (setq ac-auto-start 3)
 (ac-cc-mode-setup)
 (global-auto-complete-mode)
+
 (add-to-list 'load-path "~/.emacs.d/lisp/yasnippet")
 (require 'yasnippet)
 (yas/load-directory "~/.emacs.d/lisp/yasnippet/snippets")
@@ -442,13 +436,6 @@
 (define-key global-map "\C-e" 'end-of-buffer)
 
 ;; android-mode
-(add-to-list 'load-path "~/.emacs.d/lisp/android-mode/")
-(require 'android-mode)
-(load-file "~/.emacs.d/lisp/android-mode/android-compile.el")
-
-(add-hook 'c++-mode-hook 'android-compile)
-(add-hook 'java-mode-hook 'android-compile)
-
 (defun dos2unix (buffer)
   "Automate M-% C-q C-m RET C-q C-j RET"
   (interactive "*b")
