@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home1/cscheng/dorado/fpga/fpga-module-test/modules/i2c'
-let g:netrw_dirhist_2='/home1/cscheng/halley/new/kernel-3.0.8/arch/mips/xburst/soc-4775/chip-m150'
-let g:netrw_dirhist_3='/home1/cscheng/buildroot/new/buildroot/system/ingenic/halley/etc/init.d'
-let g:netrw_dirhist_4='/home1/cscheng/.vim/vim'
-let g:netrw_dirhist_5='/home1/cscheng/buildroot/new/buildroot/system/ingenic/halley/etc'
