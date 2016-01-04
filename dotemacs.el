@@ -23,13 +23,8 @@
 (menu-bar-mode 0)
 (setq x-select-enable-clipboard t)
 
-(require 'ctypes)
-(ctypes-auto-parse-mode 1)
-(require 'shell-completion)
-(require 'shell-command)
-(shell-command-completion-mode)
-
-;(add-hook 'after-make-frame-functions(lambda (frame)(with-selected-frame frame)))
+;(require 'ctypes)
+;(ctypes-auto-parse-mode 1)
 
 (setq scroll-margin 0 scroll-conservatively 10000)
 (setq linum-format
@@ -275,7 +270,7 @@
 
 
 ;; Load CEDET
-(add-to-list 'load-path "~/.emacs.d/lisp/cedet")
+;;(add-to-list 'load-path "~/.emacs.d/lisp/cedet")
 (setq ede-locate-setup-options
       '(ede-locate-cscope
 	ede-locate-base))
