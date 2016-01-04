@@ -1,5 +1,7 @@
 syntax on
 
+colorscheme blackboard
+
 " turn on line numbers:
 set number
 " toggle line numbers and fold column for easy copying:
@@ -41,4 +43,6 @@ let g:pydiction_location='~/.vim/vimfiles/complete-dict'
 " python syntax 
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
+" pylint setup
+autocmd FileType python compiler pylint
 let g:pylint_onwrite = 0
