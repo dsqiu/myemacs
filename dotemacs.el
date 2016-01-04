@@ -119,9 +119,9 @@
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
 
-(setq my-hostname 
+(setq my-hostname
       (replace-regexp-in-string "\\(^[[:space:]\n]*\\|[[:space:]\n]*$\\)" "" ;; like perl chomp()
-        (with-output-to-string 
+        (with-output-to-string
            (call-process "/bin/hostname" nil standard-output nil))))
 (setq my-username (getenv "USER"))
 (setq frame-title-format '("%b - " my-username "@" my-hostname))
@@ -829,3 +829,4 @@ Don't mess with special buffers."
 (global-set-key (kbd "C-SPC") nil)
 (global-set-key (kbd "C-x C-c") nil)
 
+(setq search-whitespace-regexp ".*?")
