@@ -2,6 +2,10 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dsqiu/Work/linux/python/mysite/" . "mysite/")
+ ("/home/dsqiu/Work/linux/python/" . "mysite/")
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/mysite/" . "books/")
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/" . "mysite/")
  ("/home/" . "dsqiu/")
  ("/home/dsqiu/Work/android/watch-l/kernel-3.10.14/arch/mips/xburst/soc-m200/" . "common/")
  ("/home/dsqiu/Work/android/watch-l/kernel-3.10.14/arch/mips/xburst/" . "soc-m200/")
@@ -113,18 +117,23 @@
  ("/home/dsqiu/Work/linux/cppunit-code/cppunit/src/" . "cppunit/")
  ("/home/dsqiu/Work/linux/cppunit-code/cppunit/" . "src/")
  ("/home/dsqiu/Work/linux/cppunit-code/" . "cppunit/")
- ("/home/dsqiu/Work/linux/" . "ci20/")
+ ("/home/dsqiu/Work/linux/" . "python/")
  ("/home/dsqiu/Work/linux/github/qzystudy/" . "linux/")
  ("/home/dsqiu/.emacs.d/snippets/" . "python-mode/")
  ("/home/dsqiu/.emacs.d/" . "lisp/")
- ("/home/dsqiu/" . ".emacs.d/")
+ ("/home/dsqiu/" . "Work/")
  ("/home/dsqiu/Work/linux/github/qzystudy/base-algorithm-cpp/" . "singlelist/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/dsqiu/"
  "/home/dsqiu/.emacs.d/lisp/"
+ "/home/dsqiu/"
+ "/home/dsqiu/Tools/emacs/lisp/"
+ "/home/dsqiu/Work/linux/python/mysite/mysite/mysite/"
+ "/home/dsqiu/Work/linux/python/mysite/mysite/books/"
+ "/home/dsqiu/Work/linux/python/mysite/mysite/mysite/books/"
+ "/home/dsqiu/Work/linux/python/mysite/mysite/templates/"
  "/home/dsqiu/Work/android/watch-l/kernel-3.10.14/arch/mips/xburst/soc-m200/common/"
  "/home/dsqiu/Work/android/watch-l/kernel-3.10.14/arch/"
  "/home/dsqiu/Work/android/watch-l/kernel-3.10.14/drivers/dma/jzdma/common_firmware/include/"
@@ -168,40 +177,61 @@
  "/home/dsqiu/Work/linux/TestStruct/jpeg/"
  "/home/dsqiu/Work/android/home/android4.3-master/kernel/drivers/usb/dwc2/"
  "/home/dsqiu/Work/linux/ci20/CI20_u-boot/drivers/mmc/"
- "/home/dsqiu/Work/android/l/art/compiler/driver/"
- "/home/dsqiu/Work/android/l/art/dex2oat/"
- "/home/dsqiu/Work/android/l/frameworks/native/cmds/installd/"
- "/home/dsqiu/Work/android/l/art/compiler/dex/"
- "/home/dsqiu/Work/android/l/art/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "a.py"
  "bm.el"
- "timer.c"
- "Kconfig"
- "tcsm.h"
- "jz_dma.c"
- "misc.h"
- "jzsoc.h"
- "uart.h"
- "common.h"
+ ".emacs"
+ "COPYING"
+ "settings.py"
+ "models.py"
+ "hours_ahead.html"
+ "base.html"
+ "current_datetime.html"
+ "urls.py"
+ "views.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/dsqiu/" (22153 12495 457051 547000) ".gksu.lock" ".idlerc/" ".repopickle_.gitconfig" ".AndroidStudio1.4/" ".dbus/" "java_error_in_STUDIO_28795.log" ".multisystem/" "xjyu.tar.bz2" ".gnome2/" ".AndroidStudioBeta/" ".xsession-errors" ".gitconfig~" ".emacs.d/" ".python-history" ".multisystem-theme" ".gnome2_private/" ".presage/" "WebstormProjects/" "bin/" ".subversion/" ".python-eggs/" ".pip/" "业绩.odt" ".fonts.conf" ".bash_logout" "CI20升级640*480.docx" "VirtualBox VMs/" ".repo_.gitconfig.json" ".python_history" ".nv/" ".WebStorm10/" "Pictures/" ".springlobby/" ".AndroidStudio1.3/" ".xinputrc" ".viminfo" "dhango-bak/" "SpringLobby/" ".thumbnails/" "./" "PycharmProjects/" "qt4-dev-tools/" "jz_uart.c" ".gstreamer-0.10/" ".macromedia/" ".emacs" "AndroidStudioProjects/" "examples.desktop" "uml-generated-code/" ".kchmviewer/" ".gconf/" ".nvidia-settings-rc" "xjyu/" ".local/" ".profile" ".android/" ".dmrc" ".codeblocks/" "Templates/" ".gimp-2.8/" ".ccache/" "a.py~" ".thunderbird/" ".dia/" ".Xauthority" "Tmp/" ".gnupg/" ".AndroidStudio/" "Videos/" "Documents/" ".mozilla/" "Work/" "../" ".gnome/" ".ICEauthority" "Downloads/" "Misc/" ".calc_history" ".compiz/" ".remmina/" ".bzr.log" "Tools/" "CI20升级640*480.odt" ".bash_history" ".xsession-errors.old" "hosts" ".bazaar/" ".mplayer/" "proxy.sh" ".sudo_as_admin_successful" ".mtoolsrc" ".rpmdb/" ".pki/" ".bashrc~" "GBS-ROOT/" "a.py" ".config/" "Music/" ".screenlets/" ".bashrc" "Desktop/" "key.store.jks" ".wine/" "minicom.log" ".PyCharm40/" "Driver/" "workspace/" ".Xmodmap" ".gphoto/" ".gitconfig" ".AndroidStudio1.5/" ".gvfs/" ".java/" ".repoconfig/" "CUnitHome/" ".lesshst" ".ssh/" ".freerdp/" ".adobe/" ".gradle/" ".watershed/" ".vim/" "docker/" "UnderStand/" "Public/" ".cache/" ".minirc.dfl" ".stardict/")
+ ("/home/dsqiu/.emacs.d/" (22162 22947 574858 481000) "vim-config/" "vimrc" "ido.last" "lisp/" "90-android.rules" "srecode-map.el" ".git/" "./" "dotemacs.el" "ac-comphist.dat" "gitconfig" "elpa/" "dict/" "../" "README.md" "create.sh" "semanticdb/" "recentf" "eshell/" "auto-save-list/")
+
+ ("/home/dsqiu/Tools/emacs/lisp/" (22162 22179 202506 966000) "generic-x.el" "macros.el" "forms.el" "mouse.elc" "timezone.el" "reveal.elc" "tabify.el" "image-dired.el" "msb.el" "ehelp.elc" "tooltip.el" "jka-compr.elc" "icomplete.el" "jit-lock.el" "org/" "loadup.el" "tabify.elc" "uniquify.elc" "hippie-exp.el" "ls-lisp.el" "comint.elc" "color.elc" "md4.elc" "cus-theme.el" "elec-pair.elc" "edmacro.el" "novice.el" "savehist.elc" "calc/" "find-file.elc" "net/" "image.elc" "notifications.elc" "pcmpl-rpm.elc" "ps-def.el" "ps-samp.elc" "pcomplete.el" "cedet/" "midnight.elc" "speedbar.el" "bindings.el" "rfn-eshadow.elc" "ChangeLog.2" "ehelp.el" "flow-ctrl.elc" "printing.elc" "linum.el" "textmodes/" "dynamic-setting.el" "obarray.elc" "wid-edit.elc" "thingatpt.el" "frame.elc" "whitespace.el" "frame.el" "allout-widgets.el" "ibuf-ext.elc" "winner.el" "custom.elc" "sort.elc" "cus-theme.elc" "time-stamp.elc" "epa-file.el" "isearchb.el" "informat.el" "iimage.elc" "saveplace.el" "ps-samp.el" "README" "wdired.el" "server.elc" "bs.el" "epg.elc" "doc-view.el" "character-fold.el" "help-fns.el" "time-stamp.el" "tutorial.el" "lpr.el" "cus-dep.el" "ChangeLog.8" "files.elc" "image-mode.el" "image.el" "find-dired.el" "finder.elc" "desktop.elc" "cus-face.el" "hfy-cmap.el" "ChangeLog.5" "server.el" "profiler.el" "ielm.elc" "wdired.elc" "gs.elc" "ChangeLog.10" "env.elc" "ibuffer.elc" "disp-table.elc" "pcmpl-x.elc" "dired-x.el" "thumbs.elc" "htmlfontify.el" "ChangeLog.9" "jka-cmpr-hook.elc" "emacs-lock.el" "newcomment.elc" "reposition.el" "mwheel.el" "widget.elc" "avoid.elc" "generic-x.elc" "format-spec.elc" "ChangeLog.1" "misearch.elc" "find-cmd.el" "version.el" "dframe.el" "mb-depth.elc" "ansi-color.el" "ps-mule.el" "gs.el" "cus-start.el" "ido.el" "htmlfontify.elc" "imenu.el" "dired.el" "calendar/" "time.elc" "dynamic-setting.elc" "tool-bar.el" "ebuff-menu.elc" "calculator.el" "xml.elc" "dabbrev.elc" "repeat.elc" "help-macro.el" "image-dired.elc" "allout.elc" "allout.el" "autoarg.elc" "autorevert.elc" "epg-config.el" "shadowfile.elc" "rect.el" "COPYING" "kmacro.elc" "Makefile" "info.el" "mouse-copy.elc" "align.elc" "select.el" "flow-ctrl.el" "mouse.el" "pcmpl-gnu.elc" "jka-compr.el" "mouse-copy.el" "soundex.el" "master.el" "delsel.elc" "woman.el" "dired-loaddefs.el~" "bs.elc" "disp-table.el" "ChangeLog.14" "x-dnd.el" "faces.elc" "term/" "emacs-lisp/" "apropos.el" "ChangeLog.11" "completion.el" "simple.el" "mouse-drag.el" "icomplete.elc" "faces.el" "character-fold.elc" "master.elc" "indent.elc" "ruler-mode.el" "pcmpl-x.el" "loaddefs.el~" "bindings.elc" "rot13.el" "help-mode.el" "dnd.el" "completion.elc" "epa-dired.elc" "kermit.elc" "edmacro.elc" "lpr.elc" "wid-browse.elc" "forms.elc" "info-look.el" "autoinsert.elc" "userlock.el" "thumbs.el" "register.el" "shell.elc" "fringe.elc" "dos-vars.elc" "epa-mail.elc" "foldout.elc" "type-break.elc" "dabbrev.el" "repeat.el" "chistory.el" "vcursor.elc" "type-break.el" "files-x.el" "epa-file.elc" "url/" "array.el" "recentf.el" "scroll-lock.el" "pcomplete.elc" "cus-start.elc" "minibuf-eldef.elc" "ffap.elc" "misc.el" "speedbar.elc" "subr.elc" "abbrev.el" "minibuffer.el" "filecache.elc" "xml.el" "saveplace.elc" "dired-aux.el" "ses.elc" "tree-widget.el" "dired-loaddefs.el" "locate.elc" "loadhist.el" "comint.el" "outline.elc" "autoarg.el" "ps-print-loaddefs.el" "x-dnd.elc" "pcmpl-linux.elc" "cus-edit.elc" "tmm.el" "ebuff-menu.el" "htmlfontify-loaddefs.el~" "help-at-pt.elc" "mb-depth.el" "elec-pair.el" "password-cache.elc" "strokes.elc" "ps-def.elc" "delim-col.elc" "dos-w32.elc" "face-remap.elc" "wid-edit.el" "delim-col.el" "ses.el" "ansi-color.elc" "pcmpl-unix.el" "newcomment.el" "paren.el" "emacs-lock.elc" "finder-inf.el" "misc.elc" "rfn-eshadow.el" "dired-aux.elc" "talk.el" "mpc.el" "menu-bar.el" "pcmpl-cvs.elc" "mpc.elc" "whitespace.elc" "tar-mode.el" "cmuscheme.elc" "kermit.el" "frameset.el" "epa-hook.elc" "ibuffer-loaddefs.el~" "minibuf-eldef.el" "button.el" "window.el" "epa.el" "ielm.el" "frameset.elc" "custom.el" "abbrev.elc" "outline.el" "isearch.elc" "misearch.el" "cus-load.el" "scroll-bar.el" "image-file.el" "find-dired.elc" "ibuf-ext.el" "w32-fns.el" "vcursor.el" "scroll-all.el" "descr-text.elc" "hilit-chg.elc" "face-remap.el" "epg-config.elc" "loadhist.elc" "font-lock.elc" "makesum.elc" "battery.elc" "profiler.elc" "register.elc" "mail/" "vt-control.el" "ls-lisp.elc" "ffap.el" "ezimage.el" "emulation/" "hl-line.el" "vt-control.elc" "ChangeLog.3" "mh-e/" "novice.elc" "erc/" "ldefs-boot.el" "winner.elc" "tar-mode.elc" "cus-face.elc" "rect.elc" "cmuscheme.el" "view.elc" "w32-fns.elc" "ChangeLog.15" "find-lisp.elc" "sort.el" "arc-mode.elc" "info.elc" "obarray.el" "ChangeLog.6" "locate.el" "pcmpl-cvs.el" "info-xref.elc" "ps-print-loaddefs.el~" "help-mode.elc" "userlock.elc" "jka-cmpr-hook.el" "ps-bdf.elc" "jit-lock.elc" "finder.el" "sb-image.elc" "htmlfontify-loaddefs.el" "case-table.el" "view.el" "descr-text.el" "ibuffer-loaddefs.el" "double.elc" "windmove.elc" "ruler-mode.elc" "filesets.elc" "msb.elc" "isearch.el" "mwheel.elc" "startup.elc" "savehist.el" "find-file.el" "vc/" "expand.elc" "startup.el" "filecache.el" "play/" "buff-menu.elc" "double.el" "hex-util.elc" "scroll-lock.elc" "epa-mail.el" "uniquify.el" "info-look.elc" "echistory.elc" "cdl.elc" "informat.elc" "nxml/" "facemenu.elc" "help-at-pt.el" "skeleton.el" "autoinsert.el" "ibuf-macs.elc" "format.el" "reveal.el" "proced.elc" "ps-mule.elc" "sb-image.el" "hexl.el" "avoid.el" "scroll-bar.elc" "cus-edit.el" "dirtrack.el" "makesum.el" "dnd.elc" "shell.el" "expand.el" "follow.elc" "ibuf-macs.el" "man.el" "json.elc" "find-cmd.elc" "iimage.el" "echistory.el" "facemenu.el" "composite.el" "case-table.elc" "recentf.elc" "elide-head.el" "elide-head.elc" "menu-bar.elc" "delsel.el" "bookmark.elc" "dos-w32.el" "Makefile.in" "xt-mouse.el" "help-macro.elc" "ChangeLog.13" "json.el" "desktop.el" "help.elc" "button.elc" "midnight.el" "composite.elc" "calculator.elc" "ps-print.el" "dos-vars.el" "help-fns.elc" "dired-x.elc" "woman.elc" "replace.elc" "widget.el" "pcmpl-unix.elc" "dos-fns.el" "tutorial.elc" "epa-hook.el" "files-x.elc" "info-xref.el" "hilit-chg.el" "autorevert.el" "tempo.el" "rot13.elc" "printing.el" "cus-dep.elc" "md4.el" "tempo.elc" "kmacro.el" "image-mode.elc" "ChangeLog.4" "buff-menu.el" "talk.elc" "ChangeLog.7" "gnus/" "w32-vars.el" "array.elc" "select.elc" "progmodes/" "man.elc" "linum.elc" "imenu.elc" "ps-print.elc" "cdl.el" "font-core.el" "color.el" "format-spec.el" "ezimage.elc" "hex-util.el" "epg.el" "simple.elc" "image-file.elc" "ChangeLog.12" "filesets.el" "reposition.elc" "pcmpl-linux.el" "dired.elc" "windmove.el" "hi-lock.elc" "foldout.el" "vt100-led.el" "help.el" "time.el" "hi-lock.el" "tooltip.elc" "bookmark.el" "term.elc" "proced.el" "dom.el" "align.el" "fringe.el" "mouse-drag.elc" "macros.elc" "skeleton.elc" "subr.el" "t-mouse.elc" "term.el" "filenotify.elc" "filenotify.el" "epa.elc" "allout-widgets.elc" "ChangeLog.17" "t-mouse.el" "dframe.elc" "electric.el" "vt100-led.elc" "format.elc" "window.elc" "font-core.elc" "tree-widget.elc" "paren.elc" "scroll-all.elc" "dos-fns.elc" "obsolete/" "hexl.elc" "isearchb.elc" "arc-mode.el" "international/" "timezone.elc" "battery.el" "files.el" "doc-view.elc" "electric.elc" "ChangeLog.16" "ido.elc" "find-lisp.el" "loaddefs.el" "pcmpl-rpm.el" "minibuffer.elc" "apropos.elc" "follow.el" "xt-mouse.elc" "epa-dired.el" "hippie-exp.elc" "font-lock.el" "hfy-cmap.elc" "ibuffer.el" "eshell/" "dirtrack.elc" "thingatpt.elc" "tmm.elc" "password-cache.el" "dom.elc" "leim/" "replace.el" "version.elc" "soundex.elc" "chistory.elc" "strokes.el" "notifications.el" "indent.el" "subdirs.el" "env.el" "pcmpl-gnu.el" "hl-line.elc" "tool-bar.elc" "w32-vars.elc" "ps-bdf.el" "shadowfile.el" "language/" "wid-browse.el" "../" "./")
+
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/mysite/" (22161 63572 902993 873000) "forms.py" "./" "urls.pyc" "forms.pyc" "wsgi.py" "../" "__init__.py" "wsgi.pyc" "settings.py" "settings.pyc" "urls.py" "__init__.pyc" "views.py" "views.pyc")
+
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/" (22158 32687 643067 817000) "manage.py" "django.txt" "books/" "db.sqlite3" "html/" ".git/" "./" "../" "templates/" "mysite/" "models.py" "modules.py")
+
+ ("/home/dsqiu/Work/linux/python/mysite/" (22152 57784 699251 660000) "./" "../" "mysite/")
+
+ ("/home/dsqiu/Work/linux/python/" (22162 22517 244898 501000) "django-backbone-example/" "python-django-sample/" "djangobook/" "./" "../" "webpy/" "mysite/" "django/")
+
+ ("/home/dsqiu/Work/linux/" (22151 36596 905444 311000) "github/" "create_git.txt" "mplayer/" "if/" "html/" "mips-alsa/" "python/" "test_tcsm/" "./" "warrior/" "build_project/" "homework/" "pixman/" "ci20/" "vbox/" "cairo/" "../" "audio/" "changhong/" "yocto/" "gramma/" "cmake/" "auto-complete/" "u-boot/" "requests/" "git-core/" "stardict/" "cunit-code/" "nand_new/" "baidu/" "code.google/" "PerfTest/" "fft/" "cppunit-code/" "htc/" "coding.net/")
+
+ ("/home/dsqiu/Work/" (22027 62204 635637 656000) "bin/" "./" "../" "linux/" "tizen/" "android/")
+
+ ("/home/dsqiu/" (22162 19867 385730 258000) ".gksu.lock" ".idlerc/" ".repopickle_.gitconfig" ".AndroidStudio1.4/" ".dbus/" "java_error_in_STUDIO_28795.log" ".multisystem/" "xjyu.tar.bz2" ".gnome2/" ".AndroidStudioBeta/" ".xsession-errors" ".gitconfig~" ".neocon/" ".emacs.d/" ".python-history" ".multisystem-theme" ".gnome2_private/" ".presage/" "WebstormProjects/" "bin/" ".subversion/" ".python-eggs/" ".pip/" "业绩.odt" ".bash_logout" "CI20升级640*480.docx" "VirtualBox VMs/" ".repo_.gitconfig.json" ".python_history" ".nv/" ".WebStorm10/" "Pictures/" ".springlobby/" ".AndroidStudio1.3/" ".xinputrc" ".viminfo" "dhango-bak/" ".vimrc" "SpringLobby/" ".thumbnails/" "./" "PycharmProjects/" "qt4-dev-tools/" "jz_uart.c" ".PyCharm50/" ".gstreamer-0.10/" ".macromedia/" ".emacs" "AndroidStudioProjects/" "examples.desktop" "uml-generated-code/" ".kchmviewer/" ".gconf/" ".nvidia-settings-rc" "xjyu/" ".local/" ".profile" ".android/" ".dmrc" ".codeblocks/" "Templates/" ".gimp-2.8/" ".ccache/" ".thunderbird/" ".dia/" ".Xauthority" "Tmp/" ".gnupg/" ".AndroidStudio/" "Videos/" "Documents/" ".mozilla/" "Work/" "../" ".gnome/" ".ICEauthority" "Downloads/" "Misc/" ".calc_history" ".compiz/" ".#a.py" ".remmina/" ".bzr.log" "Tools/" "CI20升级640*480.odt" ".bash_history" ".xsession-errors.old" "hosts" ".bazaar/" ".mplayer/" "proxy.sh" ".sudo_as_admin_successful" ".mtoolsrc" ".rpmdb/" ".pki/" ".bashrc~" "GBS-ROOT/" "a.py" ".config/" "Music/" ".screenlets/" ".bashrc" "Desktop/" "key.store.jks" ".wine/" "minicom.log" ".PyCharm40/" "Driver/" "workspace/" ".Xmodmap" ".gphoto/" ".gitconfig" ".AndroidStudio1.5/" ".gvfs/" ".java/" ".repoconfig/" "CUnitHome/" ".lesshst" ".ssh/" ".freerdp/" ".adobe/" ".gradle/" ".watershed/" ".vim/" "docker/" "UnderStand/" "Public/" ".cache/" ".minirc.dfl" ".stardict/" "vim/")
+
+ ("/home/dsqiu/Tools/" (22161 63255 956888 126000) "windows/" "htcnetup/" "emacs.tar.bz2" "openswan/" "emacs-release/" "WebStorm-10.0.4.tar.gz" "cscope-15.8a.tar.gz" "gnome-shell-extensions/" "yasnippet/" "goagent/" "dsqiu-emacs-config/" "pycharm-5.0.2/" "pycharm-professional-5.0.2.tar" "./" "emacs2/" "x-tile-2.5.tar.xz" "cscope-15.8a/" "x-tile-2.5/" "../" "discuz/" "Discuz_7.2_FULL_SC_UTF8.zip" "yasnippet-snippets/" "WebStorm-141.1550/" "eclipse/" "Discuz_7.2_FULL_SC_GBK.zip" "dia2codes/" "emacs/" "VSCode-linux-x64.zip" "awesome" "VSCode-linux-x64/" "understand/" "vim/")
+
+ ("/home/dsqiu/Tools/emacs/" (22162 21443 758024 497000) "config.bat" "ChangeLog.2" "nt/" "GNUmakefile" "lib/" "lisp/" "README" "INSTALL.REPO" ".git/" "lib-src/" "configure" "ChangeLog.1" "./" "autom4te.cache/" "INSTALL" "msdos/" "COPYING" "Makefile" "admin/" ".gitignore" "make-dist" ".dir-locals.el" "src/" "../" "BUGS" "CONTRIBUTE" "doc/" ".gitattributes" "autogen.sh" "configure.ac" "nextstep/" "etc/" "info/" "build-aux/" "test/" "Makefile.in" "lwlib/" "m4/" "config.status" "modules/" "aclocal.m4" "oldXMenu/" "config.log" "leim/")
+
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/books/" (22155 58471 530997 75000) "models.pyc" "./" "admin.pyc" "migrations/" "../" "admin.py" "apps.py" "__init__.py" "models.py" "__init__.pyc" "views.py" "tests.py")
+
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/mysite/books/" (22155 55347 997438 438000) "./" "../" "models.py")
+
+ ("/home/dsqiu/Work/android/watch-l/kernel-3.10.14/arch/mips/xburst/soc-m200/common/" (21940 37832 828147 983000) "irq.c" "timer.c" "setup.c" "clk/" "./" "serial.c" "Makefile" "cpu_core_voltage.c" "cpufreq.c" "cpu_switch_debug.c" "ddr.c" "gpemc.c" "libdmmu.c" "pm_p0.c" "../" "bch.c" "lm.c" "platform.c" "tcu.c" "gpio.c" "cpm_usb.c" "jz_big_little_switch.c" "reset.c" "pmmon.c" "lm-device.c" "cpu_switch.S")
+
+ ("/home/dsqiu/.emacs.d/lisp/" (22154 29383 317618 982000) "color-theme.el" "yasnippet/" "highlight-parentheses.el" "ecb-2.40/" "./" "pycomplete.el" "ccepy.el" "python-mode.el" "themes/" "wcy-swbuff.el" "ede-projects.el" "project-root.el" "../" "ascii.el" "auto-complete-clang/" "google-c-style.el" "auto-complete/" "window-number.el" "cscope/" "popup-el/" "fillcode.el" "folding.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "ibuffer.el")
+
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/templates/" (22154 30946 55978 419000) "./" "hours_ahead.html" "base.html" "../" "current_datetime.html" "mytemplate.html")
+
+ ("/home/dsqiu/Work/linux/python/mysite/mysite/html/" (22152 41630 302775 987000) "./" "../")
 
  ("/home/" (21567 5218 0 0) "dsqiu/" "qzy/" "./" "lost+found/" "../")
 
- ("/home/dsqiu/Tools/" (22153 3934 882161 385000) "windows/" "htcnetup/" "emacs.tar.bz2" "openswan/" "WebStorm-10.0.4.tar.gz" "cscope-15.8a.tar.gz" "gnome-shell-extensions/" "yasnippet/" "goagent/" "dsqiu-emacs-config/" "./" "emacs2/" "x-tile-2.5.tar.xz" "cscope-15.8a/" "pycharm-4.5.1/" "x-tile-2.5/" "../" "discuz/" "Discuz_7.2_FULL_SC_UTF8.zip" "yasnippet-snippets/" "WebStorm-141.1550/" "pycharm-professional-4.5.1.tar.gz" "eclipse/" "Discuz_7.2_FULL_SC_GBK.zip" "dia2codes/" "VSCode-linux-x64.zip" "awesome" "VSCode-linux-x64/" "understand/" "vim/")
-
  ("/home/dsqiu/Tools/emacs2/" (22153 9328 907171 457000) "config.bat" "ChangeLog.2" "nt/" "GNUmakefile" "lib/" "lisp/" "README" "INSTALL.REPO" ".git/" "lib-src/" "configure" "ChangeLog.1" "./" "autom4te.cache/" "INSTALL" "msdos/" "COPYING" "Makefile" "admin/" ".gitignore" "make-dist" ".dir-locals.el" "src/" "../" "BUGS" "CONTRIBUTE" "doc/" ".gitattributes" "autogen.sh" "configure.ac" "nextstep/" "etc/" "info/" "build-aux/" "test/" "Makefile.in" "lwlib/" "m4/" "config.status" "aclocal.m4" "oldXMenu/" "config.log" "leim/")
-
- ("/home/dsqiu/.emacs.d/lisp/" (22153 5710 594754 667000) "color-theme.el" "package/" "yasnippet/" "fontset-gbk.el" "highlight-parentheses.el" "ecb-2.40/" "subst2-gbk.el" "plugins/" "./" "gbk-mb.el" "pycomplete.el" "xml-parse.el" "ccepy.el" "python-mode.el" "emacs-lisp/" "themes/" "shell-completion.el" "ctypes.el" "subst-gbk.el" "thumbs.el" "compilation-always-kill.el" "session/" "wcy-swbuff.el" "table.el" "xml.el" "cedet_bzr/" "ede-projects.el" "project-root.el" "xpath.el" "shell-command.el" "../" "ascii.el" "auto-complete-clang/" "ucdospy.el" "characters-gbk.el" "google-c-style.el" "subst2-ksc.el" "auto-complete/" "window-number.el" "cscope/" "popup-el/" "tabbar.el" "fillcode.el" "shell.el" "folding.el" "emacs-rc-buffer-switching.el" "highlight-symbol.el" "chinese-gbk.el" "semanticdb/" "browse-kill-ring.el" "line-num.el" "maxframe.el" "theme-changer/" "dom.el" "tiling.el" "android-mode/" "display-buffer-for-wide-screen.el" "define-phrase.el" "show-wspace.el" "bm.el" "browse-kill-ring+.el" "xpath-parser.el" "gbk-utf-mode.el" "compilation-onewin.el" "ibuffer.el" "eshell/")
-
- ("/home/dsqiu/.emacs.d/" (22153 5876 813785 205000) "vim-config/" "ido.last" "lisp/" "90-android.rules" "ropemacs/" "srecode-map.el" ".git/" "./" "dotemacs.el.bak" "dotemacs.el" "ac-comphist.dat" "rope/" "gitconfig" "elpa/" "dict/" "../" "README.md" "create.sh" "eshell/" "auto-save-list/")
 
  ("/home/dsqiu/Work/android/watch-l/kernel-3.10.14/arch/mips/xburst/soc-m200/" (21939 30877 28587 902000) "Kconfig" "./" "Makefile" "common/" ".built-in.o.cmd" "../" "chip-m200/" "include/" "built-in.o")
 
@@ -364,30 +394,6 @@
  ("/home/dsqiu/AndroidStudioProjects/data/第三阶段成果/AllStyle/src/com/example/allstyle/" (21784 7558 832680 312000) "./" "MyActivity.java" "Dzh04A.java" "../" "startReceiver.java" "MainActivity.java")
 
  ("/home/dsqiu/AndroidStudioProjects/data/第四阶段成果/AllStyle/src/com/example/allstyle/" (21784 7570 16680 84000) "XiugaiMainActivity.java" "Peizhiwenjian.java" "WelcomeActivity.java" "ChuSActivity.java" "./" "MyActivity.java" "ChaZhiSuanFa.java" "../" "GetShuJu.java" "startReceiver.java" "MainActivity.java" "CanShu.java")
-
- ("/home/dsqiu/AndroidStudioProjects/data/第四阶段成果/AllStyle/src/com/example/" (21784 7570 164680 81000) "style_05a/" "style_96/" "./" "newdemos04Al/" "newdemos59d/" "newdemos7959B/" "../" "style_88A/" "newdemos63A/" "style_88B/" "allstyle/" "newdemos04Ah/" "newdemos04A/" "newdemos04/")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/example/allstyle/" (21783 57476 0 0) "XiugaiMainActivity.java" "WelcomeActivity.java" "startReceiver.java" "Peizhiwenjian.java" "MyActivity.java" "MainActivity.java" "GetShuJu.java" "ChuSActivity.java" "ChaZhiSuanFa.java" "CanShu.java" "../" "./")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/example/newdemos04/" (21783 57476 0 0) "YuanDrawl1.java" "SuanFa2.java" "Main1Activity.java" "ListviewMainActivity.java" "Fangfa.java" "Canshu04Activity.java" "BiaoTwoView.java" "../" "./")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/example/" (21783 57476 0 0) "style_96/" "style_88B/" "style_88A/" "style_05a/" "newdemos7959B/" "newdemos63A/" "newdemos59d/" "newdemos04Al/" "newdemos04Ah/" "newdemos04A/" "newdemos04/" "allstyle/" "../" "./")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/" (21783 57476 0 0) "example/" "../" "./")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/" (21783 57476 0 0) "com/" "../" "./")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/" (21783 57476 0 0) "src/" "res/" "libs/" "gen/" "bin/" "assets/" ".settings/" "project.properties" "proguard-project.txt" "ic_launcher-web.png" "AndroidManifest.xml" ".project" ".classpath" "../" "./")
-
- ("/media/dsqiu/1666-D326/第四阶段成果/" (21783 57476 0 0) "AllStyle/" "../" "./")
-
- ("/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端/AllStyle/src/com/example/newdemos04/" (21783 37800 0 0) "YuanDrawl1.java" "SuanFa2.java" "Main1Activity.java" "ListviewMainActivity.java" "Fangfa.java" "Canshu04Activity.java" "BiaoTwoView.java" "../" "./")
-
- ("/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端参数/04A_04数据文件/" (21782 50150 0 0) "tmp.txt" "XXXData2.txt" "XXXData1.txt" "XXXBiaoCS.txt" "XuZheBiao.txt" "XiShuF.txt" "XiShuBiao.txt" "WenZi.txt" "login.txt" "DataFile1(6).txt" "DataFile1(5).txt" "DataFile1(4).txt" "DataFile1(2).txt" "DataFile1(1).txt" "canshu04.txt" "BNR.txt" "BiaoStyle1.txt" "BiaoStyle.txt" "3ZhongXinZhuiXian1.txt" "3ShuiPingKeXianBiao1.txt" "3ShuiPingJiaoXian1.txt" "3KeXianBiaoZhu1(4).txt" "3KeXianBiaoZhu1(3).txt" "3KeXianBiaoZhu1(2).txt" "3KeXianBiaoZhu1(1).txt" "3BiaoXianBiao1(4).txt" "3BiaoXianBiao1(3).txt" "3BiaoXianBiao1(2).txt" "3BiaoXianBiao1(1).txt" "2ZuoBiaoRadius1.txt" "2ZuoBiaoRadius0.txt" "2Shangchuizhichang1.txt" "2JiantouRadius1.txt" "2Hengbiao1(2).txt" "2Hengbiao1(1).txt" "2Hengbiao0(1).txt" "2DataVerticalSeat1.txt" "2DataSeat1.txt" "2Chuizhibiao1(1).txt" "2BiaoTiWord1.txt" "1Chushicanshu.txt" "../" "./")
-
- ("/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端/AllStyle/res/layout/" (21781 25696 0 0) "stylelow.xml" "stylehigh.xml" "style96.xml" "style88b.xml" "style88a.xml" "style7959b.xml" "style63a.xml" "style59d.xml" "style05a.xml" "style04a.xml" "style04.xml" "item_activity.xml" "dd.xml" "activity_xiugai_main.xml" "activity_welcome.xml" "activity_my.xml" "activity_main.xml" "activity_listview_main.xml" "activity_chu_s.xml" "activity_canshu04.xml" "../" "./")
-
- ("/home/dsqiu/Work/linux/ci20/CI20_u-boot/drivers/mmc/" (21747 8132 490903 957000) "jz_mmc.c" "sdhci.c" "davinci_mmc.c" "mmc_write.c" "omap_hsmmc.c" "zynq_sdhci.c" "mmc.c" ".depend" "pxa_mmc.h" ".depend.mmc" "mxcmmc.c" "./" "pxa_mmc_gen.c" "Makefile" "s5p_sdhci.c" "mxsmmc.c" "bcm2835_sdhci.c" "fsl_esdhc_spl.c" "mmc.su" "spear_sdhci.c" "gen_atmel_mci.c" "arm_pl180_mmci.h" "ftsdc010_mci.c" "mmc_write.o" "jz_mmc.su" "dw_mmc.c" "../" "tegra_mmc.c" "exynos_dw_mmc.c" "mv_sdhci.c" "mmc_write.su" "mmc.o" "mmc_private.h" "mmc_spi.c" "jz_mmc.o" "libmmc.o" "bfin_sdh.c" "fsl_esdhc.c" "sh_mmcif.h" ".depend.jz_mmc" "sh_mmcif.c" ".depend.mmc_write" "arm_pl180_mmci.c")
 )
 
 ;; ----- ido-unc-hosts-cache -----

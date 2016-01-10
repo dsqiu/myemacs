@@ -1,128 +1,128 @@
-cd shootsheet/
+cd mysite/
 ls
-cd ren/
+e settings.py
 ls
-cd 05A/
-ls
-e 05ADTP2式105破.txt
-ls
-touch hrzls.txt
-e hrzls.txt 
-ls -l
-touch ywcgdcz.txt
-e ywcgdcz.txt 
-touch whxhqdylms.txt
-e whxhqdylms.txt 
-ls
-e g.html 
-cd /media/dsqiu/Seagate\ Backup\ Plus\ Drive/
-ls
-e tt.txt 
-ls
-cd ~
-ls
-cd AndroidStudioProjects/
-ls
-cd AllStyle/
+git init
+git commit -m "first commit"
+git commit -a -m "first commit"
+git add -A
 ls
 ls
-touch shootsheet.sh
-e shootsheet.sh
+cd ..
 ls
-chmod +x shootsheet.sh
-./shootsheet.sh
-cat shootsheet.sh
-e shootsheet.sh
+cd mysite/
 ls
-./shootsheet.sh
+rm .git/ -rf
+cd ..
 ls
-cd Files/
+git init
+git add -A
+git commit -a -m "first commit"
+git remote add origin https://git.coding.net/dsqiu/django-learn.git
+git push -u origin master
 ls
-cd CarType/
 ls
-e carType.txt 
+ls
+ls
+ls
+git st .
+git add -A
+ls
+ls
+git commit -m "study chapter 4"
+git push
+ls
+ls
+git st .
+python manage.py startapp books
+ls
+cd books/
+ls
+cd ..
+ls
+cd books/
+ls
+e models.py 
+cd ..
+ls
+ls
+mv books/ mysite/
+ls
+cd mysite/
+ls
+mv books/ ..
+ls
+ls
+cd ..
+ls
+mv books/ mysite/
+ls
+cd mysite/
+ls
+cd books/
+ls
+cd migrations/
+ls
+cd ..
+ls
+e models.py
+e views.py 
+ls
 cd ..
 ls
 cd ..
 ls
-touch ext2.sh
-chmod +x ext2.sh 
-e ext2.sh 
+cd mysite/
 ls
-e README 
-ls
-ls
+mv books/ ..
 ls
 cd ..
+ls
+cd books/
+ls
+e models.pyc
+e models.py
+e admin.pyc
+e admin.py
+ls
 cd Work/
+ls
+cd linux/
+cd python/mysite/
+ls
+cd mysite/
+ls
+cd mysite/
 s
+e settings.py
+ls
+cd Work/linux/python/
+ls
+cd mysite/
+ls
+cd mysite/
+ls
+cd mysite/
+ls
+e settings.py
+cd Work/
+ls
 cd linux/
 ls
-cd test_tcsm/
+cd python/
 ls
-cp ~/Work/android/work/list.h .
+cd mysite/mysite/
 ls
-e list.h 
+cd mysite/
 ls
-e 解压密码.txt
-cd ..
+e settings.py
+cd /home/dsqiu/Work/linux/python/mysite/mysite/templates/
 ls
-cd ..
-ls
-cd Work/linux/
-ls
-cd  tizen2/
-ls
-e repo 
-cd ..
-ls
-cd if/
-ls
-make
-make
-ls
-cd platform/
-ls
-make
-ls
-make clean
-ls
-make distclean
-ls
-make
-ls
-cd development/
-ls
-cd device/
-ls
-ls
-cd icebox/
-ls
-cd rootfs/
-ls
-ls
-ls
-ls
-ls
-cd ..
-ls
-c
-ls
-ls
-ls
-cd kernel-3.10.14/
-ls
-cd firmware/
-ls
-cd ..
-cd drivers/dma/jzdma/
-ls
-cd common_firmware/
-ls
-make
-make clean
-make
-ls
-e src/uart.c
-ls
-cp firmware_uart.hex ../
+touch contact_form3.htlm
+e contact_form3.htlm
+e contact_form3.html
+ls 
+rm contact_form3.htlm
+cd .emacs.d/
+ls lisp/
+grep interactive-p . -rn
