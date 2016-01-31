@@ -1,110 +1,6 @@
 cd mysite/
 ls
 e settings.py
-ls
-git init
-git commit -m "first commit"
-git commit -a -m "first commit"
-git add -A
-ls
-ls
-cd ..
-ls
-cd mysite/
-ls
-rm .git/ -rf
-cd ..
-ls
-git init
-git add -A
-git commit -a -m "first commit"
-git remote add origin https://git.coding.net/dsqiu/django-learn.git
-git push -u origin master
-ls
-ls
-ls
-ls
-ls
-git st .
-git add -A
-ls
-ls
-git commit -m "study chapter 4"
-git push
-ls
-ls
-git st .
-python manage.py startapp books
-ls
-cd books/
-ls
-cd ..
-ls
-cd books/
-ls
-e models.py 
-cd ..
-ls
-ls
-mv books/ mysite/
-ls
-cd mysite/
-ls
-mv books/ ..
-ls
-ls
-cd ..
-ls
-mv books/ mysite/
-ls
-cd mysite/
-ls
-cd books/
-ls
-cd migrations/
-ls
-cd ..
-ls
-e models.py
-e views.py 
-ls
-cd ..
-ls
-cd ..
-ls
-cd mysite/
-ls
-mv books/ ..
-ls
-cd ..
-ls
-cd books/
-ls
-e models.pyc
-e models.py
-e admin.pyc
-e admin.py
-ls
-cd Work/
-ls
-cd linux/
-cd python/mysite/
-ls
-cd mysite/
-ls
-cd mysite/
-s
-e settings.py
-ls
-cd Work/linux/python/
-ls
-cd mysite/
-ls
-cd mysite/
-ls
-cd mysite/
-ls
-e settings.py
 cd Work/
 ls
 cd linux/
@@ -126,3 +22,107 @@ rm contact_form3.htlm
 cd .emacs.d/
 ls lisp/
 grep interactive-p . -rn
+cd ../../..
+cd ../..
+ls
+cd PycharmProjects/
+ls
+cd django-study/
+ls
+ls
+python manage.py startapp djobs
+ls
+python manage.py help
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+python manage.py flash
+python manage.py flush
+python manage.py help
+python manage.py check
+python manage.py test
+python3.4 manage.py shell
+cd ~
+ls
+cd PycharmProjects/
+ls
+cd django-study/
+ls
+pwd
+cd ~
+ls
+cd PycharmProjects/
+ls
+cd django-study/
+ls
+cd templates/
+ls
+cd djobs/
+cd ..
+cd ..
+ls
+cd ..
+cd ..
+ls
+cd Work/
+ls
+cd linux/python/
+ls
+cd sblog/
+ls
+cd templates/
+ls
+cd simpleblog/
+ls
+e blog_list.html
+cd /home/dsqiu/Work/linux/python/sblog/templates/simpleblog/
+ls
+cd ..
+ls
+cd ..
+ls
+mv static/ ~/PycharmProjects/django-study/ -f
+git checkout static
+grep comments . -rn
+ls
+cd Work/
+ls
+cd ..
+ls
+cd PycharmProjects/
+ls
+cd mysite/
+ls
+e manage.py 
+cd ..
+ls
+cd django-study/
+ls
+e manage.py 
+cd ..
+ls
+cd DjangoProject/
+ls
+python3.4 manage.py runserver 127.0.0.1:8000
+cd ..
+ls
+cd django-study/
+grep TIME_ZON . -rn
+cd ..
+ls
+cd DjangoProject/
+ls
+python3.4 manage.py help
+python3.4 manage.py makemigrations
+python3.4 manage.py migrate
+python3.4 manage.py flush
+ls
+pwd
+ls
+cd ..
+ls
+cd mysite/
+ls
+cd mysite/
+pwd
+ls

@@ -49,10 +49,8 @@ function! ShowPyDoc(name, type)
     set buftype=nofile
     setlocal modifiable
     normal ggdG
-    " remove function/method arguments
     let s:name2 = substitute(a:name, '(.*', '', 'g' )
-    " remove all colons
-    let s:name2 = substitute(s:name2, ':', '', 'g' )
+    let s:name2 = substitute(a:name, ':', '', 'g' )
     if a:type==1
         execute  "silent read ! " . g:pydoc_cmd . " " . s:name2 
     else 
@@ -87,14 +85,15 @@ function! ShowPyDoc(name, type)
     endif
 endfunction
 
-"highlighting
+
 function! Highlight(name)
     execute "sb __doc__"
     set filetype=man
-    "syn on
-    execute 'syntax keyword pydoc '.a:name
+    syn on
+    execute 'syntax keyword pydoc '.s:name2
     hi pydoc gui=reverse
 endfunction
+
 
 "mappings
 au FileType python,man map <buffer> <leader>pw :call ShowPyDoc('<C-R><C-W>', 1)<CR>
@@ -102,10 +101,6 @@ au FileType python,man map <buffer> <leader>pW :call ShowPyDoc('<C-R><C-A>', 1)<
 au FileType python,man map <buffer> <leader>pk :call ShowPyDoc('<C-R><C-W>', 0)<CR>
 au FileType python,man map <buffer> <leader>pK :call ShowPyDoc('<C-R><C-A>', 0)<CR>
 
-" remap the K (or 'help') key
-nnoremap <silent> <buffer> K :call ShowPyDoc(expand("<cword>"), 1)<CR>
-
-
 "commands
-command! -nargs=1 Pydoc :call ShowPyDoc('<args>', 1)
-command! -nargs=*  PydocSearch :call ShowPyDoc('<args>', 0)
+command -nargs=1 Pydoc :call ShowPyDoc('<args>', 1)
+command -nargs=*  PydocSearch :call ShowPyDoc('<args>', 0)

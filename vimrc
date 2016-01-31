@@ -1,48 +1,208 @@
-syntax on
+"#############################################################################
+"
+"    vim-openerp configuration
+"    Stéphane WIRTEL
+"    Sebastien LANGE
+"
+"    This file is a part of vim-openerp
+"
+"    vim-openerp is free software: you can redistribute it and/or modify
+"    it under the terms of the GNU General Public License as published by
+"    the Free Software Foundation, either version 3 of the License, or
+"
+"    vim-openerp is distributed in the hope that it will be useful,
+"    but WITHOUT ANY WARRANTY; without even the implied warranty of
+"    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+"    GNU General Public License for more details.
+"
+"    You should have received a copy of the GNU General Public License
+"    along with this program.  If not, see http://www.gnu.org/licenses.
+"
+"#############################################################################
+" Enable Pathogen
+execute pathogen#infect()
 
-colorscheme blackboard
+" Vim Flake8 shortcut change to F5 to reflect old pep8 plugin
+autocmd FileType python map <buffer> <F5> :call Flake8()<CR>
+" Automatically execute flake8 validation on python file write
+autocmd BufWritePost *.py call Flake8()
 
-" turn on line numbers:
+syntax enable
+syn sync minlines=300
 set number
-" toggle line numbers and fold column for easy copying:
-nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+set incsearch 
+set hlsearch
+set ignorecase
+set smartcase
+set tw=0
+set sw=4
+set sts=4
+set cindent
+set smartindent
+set autoindent
+set expandtab
+set title
 
-set ruler
+"set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$
+set list listchars=tab:»·,trail:.
+set nocompatible
+"set digraph
 
-filetype plugin indent on
+filetype plugin indent on 
 
-" taglist variables
-" display function name in status bar:
-let g:ctags_statusline=1
-" automatically start script
-let generate_tags=1
-let generate_tags=1
-" Displays taglist results in a vertical window:
-let Tlist_Use_Horiz_Window=0
-" Shorter commands to toggle Taglist display
-nnoremap TT :TlistToggle<CR>
-map <F4> :TlistToggle<CR>
-" Various Taglist diplay config:
-let Tlist_Use_Right_Window = 1
-let Tlist_Compact_Format = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_File_Fold_Auto_Close = 1
-" set ctag path
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ [BUF=%n]\ %{strftime(\"%d-%m-%Y\ %H:%M:%S\",getftime(expand(\"%:p\")))}
+
+set mouse=a
+
+set backspace=indent,eol,start
+
+"set guifont=Monospace\ Bold\ 12
+let t_Co=256
+
+"let g:DoxygenToolkit_authorName="Sebastien LANGE"
+let g:DoxygenToolkit_commentType="python"
+let g:DoxugenToolkit_briefTag_funcName="yes"
+
+"Value for snippet
+let g:snips_author="First Name, LAST NAME"
+" Shortcut to reload snippets
+noremap <silent><F6> :call ResetSnippets()<CR>:call GetSnippets(snippets_dir, &ft)<CR>
+
+au! BufRead,BufNewFile *.rml set ft=xml
+
+"
+map<F2> <ESC>:NERDTree<CR>
+noremap <F3> <ESC>:Dox<CR>
+inoremap <F3> <ESC>:Dox<CR>
+nnoremap <F4> :GundoToggle<CR>
+
+map<C-F12> <ESC>:set list!<CR>
+map<F12> <ESC>:set wrap!<CR>
+
+map <F9> :!psql -d dbname < % <BAR> less
+
+au BufRead .irbrc set ft=ruby
+au! BufRead,BufNewFile *.haml set ft=haml
+au! BufRead,BufNewFile *.sass set ft=sass
+au! BufRead,BufNewFile .openerprc set ft=cfg
+
+" PgSQL
+au BufNewFile,BufRead *.pgsql setf pgsql
+au BufRead /tmp/psql.edit.* set syntax=pgsql
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+" Delete space in end file on write file
+autocmd BufWritePre *.py :%s/\s\+$//e
+
+let g:load_doxygen_syntax=1
+
+vnoremap < <gv
+vnoremap > >gv
+vnoremap <silent>* yq/i\M<ESC>p<CR>
+vnoremap <silent># yq?i\M<ESC>p<CR>
 
 
-" Python specific settings
-" set mako type"
-au BufNewFile,BufRead *.mako set ft=mako
-au BufNewFile,BufRead *.mak set ft=mako
+au FileType c,cpp,java set mps+==:;
 
-" set python code tab completion
-let g:pydiction_location='~/.vim/vimfiles/complete-dict'
+set   backupdir=/tmp
+set   directory=/tmp
 
-" python syntax 
-autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+set nowrap
 
-" pylint setup
-autocmd FileType python compiler pylint
-let g:pylint_onwrite = 0
+" {{{1 folding (see :h folding)
+" show all folds closed
+" set foldenable
+" fold on markers tripple {
+" set foldmethod=marker
+" autocmd FileType c,cpp,d,perl,java,cs set foldmethod=syntax
+" autocmd FileType python,xml set foldmethod=indent
+" set foldcolumn=4
+" set foldlevel=0
+
+"set foldmethod=indent
+highlight Folded ctermfg=6 ctermbg=0
+highlight FoldColumn ctermfg=6 ctermbg=0
+
+map gf :tabedit <cfile><CR>
+
+nmap <leader>rci :%!ruby-code-indenter<cr>
+
+let g:rails_menu=2
+
+python << EOL
+import vim
+import sys
+import os
+def EvaluateCurrentRange():
+    eval(compile('\n'.join(vim.current.range),'','exec'), globals())
+def CheckPy():
+    eval(compile('\n'.join(vim.current.buffer), '', 'exec'), globals()) 
+sys.path.append("/usr/local/lib/python2.6/site-packages")
+EOL
+
+map <C-h> :py EvaluateCurrentRange()
+map <C-j> :py CheckPy()
+
+map <silent><A-Right> :tabnext<CR>
+map <silent><A-Left> :tabprevious<CR>
+map <silent><A-Up> :move -2<CR>
+map <silent><A-Down> :move +<CR>
+map <C-Down> <C-e>
+map <C-Up> <C-y>
+noremap <A-S-Left> <C-w><
+noremap <A-S-Right> <C-w>>
+noremap <A-S-Up> <C-w>+
+noremap <A-S-Down> <C-w>-
+noremap <silent><C-S-Left> :execute 'tabmove ' . (tabpagenr()-2)<CR>
+noremap <silent><C-S-Right> :execute 'tabmove ' . tabpagenr()<CR>
+
+map <M-q> :bd<CR>
+
+if has("autocmd")
+    autocmd BufEnter * lcd %:p:h
+endif
+
+cabbr tb tab ball
+cabbr td tab delete
+
+"for activate the page down, up, etc, please comment the line below
+"map <Left> <Esc>
+"map <Down> <Esc>
+"map <Up> <Esc>
+"map <Right> <Esc>
+"imap <Left> <Esc>
+"imap <Down> <Esc>
+"imap <Up> <Esc>
+"imap <Right> <Esc>
+
+
+map T :TaskList<CR>
+map F :TlistToggle<CR>
+vunmap T
+vunmap F
+
+"
+" Uncomment this if you want to use pylint checker when you save your file
+"
+"     autocmd FileType python compiler pylint
+"
+" Above is realized with :Pylint command. To disable calling Pylint every
+" time a buffer is saved put into .vimrc file
+"
+"     let g:pylint_onwrite = 0
+"
+" Displaying code rate calculated by Pylint can be avoided by setting
+"
+"     let g:pylint_show_rate = 0
+"
+" Openning of QuickFix window can be disabled with
+"
+"     let g:pylint_cwindow = 0
+
+"
+" uncomment this if you want use the 79 character max
+"
+" autocmd FileType python highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" autocmd FileType python match OverLength /\%80v.*/
+" autocmd FileType python set textwidth=79

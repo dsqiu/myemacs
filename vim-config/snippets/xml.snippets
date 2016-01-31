@@ -1,0 +1,652 @@
+snippet <?
+	<?xml version="1.0" encoding="UTF-8"?>
+snippet oerp
+	<openerp>
+	    <data>
+	    $1
+	    </data>
+	</openerp>
+snippet openerp
+	<openerp>
+	    <data>
+	    $1
+	    </data>
+	</openerp>
+snippet field <field ... />
+	<field name="${1:Field}"/>
+snippet field <field ... ></field>
+	<field name="${1:Field}">${2:Value}</field>
+snippet field <field ... colspan ... />
+	<field name="${1:Field}" colspan="${2:4}"/>
+snippet field <field ... colspan ... col ... />
+	<field name="${1:Field}" colspan="${2:4}" col="${3:4}"/>
+snippet field <field ref="xxx"... />
+	<field name="${1:Field}" ref="${2:ir_model_data}"/>
+snippet field <field eval="xxx"... />
+	<field name="${1:Field}" eval="${2:Value}"/>
+snippet field <field name="arch" type="xml"></field>
+	<field name="arch" type="xml">
+	    $1
+	</field>
+snippet button
+	<button string="${1:Validate}" icon="${2:gtk-ok}" states="${3:draft}" type="${4:object}" name="${5:to_validate}"/>
+snippet domain
+	domain="[('${1:state}','${2:=}', ${3:True})]"
+snippet context
+	context="{}"
+snippet attrs required
+	attrs="{'${1:required}': [('${2:state}','${3:=}', ${4:'value'})]}"
+snippet attrs readonly
+	attrs="{'${1:readonly}': [('${2:state}','${3:=}', ${4:'value'})]}"
+snippet attrs invisible
+	attrs="{'${1:invisible}': [('${2:state}','${3:=}', ${4:'value'})]}"
+snippet class oe_highlight
+	class="oe_highlight"
+snippet class oe_title
+	class="oe_title"
+snippet class oe_edit_only
+	class="oe_edit_only"
+snippet placeholder
+	placeholder="${1:The Placeholder}"
+snippet select
+	select="1"
+snippet type object
+	type="object"
+snippet type action
+	type="action"
+snippet type workflow
+	type="workflow"
+snippet onchange
+	on_change="onchange_${1:method}(${1:argument}, context=context)"
+snippet on_change
+	on_change="onchange_${1:method}(${1:argument}, context=context)"
+snippet sep
+	<separator string="${1:Label}" colspan="${2:4}"/>
+snippet separator
+	<separator string="${1:Label}" colspan="${2:4}"/>
+snippet group
+	<group colspan="${1:4}">
+	    $2
+	</group>
+snippet notebook
+	<notebook colspan="4">
+	    <page string="${1:Label}">
+		$2
+	    </page>
+	</notebook>
+snippet page
+	<page string="${1:Label}">
+	    $2
+	</page>
+snippet label < 7.0
+	<label string="${1:Label}"/>
+snippet label >= 7.0
+	<label for="${2:Field}" string="${1:Label}"/>
+snippet attribute
+	<attribute name="${1:name}">${2:value}</attribute>
+snippet attr
+	<attribute name="${1:name}">${2:value}</attribute>
+snippet newline
+	<newline/>
+snippet record
+	<record id="${1:ir_model_data}" model="${2:Model}">
+	    $3
+	</record>
+snippet ref
+	ref="${1:ir_model_data}"
+snippet eval
+	eval="${1:Value}"
+snippet nol
+	nolabel="1" ${1}
+snippet nolabel
+	nolabel="1" ${1}
+snippet readonly
+	readonly="1" ${1}
+snippet required
+	required="1" ${1}
+snippet invisible
+	invisible="1" ${1}
+snippet pos
+	position="${1:inside}"
+snippet position
+	position="${1:inside}"
+snippet mode tree,form
+	mode="tree,form"
+snippet mode tree
+	mode="tree"
+snippet colspan
+	colspan="4"
+snippet col
+	col="4"
+snippet colors
+	colors="${1:grey}:${2:state}${3:==}'${4:draft}'${5:;}"
+snippet editable top
+	editable="top"
+snippet editable bottom
+	editable="bottom"
+snippet focus
+	default_focus="1"
+snippet noupdate
+	noupdate="1"
+snippet confirm
+	confirm="Are you sure ?"
+snippet version
+	version="7.0"
+snippet tree
+	<tree string="${1:Label}">
+	    $2
+	</tree>
+snippet form < 7.0
+	<form string="${1:Label}">
+	    $2
+	</form>
+snippet form >= 7.0
+	<form string="${1:Label}" version="7.0">
+	    $2
+	</form>
+snippet calendar
+	<calendar string="${1:Label}" date_start="${2:Begin date field}"
+	          date_stop="${3:End date field}" color="${4:Field group for color}">
+	    $5
+	</calendar>
+snippet gantt Start Date + Delay
+	<gantt string="${1:Gantt}" color="${2:Field}"
+	       date_start="${3:Start Date Field}" date_delay="${4:Delay Field}" default_group_by="${5:Group By Field}">
+		<field name="name"/>
+	</gantt>
+snippet gantt Start Date + End Date
+	<gantt string="${1:Gantt}" color="${2:Field}"
+	       date_start="${3:Start Date Field}" date_stop="${4:End Date Field}" default_group_by="${5:Group By Field}">
+		<field name="name"/>
+	</gantt>
+snippet graph
+	<graph string="${1:Graph}" type="${2:bar}">
+	    <field name="${3:name}"/>
+	    <field name="${4:supercount}" operator="+"/>
+	</graph>
+snippet kanban
+	<kanban default_group_by="${1:GroupBy Field}">
+	    <field name="color"/>
+	    <templates>
+	        <t t-name="kanban-box">
+	            <div t-attf-class="oe_kanban_color_#{kanban_getcolor(record.color.raw_value)}
+	                oe_kanban_global_click_edit oe_semantic_html_override
+	                oe_kanban_card #{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}">
+	                <div class="oe_dropdown_kanban">
+	                    <div class="oe_dropdown_toggle">
+	                        <span class="oe_e">#</span>
+	                        <ul class="oe_dropdown_menu">
+	                            <li><a type="delete">Delete</a></li>
+	                            <li><ul class="oe_kanban_colorpicker" data-field="color"/></li>
+	                        </ul>
+	                    </div>
+	                    <div class="oe_clear"></div>
+	                </div>
+	                <div t-attf-class="oe_kanban_content">
+	                    name: <field name="name"/><br />
+	                          <!-- Other field here -->
+	                </div>
+	            </div>
+	        </t>
+	    </templates>
+	</kanban>
+snippet header
+	<header>
+	    $1
+	</header>
+snippet sheet
+	<sheet>
+	    $1
+	</sheet>
+snippet menuitem Action < 7.0
+	<menuitem id="menu_${1:ir_model_data}" 
+	    parent="menu_${2:menu_parent}"
+	    sequence="${3:20}"
+	    action="action_${4:Action}"/>
+snippet menuitem Action >= 7.0
+	<menuitem id="${1:ir_model_data}_menu" 
+	    parent="${2:menu_parent}_menu"
+	    sequence="${3:20}"
+	    name="${5:Label}"
+	    action="${4:Action}_action"/>
+snippet menuitem Name < 7.0
+	<menuitem id="menu_${1:ir_model_data}" 
+	    parent="menu_${2:menu_parent}"
+	    sequence="${3:20}"
+	    name="${4:Label}"/>
+snippet menuitem Server Action
+	<record id="action_${1:refid_server}" model="ir.actions.server">
+	    <field name="name">${2:Name of the action}</field>
+	    <field name="model_id" ref="model_${3:res_partner}"/>
+	    <field name="state">code</field>
+	    <field name="code">action = obj.${4:my_function}()</field>
+	</record>
+	
+	<menuitem name="$2"
+	    action="action_$1"
+	    id="menu_$1" 
+	    parent="base.menu_config"
+	    type="server" icon="STOCK_EXECUTE" sequence="100" />
+snippet wizard <wizard/>
+	<wizard id="wizard_${1:name}"
+	    string="${2:label}"
+	    model="${3:ir.model}"
+	    name="${4:wizard_name}"/>
+snippet wizard osv_memory menu < 7.0
+	<record id="view_${1:model}_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="${3:Label}">
+		    <field name="${4:name}"/>
+		    <separator string="" colspan="4" />
+		    <group colspan="4" col="6">
+		        <label string ="" colspan="2"/>
+		        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+		        <button icon="terp-gtk-go-back-rtl" string="Start" name="${5:_continue}" type="object"/>
+		    </group>
+		</form>
+	    </field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="action_$1_view">
+	    <field name="name">$3</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">$2</field>
+	    <field name="view_type">form</field>
+	    <field name="view_mode">form</field>
+	    <field name="domain">[]</field>
+	    <field name="context">{}</field>
+	    <field name="target">new</field>
+	</record>
+	
+	<menuitem id="menu_$1_wizard"
+	    parent="menu_${6:menu_parent}"
+	    sequence="${7:20}"
+	    action="action_$1_view"/>
+snippet wizard osv_memory menu >= 7.0
+	<record id="view_${1:model}_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="${3:Label}" col="4" version="7.0">
+		    <group colspan="2">
+			<field name="${4:name}"/>
+		    </group>
+		    <footer>
+		        <button type="special" special="cancel" string="Cancel" icon="gtk-cancel"/>
+		        <button type="object" string="Next" name="action_${5:continue}" icon="gtk-ok"
+			        confirm="Are you sure you want to continue?"/>
+		    </footer>
+		</form>
+	    </field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="$1_wizard_action">
+	    <field name="name">$3</field>
+	    <field name="res_model">$2</field>
+	    <field name="view_type">form</field>
+	    <field name="view_mode">form</field>
+	    <field name="context">{}</field>
+	    <field name="target">new</field>
+	</record>
+	
+	<menuitem id="$1_wizard_menu"
+	    parent="${6:menu_parent}_menu"
+	    sequence="${7:20}"
+	    action="$1_wizard_action"/>
+snippet wizard osv_memory toolbar
+	<record id="view_${1:model}_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="${3:Label}">
+		    <field name="${4:name}"/>
+		</form>
+	    </field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="action_$1_view">
+	    <field name="name">$3</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">$2</field>
+	    <field name="view_type">form</field>
+	    <field name="view_mode">form</field>
+	    <field name="domain">[]</field>
+	    <field name="context">{}</field>
+	    <field name="target">new</field>
+	</record>
+	
+	<record model="ir.values" id="wizard_$1">
+	    <field name="name">$3</field>
+	    <field name="object" eval="1"/>
+	    <field name="key">action</field>
+	    <field name="key2">client_action_multi</field>
+	    <field name="model">${5:Model to launch wizard}</field>
+	    <field name="value" eval="'ir.actions.act_window,' + str(ref('action_$1_view'))" />
+	</record>
+snippet view form
+	<record id="view_${1:model}_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="${3:Label}">
+		    <field name="${4:name}"/>
+		</form>
+	    </field>
+	</record>
+snippet view tree
+	<record id="view_${1:model}_tree" model="ir.ui.view">
+	    <field name="name">$2.tree</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">tree</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<tree string="${3:Label}">
+		    <field name="${4:name}"/>
+		</tree>
+	    </field>
+	</record>
+snippet view search
+	<record id="view_${1:model}_search" model="ir.ui.view">
+	    <field name="name">$2.search</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">search</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<search string="${3:Label}">
+		    <field name="${4:name}" select="True"/>
+		</search>
+	    </field>
+	</record>
+snippet view both (tree, form)
+	<record id="view_${1:model}_tree" model="ir.ui.view">
+	    <field name="name">$2.tree</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">tree</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<tree string="${3:Label}">
+		    <field name="${4:name}"/>
+		</tree>
+	    </field>
+	</record>
+	
+	<record id="view_$1_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">$2</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="$3">
+		    <field name="$4"/>
+		</form>
+	    </field>
+	</record>
+snippet view both (tree, form, search)
+	<record id="view_${1:model}_tree" model="ir.ui.view">
+	    <field name="name">$2.tree</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">tree</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<tree string="${3:Label}">
+		    <field name="${4:name}"/>
+		</tree>
+	    </field>
+	</record>
+	
+	<record id="view_$1_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">$2</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="$3">
+		    <field name="$4"/>
+		</form>
+	    </field>
+	</record>
+	<record id="view_$1_search" model="ir.ui.view">
+	    <field name="name">$2.search</field>
+	    <field name="model">$2</field>
+	    <field name="type">search</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<search string="$3">
+		    <field name="$4" select="True"/>
+		</search>
+	    </field>
+	</record>
+snippet view both (tree, form) + Action + Menu
+	<record id="view_${1:model}_tree" model="ir.ui.view">
+	    <field name="name">$2.tree</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">tree</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<tree string="${3:Label}">
+		    <field name="${4:name}"/>
+		</tree>
+	    </field>
+	</record>
+	
+	<record id="view_$1_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">$2</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="$3">
+		    <field name="$4"/>
+		</form>
+	    </field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="act_open_$1_view">
+	    <field name="name">$3</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">$2</field>
+	    <field name="view_type">form</field>
+	    <field name="view_mode">tree,form</field>
+	    <field name="domain">[]</field>
+	    <field name="context">{}</field>
+	</record>
+	
+	<record model="ir.actions.act_window.view" id="act_open_$1_view_form">
+	    <field name="act_window_id" ref="act_open_$1_view"/>
+	    <field name="sequence" eval="20"/>
+	    <field name="view_mode">form</field>
+	    <field name="view_id" ref="view_$1_form"/>
+	</record>
+	
+	<record model="ir.actions.act_window.view" id="act_open_$1_view_tree">
+	    <field name="act_window_id" ref="act_open_$1_view"/>
+	    <field name="sequence" eval="10"/>
+	    <field name="view_mode">tree</field>
+	    <field name="view_id" ref="view_$1_tree"/>
+	</record>
+
+	<menuitem id="menu_$1"
+	    parent="${5:module.xmlid}"
+	    sequence="20"
+	    action="act_open_$1_view"/>
+snippet view both (tree, form, search) + Action + Menu
+	<record id="view_${1:model}_tree" model="ir.ui.view">
+	    <field name="name">$2.tree</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="type">tree</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<tree string="${3:Label}">
+		    <field name="${4:name}"/>
+		</tree>
+	    </field>
+	</record>
+	
+	<record id="view_$1_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">$2</field>
+	    <field name="type">form</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<form string="$3">
+		    <field name="$4"/>
+		</form>
+	    </field>
+	</record>
+	
+	<record id="view_$1_search" model="ir.ui.view">
+	    <field name="name">$2.search</field>
+	    <field name="model">$2</field>
+	    <field name="type">search</field>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<search string="$3">
+		    <field name="$4" select="True"/>
+		</search>
+	    </field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="act_open_$1_view">
+	    <field name="name">$3</field>
+	    <field name="type">ir.actions.act_window</field>
+	    <field name="res_model">$2</field>
+	    <field name="view_type">form</field>
+	    <field name="view_mode">tree,form</field>
+	    <field name="search_view_id" ref="view_$1_search"/>
+	    <field name="domain">[]</field>
+	    <field name="context">{}</field>
+	</record>
+	
+	<record model="ir.actions.act_window.view" id="act_open_$1_view_form">
+	    <field name="act_window_id" ref="act_open_$1_view"/>
+	    <field name="sequence" eval="20"/>
+	    <field name="view_mode">form</field>
+	    <field name="view_id" ref="view_$1_form"/>
+	</record>
+	
+	<record model="ir.actions.act_window.view" id="act_open_$1_view_tree">
+	    <field name="act_window_id" ref="act_open_$1_view"/>
+	    <field name="sequence" eval="10"/>
+	    <field name="view_mode">tree</field>
+	    <field name="view_id" ref="view_$1_tree"/>
+	</record>
+
+	<menuitem id="menu_$1"
+	    parent="${5:module.xmlid}"
+	    sequence="20"
+	    action="act_open_$1_view"/>
+snippet view form (inherit)
+	<record id="view_${1:model}_form" model="ir.ui.view">
+	    <field name="name">$2.form</field>
+	    <field name="model">${2:Model}</field>
+	    <field name="inherit_id" ref="${3:xmlid}"/>
+	    <field name="priority" eval="8"/>
+	    <field name="arch" type="xml">
+		<xpath expr="//notebook" position="inside">
+		    <page string="${4:text}">
+		        <field name="${5:name}"/>
+		    </page>
+		</xpath>
+	    </field>
+	</record>
+snippet act_window
+	<act_window id="act_${1:ir_model_data}"
+	    name="${2:Name}"
+	    res_model="${3:destination_model}"
+	    src_model="${4:source_model}"
+	    domain="[('${5:field}', '${6:operator}', ${7:active_id})]"/>
+snippet xpath after
+	<xpath expr="//field[@${1:name}='${2:field}']" position="after">
+	    <field name="${3:name}"/>
+	</xpath>
+snippet xpath before
+	<xpath expr="//field[@${1:name}='${2:field}']" position="before">
+	    <field name="${3:name}"/>
+	</xpath>
+snippet xpath replace
+	<xpath expr="//field[@${1:name}='${2:field}']" position="replace">
+	    <field name="$2"/>
+	</xpath>
+snippet xpath inside
+	<xpath expr="//notebook" position="inside">
+	    <page string="${1:text}">
+	    <field name="${2:name}"/>
+	    </page>
+	</xpath>
+snippet xpath attribute
+	<xpath expr="//field[@${1:name}='${2:field}']" position="attributes">
+	    <attribute name="${3:required}">${4:1}</attribute>
+	</xpath>
+snippet widget selection
+	widget="selection"
+snippet widget float_time
+	widget="float_time"
+snippet widget url
+	widget="url"
+snippet widget progressbar
+	widget="progressbar"
+snippet widget many2many
+	widget="many2many"
+snippet widget many2many_tags
+	widget="many2many_tags"
+snippet widget one2many_list
+	widget="one2many_list"
+snippet widget password
+	password="1"
+snippet widget statusbar (>= 7.0)
+	widget="statusbar"
+snippet operator
+	operator="+"
+snippet test <test expr=""/>
+	<test expr="len(${1:one2many}) == ${2:1}"/>
+snippet test <test expr=""></test>
+	<test expr="${1:state}">${2:confirmed}</test>
+snippet assert id
+	<assert id="${1:ir_model_data}" model="${2:sale.order}" severity="${3:error}"
+	        string="${4:Text appear when an error raise}">
+		$0
+	</assert>
+snippet assert search
+	<assert search="[('${1:name}','${2:=}','${3:TEXT}')]" model="${4:sale.order}" severity="${5:error}" count="${6:1}"
+	        string="${7:Text appear when an error raise}">
+		$0
+	</assert>
+snippet workflow ref
+	<workflow action="${1:button_confirm}" model="${2:sale.order}" ref="${3:ir_model_data}"/>
+snippet workflow search
+	<workflow action="${1:button_confirm}" model="${2:sale.order}">
+	    <value model="$2" search="[('${3:name}','${4:=}','${5:TEXT}')]"/>
+	</worklow>
+snippet delete id
+	<delete model="${1:model}" id="${2:ir_model_data}"/>
+snippet delete search
+	<delete model="${1:model}" search="[('${2:field}', '${3:operator}', '${4:value}')]"/>
+snippet icon gtk-apply
+	icon="gtk-apply"
+snippet icon gtk-cancel
+	icon="gtk-cancel"
+snippet icon gtk-close
+	icon="gtk-close"
+snippet icon gtk-convert
+	icon="gtk-convert"
+snippet icon gtk-execute
+	icon="gtk-execute"
+snippet icon gtk-go-forward
+	icon="gtk-go-forward"
+snippet icon gtk-jump-to
+	icon="gtk-jump-to"
+snippet icon gtk-media-pause
+	icon="gtk-media-pause"
+snippet icon gtk-ok
+	icon="gtk-ok"
+snippet icon gtk-print
+	icon="gtk-print"
