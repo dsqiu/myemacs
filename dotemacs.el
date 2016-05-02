@@ -1,3 +1,10 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path (expand-file-name "elisp" (concat (getenv "HOME") "/.emacs.d/lisp")))
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (setq exec-path (split-string "/home/dsqiu/bin/opt/mips-gcc472-glibc216/bin:/home/dsqiu/Work/android/tools/sdk/adt-bundle-linux-x86_64-20140702/sdk:/home/dsqiu/Work/android/tools/studio/android-studio/bin:/home/dsqiu/Work/android/tools/ndk/android-ndk-r10:/home/dsqiu/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" path-separator))
@@ -830,3 +837,22 @@ Don't mess with special buffers."
 (global-set-key (kbd "C-x C-c") nil)
 
 (setq search-whitespace-regexp ".*?")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
+ '(cua-mode t nil (cua-base))
+ '(display-time-mode t)
+ '(menu-bar-mode nil)
+ '(package-selected-packages (quote (yasnippet)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

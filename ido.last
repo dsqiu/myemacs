@@ -2,6 +2,20 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dsqiu/Work/android/l/frameworks/native/cmds/" . "installd/")
+ ("/home/dsqiu/Work/android/l/frameworks/native/" . "cmds/")
+ ("/home/dsqiu/Work/android/l/frameworks/" . "native/")
+ ("/home/dsqiu/Work/android/l/" . "frameworks/")
+ ("/home/dsqiu/AndroidStudioProjects/dhcp/" . "android_system_extras_su/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/ie/udaltsoft/" . "ethnodroid/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/ie/" . "udaltsoft/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/" . "ie/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/" . "java/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/" . "main/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/" . "src/")
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/" . "app/")
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/" . "su/")
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/" . "samples/")
  ("/home/dsqiu/Work/linux/python/mysite/" . "mysite/")
  ("/home/dsqiu/Work/linux/python/" . "mysite/")
  ("/home/dsqiu/Work/linux/python/mysite/mysite/mysite/" . "books/")
@@ -26,7 +40,7 @@
  ("/home/dsqiu/AndroidStudioProjects/RDPHome/app/src/" . "main/")
  ("/home/dsqiu/AndroidStudioProjects/RDPHome/app/" . "src/")
  ("/home/dsqiu/AndroidStudioProjects/RDPHome/" . "app/")
- ("/home/dsqiu/AndroidStudioProjects/" . "RDPHome/")
+ ("/home/dsqiu/AndroidStudioProjects/" . "dhcp/")
  ("/home/dsqiu/AndroidStudioProjects/Password/app/src/main/res/" . "layout/")
  ("/home/dsqiu/AndroidStudioProjects/data/第四阶段成果/AllStyle/src/com/example/" . "newdemos04/")
  ("/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/example/" . "allstyle/")
@@ -90,8 +104,8 @@
  ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/mips/" . "xburst/")
  ("/home/dsqiu/Work/android/android4.3-master/kernel/arch/" . "mips/")
  ("/home/dsqiu/Work/android/android4.3-master/kernel/" . "arch/")
- ("/home/dsqiu/Work/android/" . "home/")
- ("/home/dsqiu/Work/" . "linux/")
+ ("/home/dsqiu/Work/android/" . "l/")
+ ("/home/dsqiu/Work/" . "android/")
  ("/home/dsqiu/Work/linux/ci20/CI20_collateral/ci20-sgx-km-6f3b77c686de27ef260beb92b7fe30e7da9671a5/eurasiacon/build/linux2/" . "kbuild/")
  ("/home/dsqiu/Work/linux/ci20/CI20_linux/drivers/video/" . "jz4780-fb/")
  ("/home/dsqiu/Work/linux/ci20/CI20_linux/arch/mips/xburst/soc-4780/board/" . "ci20/")
@@ -127,9 +141,18 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/dsqiu/Work/linux/"
+ "/home/dsqiu/Work/android/l/system/core/libcutils/"
+ "/home/dsqiu/Work/android/l/frameworks/native/cmds/installd/"
+ "/home/dsqiu/AndroidStudioProjects/dhcp/android_system_extras_su/"
+ "/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/test/jni/"
+ "/home/dsqiu/AndroidStudioProjects/dhcp/"
+ "/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/su/jni/"
+ "/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/su/"
+ "/home/dsqiu/Work/linux/sleep/"
+ "/home/dsqiu/"
  "/home/dsqiu/Work/linux/python/mysite/mysite/mysite/"
  "/home/dsqiu/.emacs.d/lisp/"
- "/home/dsqiu/"
  "/home/dsqiu/Tools/emacs/lisp/"
  "/home/dsqiu/Work/linux/python/mysite/mysite/books/"
  "/home/dsqiu/Work/linux/python/mysite/mysite/mysite/books/"
@@ -168,33 +191,106 @@
  "/home/dsqiu/AndroidStudioProjects/data/第三阶段成果/AllStyle/src/com/example/allstyle/"
  "/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/example/allstyle/"
  "/media/dsqiu/1666-D326/第四阶段成果/AllStyle/src/com/example/newdemos04/"
- "/home/dsqiu/AndroidStudioProjects/AllStyle/Files/changelog/"
- "/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端/AllStyle/src/com/example/newdemos04/"
- "/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端/AllStyle/src/com/example/allstyle/"
- "/home/dsqiu/AndroidStudioProjects/AllStyle/Files/04/Files/"
- "/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端/AllStyle/res/layout/"
- "/media/dsqiu/USBFDD-BOOT/程序/辅助使用终端参数/04A_04数据文件/"
- "/home/dsqiu/Work/linux/TestStruct/jpeg/"
- "/home/dsqiu/Work/android/home/android4.3-master/kernel/drivers/usb/dwc2/"
- "/home/dsqiu/Work/linux/ci20/CI20_u-boot/drivers/mmc/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "settings.py"
- "bm.el"
- ".emacs"
- "COPYING"
- "models.py"
- "hours_ahead.html"
- "base.html"
- "current_datetime.html"
- "urls.py"
- "views.py"
+ "a.c"
+ "socket_local_client.c"
+ "installd.c"
+ "daemon.c"
+ "su.h"
+ "utils.h"
+ "android_filesystem_config.h"
+ "t.c"
+ "a.java"
+ "su.c"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/dsqiu/Work/linux/" (22311 13232 598849 192000) "fft/" "a.c" "cunit-code/" "vbox/" "warrior/" "sleep/" "coding.net/" "python/" "stardict/" "audio/" "create_git.txt" "code.google/" "html/" "mips-alsa/" "github/" "./" "../" "requests/" "auto-complete/" "PerfTest/" "nand_new/" "mplayer/" "ci20/" "qemu/" "gramma/" "cppunit-code/" "git-core/" "u-boot/" "hwtest/" "build_project/" "cmake/" "baidu/" "pixman/" "homework/" "cairo/")
+
+ ("/home/dsqiu/Work/linux/hwtest/" (22309 45641 94784 953000) "ddr-tools/" "./" "../" "serial/" ".git/")
+
+ ("/home/dsqiu/Work/linux/hwtest/ddr-tools/" (22310 56880 927800 966000) "ddrp_dwc.h" "ddrtiming/" "timing.c" "iniparser/" "ddrc.h" "./" "ddr_reg_values.h" "../" "PyConf/")
+
+ ("/home/dsqiu/Work/linux/hwtest/ddr-tools/iniparser/" (22311 13543 768165 313000) "src/" "example/" "html/" ".travis.yml" "doc/" "libiniparser.so.1" "libiniparser.a" "./" "../" "test/" "Makefile" "INSTALL" "README.md" ".gitignore" "AUTHORS" "LICENSE")
+
+ ("/home/dsqiu/Work/linux/hwtest/ddr-tools/iniparser/example/" (22311 13620 575957 764000) "parse" "twisted-errors.ini" "twisted-genhuge.py" "./" "../" "example.ini" "twisted-ofval.ini" "twisted-ofkey.ini" "parse.c" "iniexample.c" "Makefile" "twisted.ini" "iniexample")
+
+ ("/home/dsqiu/Work/android/l/frameworks/base/services/core/java/com/android/server/pm/" (21627 60530 0 0) "PackageInstallerService.java" "SELinuxMMAC.java" "PackageSettingBase.java" "CrossProfileIntentResolver.java" "KeySetManagerService.java" "GrantedPermissions.java" "LauncherAppsService.java" "BackgroundDexOptService.java" "PreferredActivity.java" "PersistentPreferredIntentResolver.java" "PackageInstallerSession.java" "PackageManagerException.java" "Installer.java" "Settings.java" "PersistentPreferredActivity.java" "./" "PackageSetting.java" "../" "PackageVerificationState.java" "PendingPackage.java" "KeySetHandle.java" "UserManagerService.java" "PackageKeySetData.java" "PackageVerificationResponse.java" "PreferredIntentResolver.java" "PackageSignatures.java" "BasePermission.java" "SharedUserSetting.java" "PreferredComponent.java" "PackageManagerService.java" "CrossProfileIntentFilter.java")
+
+ ("/home/dsqiu/Work/android/l/system/core/libcutils/" (21627 60859 0 0) "load_file.c" "process_name.c" "ashmem-dev.c" "sched_policy.c" "MODULE_LICENSE_APACHE2" "properties.c" "sockets.c" "trace.c" "socket_local.h" "iosched_policy.c" "arch-arm/" "strdup16to8.c" "arch-mips/" "socket_local_client.c" "loghack.h" "arch-arm64/" "fs.c" "record_stream.c" "atomic.c" "hashmap.c" "partition_utils.c" "open_memstream.c" "NOTICE" "./" "config_utils.c" "../" "qtaguid.c" "socket_loopback_client.c" "arch-x86/" "multiuser.c" "str_parms.c" "native_handle.c" "socket_local_server.c" "cpu_info.c" "memory.c" "threads.c" "klog.c" "socket_loopback_server.c" "strdup8to16.c" "dir_hash.c" "tests/" "Android.mk" "arch-x86_64/" "debugger.c" "ashmem-host.c" "android_reboot.c" "socket_inaddr_any_server.c" "uevent.c" "socket_network_client.c" "dlmalloc_stubs.c")
+
+ ("/home/dsqiu/Work/android/l/frameworks/base/core/jni/" (21627 60475 0 0) "android_nfc.h" "android_util_Process.cpp" "android_view_InputEventSender.cpp" "android_util_Log.h" "android_text_AndroidBidi.cpp" "android_media_AudioRecord.cpp" "android_os_UEventObserver.cpp" "android_nio_utils.cpp" "android_util_FloatMath.cpp" "android_util_Log.cpp" "android_view_MotionEvent.h" "android_hardware_camera2_CameraMetadata.cpp" "android_view_GraphicBuffer.cpp" "android_hardware_SoundTrigger.cpp" "android_nio_utils.h" "android_view_GLES20Canvas.cpp" "android_hardware_Camera.cpp" "android_view_PointerIcon.cpp" "android_view_PointerIcon.h" "android_media_RemoteDisplay.cpp" "com_android_internal_util_VirtualRefBasePtr.cpp" "MODULE_LICENSE_APACHE2" "android_view_KeyEvent.h" "android_backup_BackupHelperDispatcher.cpp" "android_opengl_GLES30.cpp" "android_hardware_camera2_legacy_LegacyCameraDevice.cpp" "android_database_SQLiteGlobal.cpp" "android_opengl_GLES11Ext.cpp" "android_media_JetPlayer.cpp" "android_animation_PropertyValuesHolder.cpp" "android_net_TrafficStats.cpp" "android_view_DisplayEventReceiver.cpp" "android_backup_BackupDataOutput.cpp" "android_graphics_Canvas.cpp" "android_view_InputChannel.h" "android_os_MemoryFile.cpp" "com_google_android_gles_jni_EGLImpl.cpp" "android_database_CursorWindow.cpp" "android_database_SQLiteConnection.cpp" "android_database_SQLiteCommon.cpp" "android_os_MessageQueue.h" "android_text_StaticLayout.cpp" "android_server_FingerprintManager.cpp" "android_os_SELinux.cpp" "android_media_ToneGenerator.cpp" "android_opengl_GLES10.cpp" "android_view_HardwareLayer.cpp" "android_view_KeyCharacterMap.h" "android_media_AudioSystem.cpp" "android_backup_FileBackupHelperBase.cpp" "com_android_internal_content_NativeLibraryHelper.cpp" "android_hardware_SensorManager.cpp" "android_view_Surface.cpp" "android_hardware_SerialPort.cpp" "android_hardware_UsbDeviceConnection.cpp" "com_android_internal_os_Zygote.cpp" "NOTICE" "android_hardware_camera2_DngCreator.cpp" "android_graphics_Picture.cpp" "android_view_InputDevice.cpp" "android_media_AudioFormat.h" "android/" "android_net_LocalSocketImpl.cpp" "com_android_internal_view_animation_NativeInterpolatorFactoryHelper.cpp" "android_opengl_GLES20.cpp" "android_server_Watchdog.cpp" "android_view_KeyEvent.cpp" "android_util_StringBlock.cpp" "AndroidRuntime.cpp" "android_view_TextureView.cpp" "android_view_RenderNodeAnimator.cpp" "android_server_NetworkManagementSocketTagger.cpp" "android_util_AssetManager.cpp" "GraphicsRegisterGlue.h" "android_text_AndroidCharacter.cpp" "android_os_Parcel.cpp" "android_content_res_Configuration.cpp" "android_database_SQLiteCommon.h" "android_view_InputEventReceiver.cpp" "android_view_VelocityTracker.cpp" "com_google_android_gles_jni_GLImpl.cpp" "android_util_EventLog.cpp" "android_view_SurfaceSession.cpp" "android_os_SystemProperties.cpp" "android_opengl_EGLExt.cpp" "android_view_ThreadedRenderer.cpp" "android_util_FileObserver.cpp" "android_opengl_EGL14.cpp" "android_content_res_ObbScanner.cpp" "GraphicsExternGlue.h" "android_net_NetUtils.cpp" "android_os_Debug.cpp" "android_util_Binder.cpp" "android_opengl_GLES31.cpp" "android_view_SurfaceControl.cpp" "android_opengl_GLES11.cpp" "android_backup_BackupDataInput.cpp" "com_android_internal_net_NetworkStatsFactory.cpp" "android_database_SQLiteDebug.cpp" "android_view_InputQueue.cpp" "android_media_AudioErrors.h" "android_hardware_camera2_legacy_PerfMeasurement.cpp" "android_view_KeyCharacterMap.cpp" "android_view_GraphicBuffer.h" "BindTest.cpp" "android_hardware_UsbRequest.cpp" "android_util_Binder.h" "android_hardware_location_ActivityRecognitionHardware.cpp" "android_app_backup_FullBackup.cpp" "android_os_SystemClock.cpp" "android_os_Trace.cpp" "com_android_internal_os_ZygoteInit.cpp" "android_view_InputChannel.cpp" "android_media_AudioTrack.cpp" "android_opengl_GLES31Ext.cpp" "android_view_InputDevice.h" "android_hardware_UsbDevice.cpp" "android_app_NativeActivity.cpp" "android_view_MotionEvent.cpp" "Android.mk" "android_emoji_EmojiFactory.cpp" "android_util_XmlBlock.cpp" "android_view_RenderNode.cpp" "android_os_Parcel.h" "android_ddm_DdmHandleNativeHeap.cpp" "android_os_MessageQueue.cpp" "android_opengl_GLES10Ext.cpp" "../" "./")
+
+ ("/home/dsqiu/AndroidStudioProjects/dhcp/android_system_extras_su/" (22291 3252 340288 781000) "utils.c" "su.c" "cscope.out" "init.superuser.rc" "binder/" "./" "utils.h" "../" "su.h" "pts.h" "Android.mk" "pts.c" ".git/" ".gitignore" "daemon.c" "LICENSE")
+
+ ("/home/dsqiu/AndroidStudioProjects/dhcp/" (22290 24494 731531 895000) "ethernet/" "android-java-libsu/" "Superuser/" "a.java" "ethnodroid/" "./" "../" "android_ethernet/" "android_system_extras_su/" "android_frameworks_opt_net_ethernet/")
+
+ ("/home/dsqiu/Work/android/l/" (22175 36127 524109 472000) "bootable/" "system/" ".repo/" "libcore/" "pdk/" "build/" "dalvik/" "sdk/" "out/" "developers/" "docs/" "art/" "cts/" "device/" "abi/" "frameworks/" "./" "packages/" "../" "tools/" "ndk/" "hardware/" "external/" "prebuilts/" "bionic/" "Makefile" "development/" "libnativehelper/" "repo")
+
+ ("/home/dsqiu/Work/android/l/frameworks/" (21627 60542 0 0) "av/" "ml/" "minikin/" "wilhelm/" "testing/" "volley/" "base/" "compile/" "./" "opt/" "ex/" "../" "multidex/" "mff/" "webview/" "rs/" "native/" "support/")
+
+ ("/home/dsqiu/Work/android/l/frameworks/native/" (21627 60537 0 0) "build/" "MODULE_LICENSE_APACHE2" "data/" "include/" "libs/" "NOTICE" "./" "../" "cmds/" "opengl/" ".git/" "services/")
+
+ ("/home/dsqiu/Work/android/l/frameworks/native/cmds/" (21627 60536 0 0) "servicemanager/" "flatland/" "dumpstate/" "installd/" "./" "../" "bugreport/" "service/" "atrace/" "dumpsys/" "rawbu/" "ip-up-vpn/")
+
+ ("/home/dsqiu/Work/android/l/frameworks/native/cmds/installd/" (21729 45655 431499 959000) "utils.c" "cscope.in.out" "cscope.po.out" "installd.c" "cscope.out" "cscope.files" "installd.h" "./" "../" "commands.c" "tests/" "Android.mk")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/eth_service/jni/" (22291 1520 666700 849000) "socket.c" "./" "../")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/test/jni/" (22290 62319 688894 520000) "MODULE_LICENSE_APACHE2" "NOTICE" "./" "../" ".#Android.mk" "android_filesystem_config.h" "Application.mk" "Android.mk" "t.c")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/ie/udaltsoft/ethnodroid/" (22288 64958 282163 383000) "EthnodroidActivity.java" "MainActivity.java" "parsers/" "./" "../" "LanguageActivity.java" "tasks/" "SearchActivity.java" "CountryActivity.java" "LineageActivity.java")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/ie/udaltsoft/" (22288 64958 282163 383000) "ethnodroid/" "./" "../")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/ie/" (22288 64958 282163 383000) "udaltsoft/" "./" "../")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/java/" (22288 64958 282163 383000) "./" "../" "ie/")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/main/" (22288 64958 282163 383000) "AndroidManifest.xml" "java/" "res/" "./" "../" "assets/")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/src/" (22288 64958 282163 383000) "main/" "./" "../" "androidTest/")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/app/" (22288 64982 394025 724000) "build/" "src/" "build.gradle" "app.iml" "./" "../")
+
+ ("/home/dsqiu/AndroidStudioProjects/ethnodroid/" (22288 64982 298026 251000) "import-summary.txt" ".idea/" "build.gradle" "gradle/" ".gradle/" "settings.gradle" "./" "../" "ethnodroid.iml" "gradle.properties" "gradlew" "gradlew.bat" "app/" "local.properties")
+
+ ("/home/dsqiu/AndroidStudioProjects/" (22290 19017 448523 448000) "报错范围.txt" "BaiDu/" "jni/" "android-java-libsu/" "Superuser/" "57e9e68ec4fdcfbf41af474c23b65559.jpg" "ApiDemos/" "sample/" "ethnodroid/" "./" "Launcher21/" "../" "Baidu-PCS-SDK-Android-L2-2.1.0.zip" "Baidu-PCS-SDK-Android-L2-2.1.0/" "ethsetting/" "renboot.py" "AndroidStudy/" "LiveBlurListView/" "RDPHome/" "A152408162-27695.rar" "gpu/" "dhcp/" "Launcher2/" "Study/")
+
+ ("/home/dsqiu/" (22290 13780 186936 506000) ".AndroidStudio/" "xjyu.tar.bz2" ".nvidia-settings-rc" "a.c" ".ssh/" "media/" ".macromedia/" "docker/" "a.py" ".config/" ".ccache/" ".dia/" ".xsession-errors.old" "qt4-dev-tools/" ".kchmviewer/" ".presage/" "WebstormProjects/" ".bash_history" ".Xauthority" ".gnupg/" "proxy.sh" ".pki/" ".dmrc" "Driver/" ".neocomplcache/" ".thunderbird/" ".bash_logout" ".cache/" "VirtualBox VMs/" ".rpmdb/" ".remmina/" ".gimp-2.8/" "Work/" ".calc_history" ".gstreamer-0.10/" ".ICEauthority" ".emacs.d/" ".neocon/" ".PyCharm50/" "Misc/" "CUnitHome/" "Documents/" "业绩.odt" ".screenlets/" ".idlerc/" ".thumbnails/" "examples.desktop" ".AndroidStudio1.4/" ".gitconfig" ".gnome/" ".python_history" ".xsession-errors" "Videos/" ".gradle/" "workspace/" ".watershed/" ".python-eggs/" ".sudo_as_admin_successful" ".yEd/" ".mtoolsrc" ".xinputrc" "AndroidStudioProjects/" ".profile" "groups/" ".python-history" ".java/" "./" ".bashrc~" ".repopickle_.gitconfig" "SpringLobby/" ".gconf/" ".AndroidStudio2.0/" "../" ".emacs" "xjyu/" "bin/" ".repo_.gitconfig.json" ".vim-fuf-data/" "PycharmProjects/" ".~lock.TrustZone调研.odp#" ".local/" ".lesshst" "Tools/" ".stardict/" ".nv/" ".multisystem/" ".minirc.dfl" ".codeblocks/" "TrustZone调研.odp" ".gksu.lock" ".android/" ".sunpinyin/" "Templates/" "dhango-bak/" ".PyCharm40/" ".wine/" ".bazaar/" ".compiz/" "uml-generated-code/" "htc820us/" ".adobe/" ".vim_mru_files" ".WebStorm10/" "Downloads/" ".AndroidStudio1.3/" "GBS-ROOT/" "CI20升级640*480.docx" ".dbus/" "findproxy.sh" ".freerdp/" ".bzr.log" ".AndroidStudio1.5/" "b.c" ".oracle_jre_usage/" "Music/" ".vim/" ".mozilla/" ".vimrc" ".springlobby/" ".gphoto/" ".subversion/" "Pictures/" ".AndroidStudioBeta/" ".gnome2_private/" "Tmp/" ".matlab/" "Desktop/" "CI20升级640*480.odt" "UnderStand/" ".install4j" ".viminfo" ".audacity-data/" ".multisystem-theme" ".bashrc" ".Xmodmap" "Public/" ".pip/" ".ipython/" ".gnome2/" ".mplayer/" ".repoconfig/")
+
+ ("/home/dsqiu/Work/" (22226 57972 770223 659000) "vim-openerp/" "doc/" "android/" "./" "linux/" "../" "bin/")
+
+ ("/home/dsqiu/Work/android/" (22207 59143 568568 672000) "home/" "art/" "rdp/" "work/" "./" "../" "tools/" "watch-l/" "l/")
+
+ ("/home/dsqiu/Work/android/tools/" (21959 15187 800426 326000) "jre-8u20-linux-x64.tar.gz" "eclipse/" "jdk1.8.0_40/" "sdk/" "ADT/" "studio-1.1/" "jre1.8.0_20/" "./" "eclipse-java-luna-SR2-linux-gtk-x86_64.tar.gz" "../" "android-ndk-r10c-linux-x86_64.bin" "android-ndk32-r10-linux-x86_64.tar.tar" "studio/" "ndk/" "adt-bundle-linux-x86_64-20140702.zip" "android-studio-ide-141.2117773-linux.zip" "android-sdk_r24-linux.tgz" "ADT-21.1.0.zip" "jdk-8u40-linux-x64.tar.gz")
+
+ ("/home/dsqiu/Work/android/tools/ndk/" (21625 45468 178183 185000) "android-ndk-r10/" "./" "../" "android-ndk-r10c/")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/su/" (22290 14421 926806 252000) "su-old" "jni/" "libs/" "./" "../" "obj/")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/su/jni/" (22290 14202 428028 858000) "MODULE_LICENSE_APACHE2" "su.c" "NOTICE" "./" "../" "android_filesystem_config.h" "Application.mk" "Android.mk")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/samples/" (22290 13424 245747 392000) "hello-neon/" "native-plasma/" "test-libstdc++/" "hello-jni/" "native-audio/" "su/" "MoreTeapots/" "native-codec/" "./" "native-media/" "../" "Teapot/" "two-libs/" "native-activity/" "san-angeles/" "module-exports/" "HelloComputeNDK/" "bitmap-plasma/" "hello-gl2/" "gles3jni/")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/" (21568 30532 0 0) "samples/" "build/" "ndk-build" "RELEASE.TXT" "docs/" "toolchains/" "prebuilt/" "ndk-which" "ndk-stack" "platforms/" "remove-windows-symlink.sh" "ndk-gdb.py" "./" "../" "ndk-gdb" "GNUmakefile" "ndk-gdb-py.cmd" "ndk-build.cmd" "sources/" "ndk-depends" "tests/" "ndk-gdb-py" "README.TXT" "find-win-host.cmd")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/build/" (21502 63872 0 0) "core/" "awk/" "./" "../" "tools/" "gmsl/")
+
+ ("/home/dsqiu/Work/android/tools/ndk/android-ndk-r10c/build/core/" (21568 30457 0 0) "check-cygwin-make.mk" "build-shared-library.mk" "clear-vars.mk" "add-platform.mk" "setup-toolchain.mk" "build-static-library.mk" "default-application.mk" "prebuilt-static-library.mk" "main.mk" "build-module.mk" "definitions-host.mk" "definitions-tests.mk" "prebuilt-shared-library.mk" "add-application.mk" "./" "../" "add-toolchain.mk" "build-executable.mk" "setup-abi.mk" "setup-imports.mk" "build-local.mk" "import-locals.mk" "definitions.mk" "build-binary.mk" "default-build-commands.mk" "prebuilt-library.mk" "init.mk" "setup-app.mk" "definitions-utils.mk" "build-all.mk" "definitions-graph.mk")
+
+ ("/home/dsqiu/Work/linux/sleep/" (22254 31741 913666 443000) "smp_cp0.h" "mipsregs.h" "i2c-gpio.c" "sm5007.c" "./" "i2c-gpio.h" "gpio.h" "../" "start.S" "u-boot.lds" "gen_function.py" "ddr.h" "gpio.c" "Makefile" "cpm.h" "pm_sleep.c" ".git/" "pm_sleep.h" "exports")
+
+ ("/home/dsqiu/Work/doc/" (22211 19290 584621 69000) "./" "../" "Virtualization/")
+
+ ("/home/dsqiu/Work/doc/Virtualization/" (22195 28470 709531 814000) "project/" "linux-mti/" "doc/" "./" "../" "dmic/" "qemu/" ".git/" "sec/")
+
+ ("/home/dsqiu/Work/doc/Virtualization/qemu/" (22211 825 926344 759000) "qobject/" ".gitmodules" "page_cache.c" "scripts/" "slirp/" "memory_mapping.c" "bt-host.c" "xen-hvm-stub.c" "target-cris/" "COPYING" "ioport.c" "Makefile.target" "kvm-stub.c" "HACKING" ".mailmap" "hmp.c" "target-tilegx/" "qga/" "target-ppc/" "bootdevice.c" "nbd/" "MAINTAINERS" "qemu-tech.texi" "aio-win32.c" "Makefile.objs" "tcg/" "qdict-test-data.txt" "linux-user/" "dump.c" "translate-common.c" "target-i386/" "iohandler.c" "linux-headers/" "target-m68k/" "configure" "cputlb.c" "target-openrisc/" "stubs/" "cpus.c" "include/" "docs/" "dma-helpers.c" "qtest.c" "tpm.c" "blockjob.c" "config-temp/" "trace/" "qemu-io.c" "io/" "os-posix.c" "xen-mapcache.c" "target-xtensa/" "cscope.out" "hmp-commands-info.hx" "thread-pool.c" "trace-events" "qemu-nbd.c" "README" "device_tree.c" "hmp.h" "qemu-img-cmds.hx" "contrib/" "audio/" "softmmu_template.h" "gdbstub.c" "bsd-user/" "block.c" "cpu-exec-common.c" "bt-vhci.c" "qemu-bridge-helper.c" "cpu-exec.c" "target-unicore32/" "target-mips/" "po/" "qemu-options-wrapper.h" "disas.c" "qapi-schema.json" "config.log" "target-microblaze/" ".travis.yml" "qemu-img.texi" "qemu-nbd.texi" "target-sh4/" ".exrc" "target-alpha/" "cscope.files" "pc-bios/" "target-arm/" "block/" "async.c" "./" "accel.c" "qemu-options.hx" "qom/" "translate-all.h" "qemu-timer.c" "target-lm32/" "qemu-seccomp.c" "qemu.nsi" "../" "disas/" "thunk.c" "tcg-runtime.c" "qemu.sasl" "ui/" "roms/" "VERSION" "libdecnumber/" "qemu-img.c" "qapi/" "version.rc" "xen-hvm.c" "module-common.c" "arch_init.c" "COPYING.LIB" "kvm-all.c" "os-win32.c" "Changelog" "util/" "vl.c" "qmp.c" "qdev-monitor.c" "balloon.c" "gdb-xml/" "fpu/" "fsdev/" "backends/" "net/" "target-tricore/" "translate-all.c" "rules.mak" "replay/" "migration/" "default-configs/" "qmp-commands.hx" "monitor.c" "blockdev.c" "qemu-doc.texi" "hmp-commands.hx" "blockdev-nbd.c" "target-s390x/" "memory.c" "qemu-log.c" "Makefile" "qemu-char.c" "iothread.c" "device-hotplug.c" "hw/" "target-moxie/" "qemu-ga.texi" "tci.c" "qemu-options.h" "xen-common.c" "tests/" ".git/" ".gitignore" "user-exec.c" "qemu-io-cmds.c" "main-loop.c" "pixman/" "CODING_STYLE" "spice-qemu-char.c" "dtc/" "crypto/" "qjson.c" "aio-posix.c" "LICENSE" ".dir-locals.el" "exec.c" "xen-common-stub.c" "numa.c" "target-sparc/")
+
  ("/home/dsqiu/Work/linux/python/mysite/mysite/mysite/" (22165 679 231723 681000) "forms.py" "./" "urls.pyc" "forms.pyc" "wsgi.py" "../" "__init__.py" "wsgi.pyc" "settings.py" "settings.pyc" "urls.py" "__init__.pyc" "views.py" "views.pyc")
 
  ("/home/dsqiu/.emacs.d/" (22162 22947 574858 481000) "vim-config/" "vimrc" "ido.last" "lisp/" "90-android.rules" "srecode-map.el" ".git/" "./" "dotemacs.el" "ac-comphist.dat" "gitconfig" "elpa/" "dict/" "../" "README.md" "create.sh" "semanticdb/" "recentf" "eshell/" "auto-save-list/")
@@ -206,12 +302,6 @@
  ("/home/dsqiu/Work/linux/python/mysite/" (22152 57784 699251 660000) "./" "../" "mysite/")
 
  ("/home/dsqiu/Work/linux/python/" (22162 22517 244898 501000) "django-backbone-example/" "python-django-sample/" "djangobook/" "./" "../" "webpy/" "mysite/" "django/")
-
- ("/home/dsqiu/Work/linux/" (22151 36596 905444 311000) "github/" "create_git.txt" "mplayer/" "if/" "html/" "mips-alsa/" "python/" "test_tcsm/" "./" "warrior/" "build_project/" "homework/" "pixman/" "ci20/" "vbox/" "cairo/" "../" "audio/" "changhong/" "yocto/" "gramma/" "cmake/" "auto-complete/" "u-boot/" "requests/" "git-core/" "stardict/" "cunit-code/" "nand_new/" "baidu/" "code.google/" "PerfTest/" "fft/" "cppunit-code/" "htc/" "coding.net/")
-
- ("/home/dsqiu/Work/" (22027 62204 635637 656000) "bin/" "./" "../" "linux/" "tizen/" "android/")
-
- ("/home/dsqiu/" (22162 19867 385730 258000) ".gksu.lock" ".idlerc/" ".repopickle_.gitconfig" ".AndroidStudio1.4/" ".dbus/" "java_error_in_STUDIO_28795.log" ".multisystem/" "xjyu.tar.bz2" ".gnome2/" ".AndroidStudioBeta/" ".xsession-errors" ".gitconfig~" ".neocon/" ".emacs.d/" ".python-history" ".multisystem-theme" ".gnome2_private/" ".presage/" "WebstormProjects/" "bin/" ".subversion/" ".python-eggs/" ".pip/" "业绩.odt" ".bash_logout" "CI20升级640*480.docx" "VirtualBox VMs/" ".repo_.gitconfig.json" ".python_history" ".nv/" ".WebStorm10/" "Pictures/" ".springlobby/" ".AndroidStudio1.3/" ".xinputrc" ".viminfo" "dhango-bak/" ".vimrc" "SpringLobby/" ".thumbnails/" "./" "PycharmProjects/" "qt4-dev-tools/" "jz_uart.c" ".PyCharm50/" ".gstreamer-0.10/" ".macromedia/" ".emacs" "AndroidStudioProjects/" "examples.desktop" "uml-generated-code/" ".kchmviewer/" ".gconf/" ".nvidia-settings-rc" "xjyu/" ".local/" ".profile" ".android/" ".dmrc" ".codeblocks/" "Templates/" ".gimp-2.8/" ".ccache/" ".thunderbird/" ".dia/" ".Xauthority" "Tmp/" ".gnupg/" ".AndroidStudio/" "Videos/" "Documents/" ".mozilla/" "Work/" "../" ".gnome/" ".ICEauthority" "Downloads/" "Misc/" ".calc_history" ".compiz/" ".#a.py" ".remmina/" ".bzr.log" "Tools/" "CI20升级640*480.odt" ".bash_history" ".xsession-errors.old" "hosts" ".bazaar/" ".mplayer/" "proxy.sh" ".sudo_as_admin_successful" ".mtoolsrc" ".rpmdb/" ".pki/" ".bashrc~" "GBS-ROOT/" "a.py" ".config/" "Music/" ".screenlets/" ".bashrc" "Desktop/" "key.store.jks" ".wine/" "minicom.log" ".PyCharm40/" "Driver/" "workspace/" ".Xmodmap" ".gphoto/" ".gitconfig" ".AndroidStudio1.5/" ".gvfs/" ".java/" ".repoconfig/" "CUnitHome/" ".lesshst" ".ssh/" ".freerdp/" ".adobe/" ".gradle/" ".watershed/" ".vim/" "docker/" "UnderStand/" "Public/" ".cache/" ".minirc.dfl" ".stardict/" "vim/")
 
  ("/home/dsqiu/Tools/" (22161 63255 956888 126000) "windows/" "htcnetup/" "emacs.tar.bz2" "openswan/" "emacs-release/" "WebStorm-10.0.4.tar.gz" "cscope-15.8a.tar.gz" "gnome-shell-extensions/" "yasnippet/" "goagent/" "dsqiu-emacs-config/" "pycharm-5.0.2/" "pycharm-professional-5.0.2.tar" "./" "emacs2/" "x-tile-2.5.tar.xz" "cscope-15.8a/" "x-tile-2.5/" "../" "discuz/" "Discuz_7.2_FULL_SC_UTF8.zip" "yasnippet-snippets/" "WebStorm-141.1550/" "eclipse/" "Discuz_7.2_FULL_SC_GBK.zip" "dia2codes/" "emacs/" "VSCode-linux-x64.zip" "awesome" "VSCode-linux-x64/" "understand/" "vim/")
 
@@ -318,82 +408,6 @@
  ("/media/" (21680 52544 190921 272000) "dsqiu/" "./" "../")
 
  ("/media/dsqiu/" (21824 57976 733161 494000) "Seagate Backup Plus Drive/" "./" "../")
-
- ("/media/dsqiu/Seagate Backup Plus Drive/" (21820 63169 48823 100000) "work/" "Warranty.pdf" "System Volume Information/" "shootsheets/" "Seagate Dashboard Installer.exe" "Seagate Dashboard Installer.dmg" "Seagate/" "RECYRCLER/" "BackupPlus.ico" "autorun.inf" "Assistant_Terminal_Mannual.pdf" "Assistant_Terminal_Mannual.docx" "AllStyle.tar.bz2" "$RECYCLE.BIN/" "../" "./")
-
- ("/media/dsqiu/Seagate Backup Plus Drive/shootsheets/org/59D/" (21810 25461 481905 600000) "7.62mm-7.62毫米并列机枪弹射表.txt" "105mm-ZPL94式105毫米坦克炮DTJ1式碎甲弹射表.txt" "105mm-ZPL94式105毫米坦克炮DTB式杀伤爆破弹射表.txt" "../" "./")
-
- ("/media/dsqiu/Seagate Backup Plus Drive/shootsheets/org/" (21824 56725 137277 700000) "DTB10式100毫米杀增程弹.txt" "59D/" "04/" "../" "./")
-
- ("/media/dsqiu/Seagate Backup Plus Drive/shootsheets/org/04/" (21810 25461 466305 600000) "机枪5.8.txt" "DTB10式100毫米杀增程弹.txt" "DTB04式100毫米杀伤爆破弹.txt" "../" "./")
-
- ("/media/dsqiu/Seagate Backup Plus Drive/work/data/第三阶段成果/AllStyle/src/com/example/newdemos04/" (21784 7558 0 0) "YuanDrawl1.java" "SuanFa2.java" "Peizhiwenjian.java" "Main1Activity.java" "GetShuJu.java" "Fangfa.java" "ChaZhiSuanFa.java" "CanShu.java" "BiaoTwoView.java" "../" "./")
-
- ("/home/dsqiu/Work/linux/ci20/touch/xf86-input-evdev-2.7.0/src/" (21671 51546 872866 148000) "emuThird.c" "./" "evdev.c" "draglock.c" "apple.c" "../" "emuWheel.c" "Makefile.am" "evdev.h" "Makefile.in" "emuMB.c")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/security/selinux/" (21450 3650 0 0) "selinuxfs.c" "xfrm.c" "Kconfig" "netnode.c" "./" "netlabel.c" "Makefile" "netlink.c" ".gitignore" "netport.c" "nlmsgtab.c" "../" "avc.c" "hooks.c" "netif.c" "exports.c" "ss/" "include/")
-
- ("/home/dsqiu/Work/linux/ci20/touch/xf86-input-elographics-1.2.1/src/" (18484 28872 0 0) "./" "../" "xf86Elo.c" "Makefile.am" "Makefile.in")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/drivers/usb/serial/" (21756 7900 725911 932000) ".usb-serial.o.cmd" "opticon.c" "usb_debug.c" "usb_wwan.c" "oti6858.h" "digi_acceleport.c" "visor.h" "Kconfig" "keyspan_usa49msg.h" "option.o" "ftdi_sio.o" "pl2303.h" "option.c" "belkin_sa.h" "ftdi_sio.h" "io_ionsp.h" "usb-serial.o" "oti6858.c" "cypress_m8.h" "usb_wwan.o" "navman.c" "mct_u232.h" "./" "funsoft.o" "keyspan_usa90msg.h" "keyspan_usa28msg.h" "keyspan.c" "generic.c" ".option.o.cmd" "io_edgeport.h" "Makefile" "kl5kusb105.h" "qcaux.c" "ftdi_sio.c" "io_edgeport.c" "belkin_sa.c" "sierra.c" ".built-in.o.cmd" ".usbserial.o.cmd" "ipw.c" "keyspan.h" "spcp8x5.c" "safe_serial.c" "iuu_phoenix.h" "io_ti.h" "mct_u232.c" "omninet.c" "bus.c" "io_tables.h" ".generic.o.cmd" "bus.o" "iuu_phoenix.c" "pl2303.c" "cyberjack.c" "garmin_gps.c" "whiteheat.h" "visor.c" "../" "moto_modem.c" "io_usbvend.h" "aircable.c" "io_ti.c" "kobil_sct.c" "ti_usb_3410_5052.h" "ftdi_sio_ids.h" "console.c" "keyspan_usa67msg.h" ".usb_wwan.o.cmd" "ezusb_convert.pl" "kobil_sct.h" ".funsoft.o.cmd" "funsoft.c" "mos7720.c" "ch341.c" "ark3116.c" "hp4x.c" ".bus.o.cmd" "mos7840.c" "keyspan_pda.c" "usbserial.o" "cp210x.c" "ChangeLog.history" "generic.o" "whiteheat.c" "ezusb.c" ".ftdi_sio.o.cmd" "ssu100.c" "cypress_m8.c" "siemens_mpi.c" "usb-serial.c" "ti_usb_3410_5052.c" "ir-usb.c" "qcserial.c" "keyspan_usa26msg.h" "usb-wwan.h" "Makefile-keyspan_pda_fw" "symbolserial.c" "zio.c" "empeg.c" "built-in.o" "io_16654.h" "kl5kusb105.c" "vivopay-serial.c" "ipaq.c")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/arch/mips/include/asm/" (21682 1757 830983 402000) "i8259.h" "mach-cobalt/" "spram.h" "mach-lantiq/" "page.h" "barrier.h" "sections.h" "watch.h" "pci.h" "perf_event.h" "asm.h" "debug.h" "rjzcache.h" "tlbdebug.h" "mman.h" "gic.h" "module.h" "cpu.h" "dma-mapping.h" "sni.h" "mach-ath79/" "delay.h" "auxvec.h" "wbflush.h" "smvp.h" "highmem.h" "gpio.h" "sim.h" "mach-dec/" "serial.h" "fpregdef.h" "edac.h" "vdso.h" "pgtable.h" "cpu-features.h" "spinlock_types.h" "break.h" "uaccess.h" "current.h" "jazzdma.h" "mips_mt.h" "posix_types.h" "device.h" "fcntl.h" "mach-sead3/" "abi.h" "i8253.h" "kdebug.h" "resource.h" "mmu.h" "hardirq.h" "mc146818-time.h" "swab.h" "mach-tx39xx/" "ioctls.h" "poll.h" "cmpxchg.h" "dsp.h" "irq_regs.h" "pgtable-bits.h" "tlb.h" "mipsmtregs.h" "compat.h" "cmp.h" "fpu_emulator.h" "bitops.h" "setup.h" "rm9k-ocd.h" "thread_info.h" "shmbuf.h" "dma.h" "sparsemem.h" "mach-powertv/" "mach-db1x00/" "cachectl.h" "pgtable-32.h" "stat.h" "mach-bcm63xx/" "segment.h" "sgialib.h" "addrspace.h" "string.h" "sockios.h" "sigcontext.h" "mach-vr41xx/" "mach-au1x00/" "netlogic/" "mach-yosemite/" "irq_gt641xx.h" "smp.h" "mach-rm/" "mach-ip27/" "kgdb.h" "cacheops.h" "mach-netlogic/" "xor.h" "regdef.h" "prom.h" "compiler.h" "termbits.h" "kprobes.h" "mach-malta/" "nile4.h" "seccomp.h" "rtlx.h" "mach-bcm47xx/" "titan_dep.h" "tlbflush.h" "octeon/" "jump_label.h" "pci/" "txx9pio.h" "spinlock.h" "r4k-timer.h" "clock.h" "smtc.h" "mach-pnx8550/" "bitsperlong.h" "txx9/" "lasat/" "traps.h" "kexec.h" "mach-tx49xx/" "mach-wrppmc/" "siginfo.h" "atomic.h" "prefetch.h" "topology.h" "uasm.h" "asm-offsets.h" "local64.h" "ptrace.h" "mach-pb1x00/" "signal.h" "ioctl.h" "linkage.h" "jazz.h" "mach-loongson/" "processor.h" "r4kcache.h" "cpu-info.h" "vpe.h" "mach-sibyte/" "futex.h" "mxu_media.h" "emma/" "mach-rc32434/" "ipcbuf.h" "checksum.h" "hugetlb.h" "elf.h" "gcmpregs.h" "inst.h" "mach-ip28/" "mips-boards/" "isadep.h" "mach-lasat/" "txx9irq.h" "mach-jz4740/" "branch.h" "ftrace.h" "war.h" "smp-ops.h" "time.h" "mach-ip32/" "local.h" "mach-mipssim/" "statfs.h" "mach-ar7/" "fixmap.h" "shmparam.h" "sgidefs.h" "bootinfo.h" "mmzone.h" "irq.h" "amon.h" "io.h" "paccess.h" "param.h" "mach-jazz/" "pmc-sierra/" "scatterlist.h" "kspd.h" "mipsregs.h" "emergency-restart.h" "socket.h" "ds1287.h" "mach-ip22/" "cevt-r4k.h" "byteorder.h" "pgtable-64.h" "sembuf.h" "irq_cpu.h" "asmmacro-32.h" "mips_machine.h" "unistd.h" "mc146818rtc.h" "smtc_ipi.h" "mach-pnx833x/" "sn/" "reg.h" "sysmips.h" "asmmacro-64.h" "user.h" "bug.h" "msc01_ic.h" "types.h" "sgi/" "pgalloc.h" "mutex.h" "ucontext.h" "timex.h" "fw/" "fb.h" "kmap_types.h" "mach-cavium-octeon/" "cop2.h" "floppy.h" "smtc_proc.h" "bugs.h" "asmmacro.h" "compat-signal.h" "mach-generic/" "cputime.h" "percpu.h" "hw_irq.h" "mmu_context.h" "ip32/" "pmon.h" "reboot.h" "irqflags.h" "div64.h" "stacktrace.h" "stackframe.h" "system.h" "mxu.h" "xtalk/" "errno.h" "unaligned.h" "fpu.h" "dec/" "gt64120.h" "hazards.h" "vr41xx/" "m48t37.h" "mipsprom.h" "sibyte/" "bcache.h" "cache.h" "parport.h" "msgbuf.h" "sgiarcs.h" "Kbuild" "txx9tmr.h" "ide.h" "arch_hweight.h" "mach-emma2rh/" "vga.h" "suspend.h" "termios.h" "cacheflush.h" "../" "./")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/arch/mips/mm/" (21756 7826 917913 438000) ".highmem.o.cmd" ".page.o.cmd" "c-tx39.c" "page.c" "cerr-sb1.c" "extable.c" "dma-default.c" "pgtable-32.c" "tlb-r8k.c" ".mmap.o.cmd" "sc-r5k.c" "extable.o" "tlbex.o" ".tlbex-fault.o.cmd" "./" "tlb-r3k.c" "c-octeon.c" ".uasm.o.cmd" "Makefile" "mmap.o" ".cache.o.cmd" ".extable.o.cmd" "tlbex.c" ".built-in.o.cmd" "ioremap.c" "c-jz.o" "init.o" "pgtable-64.c" "tlbex-fault.o" ".pgtable-32.o.cmd" "fault.c" "cex-gen.o" "uasm.c" ".tlbex.o.cmd" "sc-mips.c" "cache.o" "patchs/" "tlbex-fault.S" "../" "c-r3k.c" "hugetlbpage.c" "sc-ip22.c" "page-funcs.o" "uasm.o" "ioremap.o" ".cex-gen.o.cmd" ".ioremap.o.cmd" "c-r4k.c" "cache.c" "page-funcs.S" "mmap.c" "cex-oct.S" "pgtable-32.o" "cex-sb1.S" ".fault.o.cmd" "highmem.o" "tlb-r4k.c" "fault.o" "sc-rm7k.c" ".c-jz.o.cmd" "cex-gen.S" "dma-default.o" ".tlb-r4k.o.cmd" ".page-funcs.o.cmd" "init.c" "page.o" ".dma-default.o.cmd" "tlb-r4k.o" "c-jz.c" "highmem.c" ".init.o.cmd" "built-in.o")
-
- ("/home/dsqiu/Work/linux/warrior/" (21739 12891 82979 465000) "buildroot/" "xf86-video-fbdev-0.4.4.tar.bz2" "warrior_debian7.tar.bz2" "xf86-video-fbdev-0.4.4/" "ci20-sgx/" "warrior_debian7_en2.tar" "mesa-10.5.0-rc1/" "./" "command" "sdcard/" "warrior_debian7_en.tar.bz2" "mksdcard.sh" "u-boot-with-spl-mbr.bin" "lightdm.conf" "../" "alsa/" "xf86-video-intel-2.99.917/" "mesa-10.5.0-rc1.tar.gz" "u-boot-with-spl-mbr.bin.115200" "group" "mesa/" "boot/" "fonts/" "xf86-video-intel-2.99.917.tar.bz2" "app/" "firmware/")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/arch/mips/xburst/soc-4780/chip-4780/" (21756 7825 937913 458000) "ry1000/" "urboard/" "hdmi-80/" "pisces/" "vehicle/" "Kconfig" "ds-j801mb/" "nc750/" "leaf/" "./" "warrior/" "Makefile" ".built-in.o.cmd" "ebook/" "npm801/" "vga-dongle/" "m80/" "hlba1/" "npm3701/" "../" "npm709j/" "t700d/" "grus/" "i88/" "ji8070a/" "test/" "m80701/" "zpad80/" "printer/" "giant/" "built-in.o")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/sound/soc/" (21756 8617 229897 311000) "soc-dapm.o" "soc-cache.c" "soc-jack.o" "sh/" "Kconfig" "blackfin/" "au1x/" "codecs/" ".soc-cache.o.cmd" "./" "soc-core.o" ".soc-core.o.cmd" "omap/" "Makefile" ".built-in.o.cmd" ".snd-soc-core.o.cmd" "txx9/" "fsl/" "xburst/" "jz4740/" "../" "soc-core.c" "davinci/" "tegra/" "s6000/" "soc-jack.c" "mid-x86/" "soc-dapm.c" "ingenic/" "snd-soc-core.o" "pxa/" "ep93xx/" ".soc-jack.o.cmd" "atmel/" "soc-utils.c" "nuc900/" "soc-cache.o" "samsung/" "jz4780/" ".soc-utils.o.cmd" "imx/" "soc-utils.o" ".soc-dapm.o.cmd" "kirkwood/" "built-in.o")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/sound/soc/ingenic/" (21756 7851 237912 942000) "Kconfig" "./" "Makefile" "jz-aic.c" ".built-in.o.cmd" "jz-aic-dma.c" "mensa_spdif.c" "jz-aic-dma.h" "../" "jz-spdif.c" "include/" "built-in.o")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/" (21756 8922 453891 83000) ".vmlinux.o.cmd" "usr/" "net/" "lib/" ".tmp_kallsyms2.o" "Documentation/" ".tmp_kallsyms2.S" "Kconfig" "sound/" "mklinux_bootimg.sh" "README" "kernel/" "virt/" ".git/" "config.e" ".version" "init/" "./" "mm/" ".vmlinux.cmd" "COPYING" "Makefile" "System.map" "Module.symvers" "xorg.conf" "crypto/" ".gitignore" "scripts/" "vmlinux.o" "block/" ".tmp_System.map" "REPORTING-BUGS" "../" ".tmp_kallsyms1.o" "samples/" "CREDITS" "config.b" "security/" "..tmp_vmlinux2.cmd" ".tmp_kallsyms1.S" "..tmp_vmlinux1.cmd" "arch/" ".tmp_vmlinux1" ".missing-syscalls.d" "MAINTAINERS" "..tmp_kallsyms2.o.cmd" "tools/" "ipc/" ".config" ".config.old" "drivers/" "fs/" ".tmp_vmlinux2" "config.c" "include/" "..tmp_kallsyms1.o.cmd" "vmlinux" "config.f" ".mailmap" "Kbuild" "firmware/" ".tmp_versions/")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/sound/soc/jz4780/" (21756 7852 209912 922000) ".jz4780-pcm.o.cmd" "warrior.o" "Kconfig" "warrior.c" "jz4780-aic.h" "ci20.c" "jz4780-pcm.c" "./" "Makefile" "jz4780-i2s.o" ".built-in.o.cmd" ".warrior.o.cmd" "jz4780-pcm.o" "../" ".jz4780-i2s.o.cmd" "jz4780-i2s.c" "built-in.o")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/arch/mips/xburst/soc-4780/chip-4780/warrior/" (21756 7825 929913 458000) "warrior-pm.o" "trooper-nand.c" ".warrior-regulator.o.cmd" ".warrior-lcd.o.cmd" "warrior-i2c.o" "warrior.h" "./" "Makefile" ".warrior-misc.o.cmd" "warrior-nand.c" ".built-in.o.cmd" ".warrior-i2c.o.cmd" ".warrior-mmc.o.cmd" "warrior-mmc.o" "warrior-regulator.c" "warrior-lcd.o" "warrior-pm.c" "warrior-regulator.o" "warrior-mmc.c" "../" "warrior-misc.c" ".warrior-pm.o.cmd" "warrior-sound.c" "warrior-misc.o" "warrior-i2c.c" "warrior-lcd.c" "built-in.o")
-
- ("/home/dsqiu/Work/android/home/android4.3-master/kernel/sound/soc/codecs/" (21756 7851 453912 938000) "pcm3008.h" "tlv320aic23.c" "ak4642.c" "wm8962.h" "max9850.h" "wm1250-ev1.c" "wm8994-tables.c" "alc5623.h" "tlv320aic3x.h" "wm8753.h" "uda134x.h" "ssm2602.c" "wm8776.c" "wm8770.h" "ak4641.h" "wm9713.h" "wm8971.h" "ad1836.c" "wm8915.h" "twl6040.h" "tlv320aic32x4.c" "Kconfig" "ak4671.h" "ad73311.c" "wm8962.c" "wm8988.c" "max98088.h" "wm8904.h" "wm8737.h" "jz4780.o" "tpa6130a2.c" "wm8900.c" "sn95031.c" "wm8400.h" "wm9081.h" "wm8994.h" "uda1380.c" "wm_hubs.h" "uda134x.c" "tlv320dac33.h" "cs42l51.c" "wm8510.h" "wm8510.c" "wm8741.c" "wm8904.c" "Makefile" "wm8753.c" "wm8955.h" "wm8978.h" "wm8400.c" "ads117x.c" "wm8804.h" "wm8750.h" "wm9090.h" "ak4104.c" "max9877.h" "ad73311.h" ".built-in.o.cmd" "ad1980.c" "wm_hubs.c" "jz4775_icdc.h" "ak4535.h" "wm8903.c" "wl1273.c" "wm8731.h" "wm8985.c" "jz4780_icdc.h" "ak4535.c" "max98088.c" "88pm860x-codec.h" "wm8750.c" "tlv320dac33.c" "ad1836.h" "wm8961.c" "wm8711.h" "dfbmcs320.c" "l3.c" "wm8994.c" "wm8728.c" "wm8985.h" "cs42l51.h" "ak4641.c" "max98095.h" "ac97.c" "wm8523.h" "uda1380.h" "wm8988.h" "cq93vc.c" "snd-soc-jz4780-codec.o" "wm8940.c" "wm8776.h" "wm8737.c" "sgtl5000.c" "wm8711.c" ".snd-soc-jz4780-codec.o.cmd" ".jz4780.o.cmd" "max9850.c" "wm9712.h" "jz4775_icdc.c" "spdif_transciever.c" "88pm860x-codec.c" "da7210.c" "jz4740.c" "cs4271.c" "wm8955.c" "wm8960.h" "ad193x.h" "wm8958-dsp2.c" "tlv320aic26.c" "wm8993.h" "wl1273.h" "wm8350.c" "wm8731.c" "wm8961.h" "cx20442.h" "wm9713.c" "tlv320aic3x.c" "wm8978.c" "ad193x.c" "wm9712.c" "wm8971.c" "max9877.c" "wm8974.h" "wm8915.c" "wm8940.h" "jz4780_icdc.c" "max98095.c" "wm8960.c" "tlv320aic32x4.h" "alc5623.c" "twl4030.c" "sgtl5000.h" "wm8727.c" "ak4671.c" "wm9705.c" "jz4780.c" "wm2000.c" "ad1980.h" "wm8991.h" "wm8995.h" "tlv320aic26.h" "wm8990.h" "tpa6130a2.h" "wm8728.h" "wm9081.c" "cs4270.c" "wm8523.c" "ads117x.h" "wm8991.c" "wm8990.c" "wm8804.c" "wm9705.h" "pcm3008.c" "wm2000.h" "wm8350.h" "wm8995.c" "wm8580.h" "wm8974.c" "stac9766.h" "wm9090.c" "sn95031.h" "wm8580.c" "lm4857.c" "wm8770.c" "cx20442.c" "tlv320aic23.h" "twl6040.c" "wm8900.h" "stac9766.c" "wm8741.h" "wm8903.h" "built-in.o" "ssm2602.h" "dmic.c" "wm8993.c" "../" "./")
-
- ("/home/dsqiu/Work/android/l/frameworks/native/cmds/installd/" (21729 45655 431499 959000) "commands.c" "./" "Android.mk" "cscope.out" "tests/" "../" "utils.c" "cscope.files" "installd.c" "installd.h" "cscope.in.out" "cscope.po.out")
-
- ("/home/dsqiu/Work/android/l/art/dex2oat/" (21735 4041 480608 2000) "./" "dex2oat.cc" "Android.mk" "../")
-
- ("/home/dsqiu/.emacs.d/snippets/python-mode/" (21819 34215 524954 100000) "selfassign" "size" "function" "metaclass" "arg_positional" "setup" "assetNotIn" "__setitem__" "self_without_dot" "method_docstring" "unicode" "classmethod" "pass" "trace" "function_docstring" "deftest" "logger_name" "not_impl" "method" "__contains__" "if" "from" "setdef" "init" "test_class" "./" "init_docstring" "celery_pdb" "np" "ife" "__new__" "try" "utf8" "lambda" "__getitem__" "prop" "with_statement" "test_file" "assertRaises" "ifmain" "parser" "logging" "assertFalse" "import" "str" "doctest" "interact" "self" "../" "with" "doc" ".yas-setup.el" "return" "print" "list" ".yas-parents" "assertRaises.with" "iter" "__exit__" "parse_args" "main" "super" "assertTrue" "script" "cls" "__len__" "tryelse" "arg" "static" "assertIn" "assertEqual" "for" "reg" "eq" "django_test_class" "dec" "while" "__enter__" "repr" "ipdbdebug" "all" "assertNotEqual" "ass")
-
- ("/home/dsqiu/Work/linux/se/x1000scboot/sc_firmware/" (21807 47256 338677 401000) "se_entry.S" "pdma_se.ld" "hash.c" "make.sh" "mcu_sc.dump" "scrom_interface.o" "se_rom/" "hash.h" "get_hex_from_bin.sh" "ori.ld" "ld.script" "./" "md5.c" "Makefile" "rsa.c.back" "bin_to_32bit_hex" "s3" "x.hex" "otp.c" "internal_rsa_aes.h" "111" "aes.c" "se_entry.o" "reverse_bytes.awk" "trans_ram_hex.awk" "cscope.out" "pdma_mcu.h" "mcu_sc.hex" "otp.o" "mcu_sc.s" "aes.o" "scrom_interface.h" "../" "tags" "mcu_sc.bin" "internal_rsa_aes.o" "internal_rsa_aes.c" "cscope.files" "mcu_sc.o" "mcu_sc.a" "mcu_base.h" ":W" "otp.h" "cscope.in.out" "scrom_interface.c.new" "aes.h" "md5.h" "md5.o" "11.hex" "s3.hex" "mcu_sc.i" "scram.h" "sc.awk" "scrom_interface.c" "rsa.c" "s4.hex" "s1.hex" "mcu_sc.c" "s2.hex" "trans_rom_hex.awk" "cscope.po.out" "rsa.h" "mcu_sc.vmem" "err.h" "sort_serom.awk" "s11.hex")
-
- ("/home/dsqiu/AndroidStudioProjects/AllStyle/Files/04/Files/ChartStyle/" (21819 39523 458917 578000) "Coefficients.txt" "02/" "./" "currentChartStyle.txt" "../" "01/" "CrossFact.txt")
-
- ("/home/dsqiu/AndroidStudioProjects/AllStyle/Files/04/" (21819 39523 458917 578000) "./" "../" "Files/" "Tables/")
-
- ("/home/dsqiu/AndroidStudioProjects/AllStyle/Files/" (21820 14424 449229 63000) "04/" "ChartStyle/" "passwd" "./" "changelog/" "../")
-
- ("/home/dsqiu/AndroidStudioProjects/AllStyle/silver/part0/" (21793 23521 884489 56000) "001.png" "./" "../")
-
- ("/home/dsqiu/.emacs.d/snippets/" (21554 42320 956611 853000) "js-mode/" "sql-mode/" "m4-mode/" "time" "markdown-mode/" "csharp-mode/" "cpp-omnet-mode/" "org-mode/" "cc-mode/" "go-mode/" "./" "ensime-mode/" "chef-mode/" "git-commit-mode/" "makefile-gmake-mode/" "prog-mode/" "ex-makefile" "html-mode/" "ned-mode/" "makefile-bsdmake-mode/" "octave-mode/" "python-mode/" "makefile-mode/" "nxml-mode/" "a-makefile" "c++-mode/" "yaml-mode/" "f90-mode/" "lisp-interaction-mode/" "fundamental-mode/" "erc-mode/" "emacs-lisp-mode/" "tuareg-mode/" "cmake-mode/" "../" "antlr-mode/" "README.md" "so-makefile" "CONTRIBUTORS.txt" "applescript-mode/" "erlang-mode/" "text-mode/" "ruby-mode/" "js2-mode/" "nsis-mode/" "udev-mode/" "makefile-automake-mode/" "haskell-mode/" "c-mode/" "enh-ruby-mode/" "rst-mode/" "latex-mode/" "css-mode/" "sh-mode/" "nesc-mode/" "email" "groovy-mode/" "java-mode/" "snippet-mode/" "typerex-mode/" "rename_add_contr.py" "perl-mode/" "lua-mode/" "scala-mode/" "cperl-mode/" "conf-unix-mode/" "LICENSE")
-
- ("/home/dsqiu/AndroidStudioProjects/" (21793 21165 668407 178000) "password2/" "silverLOGO.gif" "./" ".#renboot.py" "silver/" "sample/" "../" "Study/" "57e9e68ec4fdcfbf41af474c23b65559.jpg" "renboot.py" "RDPHome/")
-
- ("/home/dsqiu/AndroidStudioProjects/RDPHome/app/src/main/" (21764 7794 71013 961000) "assets/" "res/" "./" "java/" "../" "jniLibs/" "AndroidManifest.xml")
-
- ("/home/dsqiu/AndroidStudioProjects/RDPHome/app/src/" (21763 46434 308479 938000) "./" "../" "main/")
-
- ("/home/dsqiu/AndroidStudioProjects/RDPHome/app/" (21790 44592 239665 737000) "app.iml" "local.properties" "gradlew" "./" "gradle/" "gradlew.bat" ".idea/" "build/" "app-release.apk" "src/" "../" "lint.xml" "build.gradle")
-
- ("/home/dsqiu/AndroidStudioProjects/RDPHome/" (21790 45969 895626 628000) "local.properties" "gradlew" ".git/" "./" "gradle/" "gradlew.bat" "aFreeRDP.iml" ".idea/" "build/" "../" "README.md" "settings.gradle" "RDPHome.iml" "build.gradle" "import-summary.txt" ".gradle/" "app/")
-
- ("/home/dsqiu/AndroidStudioProjects/Password/app/src/main/res/layout/" (21790 51435 315515 102000) "./" "activity_login.xml" "../")
-
- ("/home/dsqiu/AndroidStudioProjects/Password/app/src/main/res/" (21790 48673 283571 463000) "mipmap-xhdpi/" "drawable/" "layout-keysexposed/" "./" "values-v11/" "mipmap-xxhdpi/" "../" "mipmap-mdpi/" "layout/" "mipmap-hdpi/" "values/")
-
- ("/home/dsqiu/AndroidStudioProjects/data/第四阶段成果/AllStyle/src/com/example/newdemos04/" (21786 46666 362832 462000) "Fangfa.java" "./" "Main1Activity.java" "../" "BiaoTwoView.java" "YuanDrawl1.java" "ListviewMainActivity.java" "SuanFa2.java" "Canshu04Activity.java")
-
- ("/home/dsqiu/AndroidStudioProjects/data/第三阶段成果/AllStyle/src/com/example/allstyle/" (21784 7558 832680 312000) "./" "MyActivity.java" "Dzh04A.java" "../" "startReceiver.java" "MainActivity.java")
-
- ("/home/dsqiu/AndroidStudioProjects/data/第四阶段成果/AllStyle/src/com/example/allstyle/" (21784 7570 16680 84000) "XiugaiMainActivity.java" "Peizhiwenjian.java" "WelcomeActivity.java" "ChuSActivity.java" "./" "MyActivity.java" "ChaZhiSuanFa.java" "../" "GetShuJu.java" "startReceiver.java" "MainActivity.java" "CanShu.java")
 )
 
 ;; ----- ido-unc-hosts-cache -----
